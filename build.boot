@@ -15,7 +15,7 @@
  pom {:project     'delaguardo/clj-i18n
       :version     +version+
       :description "Clojure(Script) RoR-style i18n library."
-      :url         "https://github.com/DeLaGuardo/i18n-cljs"
-      :scm         {:url "https://github.com/DeLaGuardo/i18n-cljs"}
+      :url         "https://github.com/DeLaGuardo/clj-i18n"
+      :scm         {:url "https://github.com/DeLaGuardo/clj-i18n"}
       :license     {"EPL" "http://www.eclipse.org/legal/epl-v10.html"}}
  jar {:manifest {"Foo" "bar"}})
