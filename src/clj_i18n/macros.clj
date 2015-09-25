@@ -6,7 +6,7 @@
 (extend-protocol yaml/YAMLCodec
   java.util.ArrayList
   (decode [data]
-    (vec data)))
+    (vec (remove nil? data))))
 
 (defn- deep-merge
   ([a b]
@@ -20,24 +20,29 @@
           (first other)
           (rest other))))
 
+(defn- read-file [res]
+  (let [res (resource res)]
+    (first
+     (vals
+      (yaml/parse-string
+       (slurp (if (.startsWith (str res) "f")
+                (file res)
+                res)))))))
+
 (defn- read-translations [translation-key path-to-locale-data]
-  (let [en-data (yaml/parse-string (slurp (file (resource "base/locale/en.yml"))))
+  (let [en-data (read-file "base/locale/en.yml")
         [locale _] (split translation-key #"-")
         locale-data (if (not= locale translation-key)
-                      (deep-merge (yaml/parse-string
-                                   (slurp (file (resource (str "base/locale/" locale ".yml")))))
-                                  (yaml/parse-string
-                                   (slurp (file (resource (str "base/locale/" translation-key ".yml")))))
+                      (deep-merge (read-file (str "base/locale/" locale ".yml"))
+                                  (read-file (str "base/locale/" translation-key ".yml"))
                                   (if path-to-locale-data
-                                    (yaml/parse-string
-                                     (slurp (file (resource (str path-to-locale-data "/" locale ".yml")))))
+                                    (read-file (str path-to-locale-data "/" locale ".yml"))
                                     {}))
-                      (yaml/parse-string
-                       (slurp (file (resource (str "base/locale/" translation-key ".yml"))))))]
+                      (read-file (str "base/locale/" translation-key ".yml")))]
     (deep-merge en-data
                 locale-data
                 (if path-to-locale-data
-                  (slurp (file (resource (str path-to-locale-data "/" translation-key ".yml"))))
+                  (read-file (str path-to-locale-data "/" translation-key ".yml"))
                   {}))))
 
 (def memoized-read-translations (memoize read-translations))
