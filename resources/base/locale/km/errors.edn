@@ -1,0 +1,39 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "មានរួចហើយ",
+  :too_long
+  {:one "វែងពេក (អតិបរមា 1 អក្សរ)",
+   :other "វែងពេក (អតិបរមា %{count} អក្សរ)"},
+  :equal_to "ត្រូវតែស្មើ %{count}",
+  :even "ត្រូវតែជាចំនួនគត់",
+  :greater_than "ត្រូវតែច្រើនជាង %{count}",
+  :present "ត្រូវតែរំលង",
+  :less_than_or_equal_to "ត្រូវតែតិចជាងឬស្មើ %{count}",
+  :confirmation "ផ្ទៀងផ្ទាត់មិនត្រូវនឹង %{attribute}",
+  :accepted "ត្រូវតែព្រម",
+  :too_short
+  {:one "ខ្លីពេក (អប្បរមា 1 អក្សរ)",
+   :other "ខ្លីពេក (អប្បរមា %{count} អក្សរ)"},
+  :record_invalid "មិនមានសុពលភាព: %{errors}",
+  :invalid "មិនត្រឹមត្រូវ",
+  :wrong_length
+  {:one "ប្រវែងមិនត្រូវ (គួរតែមាន 1 អក្សរ)",
+   :other "ប្រវែងមិនត្រូវ (គួរតែមាន %{count} អក្សរ)"},
+  :not_an_integer "ត្រូវតែជាចំនួនពេញ",
+  :empty "មិនអាចរំលង",
+  :odd "ត្រូវតែជាចំនួនសេស",
+  :blank "មិនអាចរំលង",
+  :exclusion "មិនអនុញ្ញាតឱ្យប្រើ",
+  :less_than "ត្រូវតែតិចជាង %{count}",
+  :other_than "ត្រូវតែខុសពី %{count}",
+  :not_a_number "មិនមែនជាលេខទេ",
+  :greater_than_or_equal_to "ត្រូវតែច្រើនជាងឬស្មើ %{count}",
+  :inclusion "មិនបាននៅក្នុងរាយការណ៍",
+  :restrict_dependent_destroy
+  {:one "មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ",
+   :many "មិនអាចលុបបានទេពីព្រោះមាន %{record} នៅឡើយ"}},
+ :template
+ {:body "សូមពិនិត្យមើលកំហុសនៅខាងក្រោម:",
+  :header
+  {:one "មានកំហុស1ដែលបានបញ្ឈប់ %{model} នេះពីការរក្សាទុក",
+   :other "មានកំហុស%{count}ដែលបានបញ្ឈប់ %{model} នេះពីការរក្សាទុក'"}}}

@@ -1,0 +1,6 @@
+{:formats
+ {:default "%A, ika-%d ng %B ng %Y %H:%M:%S %z",
+  :short "%d ng %b %H:%M",
+  :long "ika-%d ng %B ng %Y %H:%M"},
+ :am "AM",
+ :pm "PM"}

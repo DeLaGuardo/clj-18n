@@ -1,0 +1,6 @@
+{:am "dopoldan",
+ :formats
+ {:default "%A, %d %b %Y ob %H:%M:%S",
+  :long "%d. %B, %Y ob %H:%M",
+  :short "%d. %b ob %H:%M"},
+ :pm "popoldan"}

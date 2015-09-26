@@ -1,0 +1,5 @@
+{:select {:prompt "Sicht w.e.g. eraus"},
+ :submit
+ {:create "uleeën %{model}",
+  :submit "späicheren %{model}",
+  :update "aktualiséieren %{model}"}}

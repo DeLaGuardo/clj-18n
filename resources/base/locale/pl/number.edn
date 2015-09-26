@@ -1,0 +1,40 @@
+{:currency
+ {:format
+  {:delimiter " ",
+   :format "%n %u",
+   :precision 2,
+   :separator ",",
+   :significant false,
+   :strip_insignificant_zeros true,
+   :unit "zł"}},
+ :format
+ {:delimiter " ",
+  :precision 3,
+  :separator ",",
+  :significant false,
+  :strip_insignificant_zeros false},
+ :human
+ {:decimal_units
+  {:format "%n %u",
+   :units
+   {:billion "Miliard",
+    :million "Milion",
+    :quadrillion "Biliard",
+    :thousand "Tysiąc",
+    :trillion "Bilion",
+    :unit ""}},
+  :format
+  {:delimiter "",
+   :precision 3,
+   :significant true,
+   :strip_insignificant_zeros true},
+  :storage_units
+  {:format "%n %u",
+   :units
+   {:byte {:few "bajty", :many "bajtów", :one "bajt", :other "bajty"},
+    :gb "GB",
+    :kb "KB",
+    :mb "MB",
+    :tb "TB"}}},
+ :percentage {:format {:delimiter "", :format "%n%"}},
+ :precision {:format {:delimiter ""}}}

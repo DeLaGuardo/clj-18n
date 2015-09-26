@@ -1,0 +1,27 @@
+{:distance_in_words
+ {:x_months {:one "חודש אחד", :other "%{count} חודשים"},
+  :less_than_x_minutes
+  {:one "פחות מדקה אחת",
+   :other "פחות מ- %{count} דקות",
+   :zero "פחות מדקה אחת"},
+  :almost_x_years {:one "כמעט שנה", :other "כמעט %{count} שנים"},
+  :over_x_years {:one "מעל שנה אחת", :other "מעל %{count} שנים"},
+  :x_seconds {:one "שניה אחת", :other "%{count} שניות"},
+  :x_minutes {:one "דקה אחת", :other "%{count} דקות"},
+  :x_days {:one "יום אחד", :other "%{count} ימים"},
+  :less_than_x_seconds
+  {:one "פחות משניה אחת",
+   :other "פחות מ- %{count} שניות",
+   :zero "פחות משניה אחת"},
+  :half_a_minute "חצי דקה",
+  :about_x_months
+  {:one "בערך חודש אחד", :other "בערך %{count} חודשים"},
+  :about_x_hours {:one "בערך שעה אחת", :other "בערך %{count} שעות"},
+  :about_x_years {:one "בערך שנה אחת", :other "בערך %{count} שנים"}},
+ :prompts
+ {:day "יום",
+  :hour "שעה",
+  :minute "דקה",
+  :month "חודש",
+  :second "שניות",
+  :year "שנה"}}

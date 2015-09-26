@@ -1,0 +1,36 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "n'est pas disponible",
+  :too_long
+  {:one "est trop long (pas plus d'un caractère)",
+   :other "est trop long (pas plus de %{count} caractères)"},
+  :equal_to "doit être égal à %{count}",
+  :even "doit être pair",
+  :greater_than "doit être supérieur à %{count}",
+  :less_than_or_equal_to "doit être inférieur ou égal à %{count}",
+  :confirmation "ne concorde pas avec %{attribute}",
+  :accepted "doit être accepté(e)",
+  :too_short
+  {:one "est trop court (au moins un caractère)",
+   :other "est trop court (au moins %{count} caractères)"},
+  :record_invalid "La validation a échoué : %{errors}",
+  :invalid "n'est pas valide",
+  :wrong_length
+  {:one
+   "ne fait pas la bonne longueur (doit comporter un seul caractère)",
+   :other
+   "ne fait pas la bonne longueur (doit comporter %{count} caractères)"},
+  :not_an_integer "doit être un nombre entier",
+  :empty "doit être rempli(e)",
+  :odd "doit être impair",
+  :blank "doit être rempli(e)",
+  :exclusion "n'est pas disponible",
+  :less_than "doit être inférieur à %{count}",
+  :not_a_number "n'est pas un nombre",
+  :greater_than_or_equal_to "doit être supérieur ou égal à %{count}",
+  :inclusion "n'est pas inclus(e) dans la liste"},
+ :template
+ {:body "Veuillez vérifier les champs suivants : ",
+  :header
+  {:one "Impossible d'enregistrer ce %{model} : 1 erreur",
+   :other "Impossible d'enregistrer ce %{model} : %{count} erreurs"}}}

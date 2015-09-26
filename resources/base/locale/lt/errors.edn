@@ -1,0 +1,42 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "jau užimtas",
+  :too_long
+  {:one "per ilgas (daugiausiai %{count} simbolis)",
+   :few "per ilgas (daugiausiai %{count} simboliai)",
+   :other "per ilgas (daugiausiai %{count} simbolių)"},
+  :equal_to "turi būti lygus %{count}",
+  :even "turi būti lyginis",
+  :greater_than "turi būti didesnis už %{count}",
+  :present "turi būti tuščias",
+  :less_than_or_equal_to "turi būti mažesnis arba lygus %{count}",
+  :confirmation "neteisingai pakartotas",
+  :accepted "turi būti patvirtintas",
+  :too_short
+  {:one "per trumpas (mažiausiai %{count} simbolis)",
+   :few "per trumpas (mažiausiai %{count} simboliai)",
+   :other "per trumpas (mažiausiai %{count} simbolių)"},
+  :record_invalid "Nepraeitos patikros: %{errors}",
+  :invalid "neteisingas",
+  :wrong_length "neteisingo ilgio (turi būti %{count} simboliai)",
+  :not_an_integer "privalo būti sveikas skaičius",
+  :empty "negali būti tuščias",
+  :odd "turi būti nelyginis",
+  :blank "negali būti tuščias",
+  :exclusion "užimtas",
+  :less_than "turi būti mažesnis už %{count}",
+  :other_than "privalo būti kitoks nei %{count}",
+  :not_a_number "ne skaičius",
+  :greater_than_or_equal_to "turi būti didesnis arba lygus %{count}",
+  :inclusion "nenumatyta reikšmė",
+  :restrict_dependent_destroy
+  {:one
+   "Negalima ištrinti įrašo nes priklausomas %{record} egzistuoja",
+   :many
+   "Negalima ištrinti įrašų nes priklausomi %{record} egzistuoja"}},
+ :template
+ {:body "Šiuose laukuose yra klaidų:",
+  :header
+  {:one "Išsaugant objektą %{model} rasta %{count} klaida",
+   :few "Išsaugant objektą %{model} rastos %{count} klaidos",
+   :other "Išsaugant objektą %{model} rasta %{count} klaidų"}}}

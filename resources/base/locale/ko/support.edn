@@ -1,0 +1,4 @@
+{:array
+ {:last_word_connector ", ",
+  :two_words_connector "와(과) ",
+  :words_connector ", "}}

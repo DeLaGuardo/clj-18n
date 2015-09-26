@@ -1,0 +1,29 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "ne estas disponebla",
+  :too_long "estas tro longa (maksimume %{count} karekteroj)",
+  :equal_to "devas egali %{count}",
+  :even "devas esti para",
+  :greater_than "devas superi %{count}",
+  :less_than_or_equal_to "devas malsuperi aŭ egali %{count}",
+  :confirmation "ne kongruas kun la konfirmo",
+  :accepted "devas esti akceptita",
+  :too_short "estas tro mallonga (minimume %{count} karakteroj)",
+  :record_invalid "Validado malsukcesis: %{errors}",
+  :invalid "estas nevalida",
+  :wrong_length
+  "ne estas je ĝusta longo (devas enhavi %{count} karakterojn)",
+  :not_an_integer "devas esti entjero",
+  :empty "devas esti kompletigita",
+  :odd "devas esti nepara",
+  :blank "devas esti kompletigita",
+  :exclusion "ne estas disponebla",
+  :less_than "devas malsuperi %{count}",
+  :not_a_number "ne estas nombro",
+  :greater_than_or_equal_to "devas superi aŭ egali %{count}",
+  :inclusion "ne estas inkluzivita de la listo"},
+ :template
+ {:body "Kontrolu la jenajn kampojn: ",
+  :header
+  {:one "Ne eblas registri tiun %{model}: 1 eraro",
+   :other "Ne eblas registri tiun %{model}: %{count} eraroj"}}}

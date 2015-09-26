@@ -1,0 +1,41 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "ta usá kaba",
+  :too_long
+  {:one "ta muchu largu (máksimo ta 1 karakter)",
+   :other "ta muchu largu (máksimo ta %{count} karakter)"},
+  :equal_to "mester ta meskos ku %{count}",
+  :even "mester ta par",
+  :greater_than "mester ta mas grandi ku %{count}",
+  :present "mester keda bashí",
+  :less_than_or_equal_to "mester ta ménos òf mes tantu ku %{count}",
+  :confirmation "no ta meskos %{attribute}",
+  :accepted "mester asept'é",
+  :too_short
+  {:one "ta muchu kòrtiku (mínimo ta 1 karakter)",
+   :other "is too short (mínimo ta %{count} karakter)"},
+  :record_invalid "Validashon a faya: %{errors}",
+  :invalid "no ta bálido",
+  :wrong_length
+  {:one "su largura no ta korekto (mester ta 1 karakter)",
+   :other "su largura no ta korekto (mester ta %{count} karakter)"},
+  :not_an_integer "mester ta un number hinté",
+  :empty "no por keda bashí",
+  :odd "mester ta impar",
+  :blank "no por keda sin yen'é",
+  :exclusion "ta reservá",
+  :less_than "mester ta ménos ku %{count}",
+  :other_than "no por ta %{count}",
+  :not_a_number "no ta un number",
+  :greater_than_or_equal_to "mester ta mes òf mas grandi ku %{count}",
+  :inclusion "no ta aparesé den e lista",
+  :restrict_dependent_destroy
+  {:one
+   "No por kita e registro akí pasobra un otro %{record} ta dependé di dje",
+   :many
+   "No por kita e registro akí pasobra otro %{record} ta dependé di dje"}},
+ :template
+ {:body "E siguiente rúbrikanan ta duna problema:",
+  :header
+  {:one "1 fout a pone ku no por a save e %{model} akí",
+   :other "%{count} fout a pone ku no por a save e %{model} akí"}}}

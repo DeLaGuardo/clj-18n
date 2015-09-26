@@ -1,0 +1,39 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "ir jau aizņemts",
+  :too_long
+  {:zero "ir par garu (maksimums ir %{count} simboli)",
+   :one "ir par garu (maksimums ir %{count} simbols)",
+   :other "ir par garu (maksimums ir %{count} simboli)"},
+  :equal_to "ir jābūt vienādam ar %{count}",
+  :even "ir jābūt pāra skaitlim",
+  :greater_than "ir jābūt lielākam par %{count}",
+  :less_than_or_equal_to "ir jābūt mazākam vai vienādam ar %{count}",
+  :confirmation "nesakrīt ar apstiprinājumu",
+  :accepted "ir jāpiekrīt",
+  :too_short
+  {:zero "ir par īsu (minimums ir %{count} simboli)",
+   :one "ir par īsu (minimums ir %{count} simbols)",
+   :other "ir par īsu (minimums ir %{count} simboli)"},
+  :record_invalid "Pārbaude neizdevās: %{errors}",
+  :invalid "nav derīgs",
+  :wrong_length
+  {:zero "ir nepareizs garums (jābūt %{count} simboliem)",
+   :one "ir nepareizs garums (jābūt %{count} simbolam)",
+   :other "ir nepareizs garums (jābūt %{count} simboliem)"},
+  :not_an_integer "ir jābūt veselam skaitlim",
+  :empty "ir jābūt aizpildītam",
+  :odd "ir jābūt nepāra skaitlim",
+  :blank "ir jābūt aizpildītam",
+  :exclusion "nav pieejams",
+  :less_than "ir jābūt mazākam par %{count}",
+  :not_a_number "nav skaitlis",
+  :greater_than_or_equal_to
+  "ir jābūt lielākam vai vienādam ar %{count}",
+  :inclusion "nav iekļauts sarakstā"},
+ :template
+ {:body "Problēmas ir šajos ievades laukos:",
+  :header
+  {:zero "Dēļ %{count} kļūdām šis %{model} netika saglabāts",
+   :one "Dēļ %{count} kļūdas šis %{model} netika saglabāts",
+   :other "Dēļ %{count} kļūdām šis %{model} netika saglabāts"}}}

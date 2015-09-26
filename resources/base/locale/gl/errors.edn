@@ -1,0 +1,27 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "non está dispoñible",
+  :too_long "é demasiado longo (non máis de %{count} carácteres)",
+  :equal_to "debe ser igual a %{count}",
+  :even "debe ser impar",
+  :greater_than "debe ser maior que %{count}",
+  :less_than_or_equal_to "debe ser menor ou igual que %{count}",
+  :confirmation "non coincide coa confirmación",
+  :accepted "debe ser aceptado",
+  :too_short "é demasiado curto (non menos de %{count} carácteres)",
+  :invalid "non é válido",
+  :wrong_length
+  "non ten a lonxitude correcta (debe ser de %{count} carácteres)",
+  :empty "non pode estar valeiro",
+  :odd "debe ser par",
+  :blank "non pode estar en blanco",
+  :exclusion "xa existe",
+  :less_than "debe ser menor que %{count}",
+  :not_a_number "non é un número",
+  :greater_than_or_equal_to "debe ser maior ou igual que %{count}",
+  :inclusion "non está incluido na lista"},
+ :template
+ {:body "Atopáronse os seguintes problemas:",
+  :header
+  {:one "1 erro evitou que se poidese gardar o %{model}",
+   :other "%{count} erros evitaron que se poidese gardar o %{model}"}}}

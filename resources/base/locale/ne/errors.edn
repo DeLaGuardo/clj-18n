@@ -1,0 +1,34 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "पहिल्यै प्रयोग गरीएको छ",
+  :too_long
+  {:one "धेरै लामो छ (अधिक्तम 1 character हो)",
+   :other "धेरै लामो छ (अधिक्तम %{count} characters हो)"},
+  :equal_to "%{count} सँग बराबर हुनुपर्नेछ",
+  :even "जोर संख्या हुनुपर्नेछ",
+  :greater_than "%{count} भन्दा बेसी हुनुपर्नेछ",
+  :less_than_or_equal_to "%{count} सँग बराबर अथवा कम हुनुपर्नेछ",
+  :confirmation "पुष्ठिकरणसँग मेल खाँदैन",
+  :accepted "स्वीकार गरिनुपर्नेछ",
+  :too_short
+  {:one "धेरै छोटो छ (न्युनत्तम 1 character हो)",
+   :other "धेरै छोटो छ (न्युनत्तम %{count} characters हो)"},
+  :record_invalid "मान्य भएन: %{errors}",
+  :invalid "अमान्य छ",
+  :wrong_length
+  {:one "गलत लम्बाई हो (1 character हुनुपर्नेछ)",
+   :other "गलत लम्बाई हो (%{count} characters हुनुपर्नेछ)"},
+  :not_an_integer "पुर्णाकं हुनुपर्नेछ",
+  :empty "रित्तो हुन सक्दैन",
+  :odd "बिजोर संख्या हुनुपर्नेछ",
+  :blank "खाली हुन सक्दैन",
+  :exclusion "प्रयोगको लागी संरक्षित छ",
+  :less_than "%{count} भन्दा कम हुनुपर्नेछ",
+  :not_a_number "अंक होईन",
+  :greater_than_or_equal_to "%{count} सँग बराबर अथवा बेसी हुनुपर्नेछ",
+  :inclusion "सुचीमा सामेल गरिएको छैन"},
+ :template
+ {:body "तलका क्षेत्रधारकहरु समस्याहरु देखियो:",
+  :header
+  {:one "1 गल्तीले यस %{model} लाई बचत गर्नबाट रोक्यो",
+   :other "%{count} गल्तीले यस %{model} लाई बचत गर्नबाट रोक्यो"}}}

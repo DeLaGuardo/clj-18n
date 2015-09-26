@@ -1,0 +1,41 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "is al in gebruik",
+  :too_long
+  {:one "is te lang (maximaal %{count} teken)",
+   :other "is te lang (maximaal %{count} tekens)"},
+  :equal_to "moet gelijk zijn aan %{count}",
+  :even "moet even zijn",
+  :greater_than "moet groter zijn dan %{count}",
+  :present "moet leeg zijn",
+  :less_than_or_equal_to "moet minder dan of gelijk zijn aan %{count}",
+  :confirmation "komt niet overeen met %{attribute}",
+  :accepted "moet worden geaccepteerd",
+  :too_short
+  {:one "is te kort (minimaal %{count} teken)",
+   :other "is te kort (minimaal %{count} tekens)"},
+  :record_invalid "Validatie mislukt: %{errors}",
+  :invalid "is ongeldig",
+  :wrong_length
+  {:one "heeft onjuiste lengte (moet %{count} teken lang zijn)",
+   :other "heeft onjuiste lengte (moet %{count} tekens lang zijn)"},
+  :not_an_integer "moet een geheel getal zijn",
+  :empty "moet opgegeven zijn",
+  :odd "moet oneven zijn",
+  :blank "moet opgegeven zijn",
+  :exclusion "is niet beschikbaar",
+  :less_than "moet minder zijn dan %{count}",
+  :other_than "moet anders zijn dan %{count}",
+  :not_a_number "is geen getal",
+  :greater_than_or_equal_to
+  "moet groter dan of gelijk zijn aan %{count}",
+  :inclusion "is niet in de lijst opgenomen",
+  :restrict_dependent_destroy
+  {:one "Kan item niet verwijderen omdat %{record} afhankelijk is",
+   :many
+   "Kan item niet verwijderen omdat afhankelijke %{record} bestaan"}},
+ :template
+ {:body "Controleer de volgende velden:",
+  :header
+  {:one "%{model} niet opgeslagen: 1 fout gevonden",
+   :other "%{model} niet opgeslagen: %{count} fouten gevonden"}}}

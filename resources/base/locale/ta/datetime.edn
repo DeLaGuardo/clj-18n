@@ -1,0 +1,30 @@
+{:distance_in_words
+ {:x_months {:one "1 மாதம்", :other "%{count} மாதங்கள்"},
+  :less_than_x_minutes
+  {:one "ஒரு நிமிடத்திற்கும் குறைவாக",
+   :other "குறைவாக %{count} நிமிடங்கள்"},
+  :almost_x_years
+  {:one "கிட்டத்தட்ட 1  ஆண்டு",
+   :other "கிட்டத்தட்ட %{count}  ஆண்டுகள்"},
+  :over_x_years
+  {:one "ஒரு  ஆண்டிற்கு மேலாக", :other "%{count}  ஆண்டிற்கு மேலாக"},
+  :x_seconds {:one "1 வினாடி", :other "%{count} விநாடிகள்"},
+  :x_minutes {:one "1 நிமிடம்", :other "%{count} நிமிடங்கள்"},
+  :x_days {:one "1 நாள்", :other "%{count} நாட்கள்"},
+  :less_than_x_seconds
+  {:one "ஒரு வினாடிக்கும் குறைவாக",
+   :other "குறைவாக %{count} வினாடிகள்"},
+  :half_a_minute "அரை நிமிடம்",
+  :about_x_months
+  {:one "சுமார் 1 மாதம்", :other "சுமார் %{count} மாதங்களுக்கு"},
+  :about_x_hours
+  {:one "சுமார் 1 மணி நேரம்", :other "சுமார் %{count} மணி"},
+  :about_x_years
+  {:one "சுமார் 1  ஆண்டு", :other "சுமார் %{count}  ஆண்டுகள்"}},
+ :prompts
+ {:day "நாள்",
+  :hour "மணி",
+  :minute "நிமிடம்",
+  :month "மாதம்",
+  :second "விநாடிகள்",
+  :year "ஆண்டு"}}

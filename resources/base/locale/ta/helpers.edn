@@ -1,0 +1,5 @@
+{:select {:prompt "தேர்வு செய்க"},
+ :submit
+ {:create "%{model} ஐ  உருவாக்கு",
+  :submit "%{model} ஐ சேமி",
+  :update "%{model} ஐ புதுப்பி"}}

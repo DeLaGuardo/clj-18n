@@ -1,0 +1,37 @@
+{:abbr_day_names ["Son" "Maan" "Dins" "Woe" "Don" "Vry" "Sat"],
+ :abbr_month_names
+ ["Jan"
+  "Feb"
+  "Mar"
+  "Apr"
+  "Mei"
+  "Jun"
+  "Jul"
+  "Aug"
+  "Sep"
+  "Okt"
+  "Nov"
+  "Des"],
+ :day_names
+ ["Sondag"
+  "Maandag"
+  "Dinsdag"
+  "Woensdag"
+  "Donderdag"
+  "Vrydag"
+  "Saterdag"],
+ :formats {:default "%Y-%m-%d", :long "%B %d, %Y", :short "%b %d"},
+ :month_names
+ ["Januarie"
+  "Februarie"
+  "Maart"
+  "April"
+  "Mai"
+  "Junie"
+  "Julie"
+  "Augustus"
+  "September"
+  "Oktober"
+  "November"
+  "Desember"],
+ :order [":year" ":month" ":day"]}

@@ -1,0 +1,28 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "je ju zajãté",
+  :too_long "je za dłëdżé (maksymalno %{count} znaków)",
+  :equal_to "mùszi bëc równe %{count}",
+  :even "mùszé bëc parzësté",
+  :greater_than "mùszi bëc wikszé òd %{count}",
+  :less_than_or_equal_to "mùszi bëc mniszé abò równé %{count}",
+  :confirmation "nie zgòdzô sã z pòcwierdzenim",
+  :accepted "mùszi bëc zaakceptowóné",
+  :too_short "je za krótczé (przënômni %{count} znaków)",
+  :record_invalid "Negatiwné sprôwdzenié pòprawnoscë: %{errors}",
+  :invalid "je zmiłkòwé",
+  :wrong_length "mô lëchą długòtã (bë mùsza miec %{count} znaków)",
+  :not_an_integer "muszi bëc całowną lëczbą",
+  :empty "ni mòżé bëc pùsté",
+  :odd "mùszi bëc nieparzësté",
+  :blank "ni mòże bëc pùsté",
+  :exclusion "je zarezerwowóné",
+  :less_than "mùszi bëc mniszé òd %{count}",
+  :not_a_number "nie je lëczbą",
+  :greater_than_or_equal_to "mùszi bëc wikszé abò równé %{count}",
+  :inclusion "ni ma na lësce dopùszczalnëch wôrtnotów"},
+ :template
+ {:body "Fele tikają sã nëch pól:",
+  :header
+  {:one "%{model} nie òstôł zachòwóny przez jedną felã",
+   :other "%{model} nie òstôł zachòwóny przez %{count} felów"}}}

@@ -1,0 +1,6 @@
+{:am "",
+ :formats
+ {:default "%A %e. %B %Y kl. %H:%M",
+  :long "%A %e. %B %Y kl. %H:%M",
+  :short "%e. %B kl. %H:%M"},
+ :pm ""}

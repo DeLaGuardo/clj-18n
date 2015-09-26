@@ -1,0 +1,5 @@
+{:select {:prompt "Сайлагыз: "},
+ :submit
+ {:create "%{model} иҗат итергә",
+  :submit "%{model} саклап калырга",
+  :update "%{model} саклап калырга"}}

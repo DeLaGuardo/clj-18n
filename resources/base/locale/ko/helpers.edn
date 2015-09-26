@@ -1,0 +1,2 @@
+{:select {:prompt "선택해주세요"},
+ :submit {:create "등록", :submit "제출", :update "갱신"}}

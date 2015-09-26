@@ -1,0 +1,26 @@
+{:distance_in_words
+ {:x_months {:one "1 ay", :other "%{count} ay"},
+  :less_than_x_minutes
+  {:one "1 dəqiqədən az", :other "%{count} dəqiqədən az"},
+  :almost_x_years
+  {:one "təqribən 1 il", :other "təqribən %{count} il"},
+  :over_x_years {:one "1 ildən çox", :other "%{count} ildən çox"},
+  :x_seconds {:one "1 saniyə", :other "%{count} saniyə"},
+  :x_minutes {:one "1 dəqiqə", :other "%{count} dəqiqə"},
+  :x_days {:one "1 gün", :other "%{count} gün"},
+  :less_than_x_seconds
+  {:one "1 saniyədən az", :other "%{count} saniyədən az"},
+  :half_a_minute "yarım dəqiqə",
+  :about_x_months
+  {:one "təxminən 1 ay", :other "təxminən %{count} ay"},
+  :about_x_hours
+  {:one "təxminən 1 saat", :other "təxminən %{count} saat"},
+  :about_x_years
+  {:one "təxminən 1 il", :other "təxminən %{count} il"}},
+ :prompts
+ {:day "Gün",
+  :hour "Saat",
+  :minute "Dəqiqə",
+  :month "Ay",
+  :second "Saniyə",
+  :year "İl"}}

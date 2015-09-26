@@ -1,0 +1,5 @@
+{:select {:prompt "ପସନ୍ଦ କର"},
+ :submit
+ {:create "%{model} ବନାଅ",
+  :submit "%{model} ସୁରଖିତ କର",
+  :update "%{model} ଅାଧୂନିକରଣ କର"}}

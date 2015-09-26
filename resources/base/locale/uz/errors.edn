@@ -1,0 +1,54 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "band",
+  :too_long
+  {:few
+   "uzunligi yetarligidan ortiq (%{count} ta simvoldan yuqori mumkin emas)",
+   :many
+   "uzunligi yetarligidan ortiq (%{count} ta simvoldan yuqori mumkin emas)",
+   :one
+   "uzunligi yetarligidan ortiq (%{count} ta simvoldan yuqori mumkin emas)",
+   :other
+   "uzunligi yetarligidan ortiq (%{count} ta simvoldan yuqori mumkin emas)"},
+  :equal_to "%{count} ga teng",
+  :even "juft sonlar mumkin",
+  :greater_than "%{count} dan yuqori",
+  :less_than_or_equal_to "%{count} ga teng yoki kam",
+  :confirmation "tasdiq bilan mos emas",
+  :accepted "tasdiqlash kerak",
+  :too_short
+  {:few
+   "uzunligi yetarli emas (%{count} ta simvoldan kam mumkin emas)",
+   :many
+   "uzunligi yetarli emas (%{count} ta simvoldan kam mumkin emas)",
+   :one
+   "uzunligi yetarli emas (%{count} ta simvoldan kam mumkin emas)",
+   :other
+   "uzunligi yetarli emas (%{count} ta simvoldan kam mumkin emas)"},
+  :record_invalid "%{errors} ta hato bor.",
+  :invalid "notugri",
+  :wrong_length
+  {:few
+   "uzunligi notugri (uzunligi %{count} simvolga teng bulishi kerak)",
+   :many
+   "uzunligi notugri (uzunligi %{count} simvolga teng bulishi kerak)",
+   :one
+   "uzunligi notugri (uzunligi %{count} simvolga teng bulishi kerak)",
+   :other
+   "uzunligi notugri (uzunligi %{count} simvolga teng bulishi kerak)"},
+  :not_an_integer "butun son emas",
+  :empty "bush bulishi mumkin emas",
+  :odd "toq sonlar mumkin",
+  :blank "bush bulishi mumkin emas",
+  :exclusion "mumkin emas",
+  :less_than "%{count} dan kam",
+  :not_a_number "son emas",
+  :greater_than_or_equal_to "%{count} ga teng yoki yuqori",
+  :inclusion "kutilmagan natija"},
+ :template
+ {:body "Quyidagilarda hatolar mavjud:",
+  :header
+  {:few "%{count} ta hatolar sababli %{model}:ni saqlab bulmadi",
+   :many "%{count} ta hatolar sababli %{model}:ni saqlab bulmadi",
+   :one "%{count} ta hato sababli %{model}:ni saqlab bulmadi",
+   :other "%{count} ta hatolar sababli %{model}:ni saqlab bulmadi"}}}

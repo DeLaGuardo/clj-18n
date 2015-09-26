@@ -1,0 +1,6 @@
+{:am "صباحًا",
+ :formats
+ {:default "%a %b %d %H:%M:%S %Z %Y",
+  :long "%B %d, %Y %H:%M",
+  :short "%d %b %H:%M"},
+ :pm "مساءً"}

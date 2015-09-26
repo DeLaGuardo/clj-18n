@@ -1,0 +1,37 @@
+{:abbr_day_names ["nie" "pòn" "wtó" "str" "czw" "pią" "sob"],
+ :abbr_month_names
+ ["stë"
+  "gro"
+  "str"
+  "łżë"
+  "môj"
+  "cze"
+  "lëp"
+  "zél"
+  "séw"
+  "ruj"
+  "lës"
+  "gòd"],
+ :day_names
+ ["niedzela"
+  "pòniedzôłk"
+  "wtórk"
+  "strzoda"
+  "czwiôrtk"
+  "piątk"
+  "sobòta"],
+ :formats {:default "%d-%m-%Y", :long "%B %d, %Y", :short "%d %b"},
+ :month_names
+ ["stëcznik"
+  "gromicznik"
+  "strëmiannik"
+  "łżëkwiôt"
+  "môj"
+  "czerwińc"
+  "lëpińc"
+  "zélnik"
+  "séwnik"
+  "rujan"
+  "lëstopadnik"
+  "gòdnik"],
+ :order [":day" ":month" ":year"]}

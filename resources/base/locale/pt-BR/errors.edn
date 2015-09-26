@@ -1,0 +1,35 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "já está em uso",
+  :too_long "é muito longo (máximo: %{count} caracteres)",
+  :equal_to "deve ser igual a %{count}",
+  :even "deve ser par",
+  :greater_than "deve ser maior que %{count}",
+  :present "deve ficar em branco",
+  :less_than_or_equal_to "deve ser menor ou igual a %{count}",
+  :confirmation "não é igual a %{attribute}",
+  :accepted "deve ser aceito",
+  :too_short "é muito curto (mínimo: %{count} caracteres)",
+  :record_invalid "A validação falhou: %{errors}",
+  :invalid "não é válido",
+  :wrong_length "não possui o tamanho esperado (%{count} caracteres)",
+  :not_an_integer "não é um número inteiro",
+  :empty "não pode ficar vazio",
+  :odd "deve ser ímpar",
+  :blank "não pode ficar em branco",
+  :exclusion "não está disponível",
+  :less_than "deve ser menor que %{count}",
+  :other_than "deve ser diferente de %{count}",
+  :not_a_number "não é um número",
+  :greater_than_or_equal_to "deve ser maior ou igual a %{count}",
+  :inclusion "não está incluído na lista",
+  :restrict_dependent_destroy
+  {:one
+   "Não é possível excluir o registro pois existe um %{record} dependente",
+   :many
+   "Não é possível excluir o registro pois existem %{record} dependentes"}},
+ :template
+ {:body "Por favor, verifique o(s) seguinte(s) campo(s):",
+  :header
+  {:one "Não foi possível gravar %{model}: 1 erro",
+   :other "Não foi possível gravar %{model}: %{count} erros."}}}

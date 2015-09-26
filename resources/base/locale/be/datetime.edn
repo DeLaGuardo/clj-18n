@@ -1,0 +1,25 @@
+{:distance_in_words
+ {:x_months {:one "1 месяц", :other "%{count} месяцаў"},
+  :less_than_x_minutes
+  {:one "меней за 1 хвіліну", :other "меней за %{count} хвілін"},
+  :almost_x_years {:one "амаль 1 год", :other "амаль %{count} гадоў"},
+  :over_x_years
+  {:one "болей за 1 год", :other "болей за %{count} гадоў"},
+  :x_seconds {:one "1 секунда", :other "%{count} секундаў"},
+  :x_minutes {:one "1 хвіліна", :other "%{count} хвілін"},
+  :x_days {:one "1 дзень", :other "%{count} дзён"},
+  :less_than_x_seconds
+  {:one "меней за 1 секунду", :other "меней за %{count} секундаў"},
+  :half_a_minute "палова хвіліны",
+  :about_x_months
+  {:one "каля 1 месяца", :other "каля %{count} месяцаў"},
+  :about_x_hours
+  {:one "каля 1 гадзіны", :other "каля %{count} гадзін"},
+  :about_x_years {:one "каля 1 года", :other "каля %{count} гадоў"}},
+ :prompts
+ {:day "Дзень",
+  :hour "Гадзіна",
+  :minute "Хвіліна",
+  :month "Месяц",
+  :second "Секунда",
+  :year "Год"}}

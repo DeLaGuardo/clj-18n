@@ -1,0 +1,31 @@
+{:format "%{message}",
+ :messages
+ {:taken "%{attribute}已經用過",
+  :too_long {:one "太長（最多1個字）", :other "太長（最多%{count}個字）"},
+  :equal_to "%{attribute}要係%{count}",
+  :even "%{attribute}要係雙數",
+  :greater_than "%{attribute}要大過%{count}",
+  :present "%{attribute}要空白",
+  :less_than_or_equal_to "%{attribute}要細過或者等於%{count}",
+  :confirmation "%{attribute}唔夾",
+  :accepted "一定要接受%{attribute}",
+  :too_short {:one "太短（最少1個字）", :other "太短（最少%{count}個字）"},
+  :record_invalid "%{attribute}有問題︰%{errors}",
+  :invalid "%{attribute}無效",
+  :wrong_length {:one "唔啱字數 (要係1個字)", :other "唔啱字數 (要係%{count}個字)"},
+  :not_an_integer "%{attribute}要係整數",
+  :empty "%{attribute}唔可以漏空",
+  :odd "%{attribute}要係單數",
+  :blank "%{attribute}唔可以空白",
+  :exclusion "%{attribute}唔用得",
+  :less_than "%{attribute}要細過%{count}",
+  :other_than "%{attribute}唔可以係%{count}",
+  :not_a_number "%{attribute}唔係一個數",
+  :greater_than_or_equal_to "%{attribute}要大過或者等於%{count}",
+  :inclusion "%{attribute}唔喺表入面",
+  :restrict_dependent_destroy
+  {:one "唔可以刪除，因為%{record}要用佢", :many "唔可以刪除，因為%{record}要用佢"}},
+ :template
+ {:body "呢啲有問題︰",
+  :header
+  {:one "有一個問題，%{model}儲存唔到。", :other "有%{count}個問題，%{model}儲存唔到。"}}}

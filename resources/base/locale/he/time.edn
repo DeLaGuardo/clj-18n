@@ -1,0 +1,6 @@
+{:am "am",
+ :formats
+ {:default "%a %d %b %H:%M:%S %Z %Y",
+  :long "%d ב%B, %Y %H:%M",
+  :short "%d %b %H:%M"},
+ :pm "pm"}

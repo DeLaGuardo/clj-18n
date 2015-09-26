@@ -1,0 +1,28 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "כבר בשימוש",
+  :too_long "ארוך מדי (יותר מ- %{count} תווים)",
+  :equal_to "חייב להיות שווה ל- %{count}",
+  :even "חייב להיות זוגי",
+  :greater_than "חייב להיות גדול מ- %{count}",
+  :less_than_or_equal_to "חייב להיות קטן או שווה ל- %{count}",
+  :confirmation "לא תואם לאישורו",
+  :accepted "חייב באישור",
+  :too_short "קצר מדי (פחות מ- %{count} תווים)",
+  :record_invalid "האימות נכשל: %{errors}",
+  :invalid "לא תקין",
+  :wrong_length "לא באורך הנכון (חייב להיות %{count} תווים)",
+  :not_an_integer "חייב להיות מספר שלם",
+  :empty "לא יכול להיות ריק",
+  :odd "חייב להיות אי זוגי",
+  :blank "לא יכול להיות ריק",
+  :exclusion "לא זמין",
+  :less_than "חייב להיות קטן מ- %{count}",
+  :not_a_number "חייב להיות מספר",
+  :greater_than_or_equal_to "חייב להיות גדול או שווה ל- %{count}",
+  :inclusion "לא נכלל ברשימה"},
+ :template
+ {:body "אנא בדוק את השדות הבאים:",
+  :header
+  {:one "לא ניתן לשמור את ה%{model}: שגיאה אחת",
+   :other "לא ניתן לשמור את ה%{model}: %{count} שגיאות."}}}

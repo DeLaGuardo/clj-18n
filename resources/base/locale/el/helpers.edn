@@ -1,0 +1,5 @@
+{:select {:prompt "Παρακαλώ επιλέξτε"},
+ :submit
+ {:create "Δημιουργήστε %{model}",
+  :submit "Αποθηκεύστε %{model}",
+  :update "Ενημερώστε %{model}"}}

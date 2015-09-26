@@ -1,0 +1,29 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "पहले ही ले लिया गया है",
+  :too_long "अत्यधिक लंबा है (अधिकतम %{count} वर्ण हैं)",
+  :equal_to "%{count} के लिए बराबर होना चाहिए",
+  :even "सम होना चाहिए",
+  :greater_than "%{count} से अधिक होना चाहिए",
+  :less_than_or_equal_to "%{count} से कम या बराबर होना आवश्यक है",
+  :confirmation "पुष्टिकरण मेल नहीं खाता",
+  :accepted "स्वीकार किया जाना जरूरी",
+  :too_short "अत्यधिक छोटा है (न्यूनतम %{count} वर्ण हैं)",
+  :record_invalid "सत्यापन विफल: %{errors}",
+  :invalid "अवैध है",
+  :wrong_length "गलत लंबाई है (%{count} वर्ण युक्त होना चाहिए)",
+  :not_an_integer "एक पूर्णांक होना चाहिए",
+  :empty "रिक्त नहीं रह सकता है",
+  :odd "विसम होना चाहिए",
+  :blank "खाली नहीं रह सकता है",
+  :exclusion "आरक्षित है",
+  :less_than "%{count} से कम होना चाहिए",
+  :not_a_number "कोई संख्या नहीं है",
+  :greater_than_or_equal_to "%{count} से बड़ा या बराबर होना आवश्यक है",
+  :inclusion "सूची में शामिल नहीं है"},
+ :template
+ {:body "निम्नलिखित क्षेत्रों के साथ समस्या थी:",
+  :header
+  {:one "इस %{model} को सहेजे जाना एक त्रुटि के कारण नहीं हुआ",
+   :other
+   "इस %{model} को सहेजे जाना %{count} त्रुटि के कारण नहीं हुआ"}}}

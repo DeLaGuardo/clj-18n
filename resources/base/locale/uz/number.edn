@@ -1,0 +1,56 @@
+{:currency
+ {:format
+  {:delimiter " ",
+   :format "%n %u",
+   :precision 2,
+   :separator ".",
+   :significant false,
+   :strip_insignificant_zeros false,
+   :unit "sum."}},
+ :format
+ {:delimiter " ",
+  :precision 3,
+  :separator ".",
+  :significant false,
+  :strip_insignificant_zeros false},
+ :human
+ {:decimal_units
+  {:format "%n %u",
+   :units
+   {:billion
+    {:few "milliard",
+     :many "milliard",
+     :one "milliard",
+     :other "milliard"},
+    :million
+    {:few "million",
+     :many "million",
+     :one "million",
+     :other "million"},
+    :quadrillion
+    {:few "kvadrillion",
+     :many "kvadrillion",
+     :one "kvadrillion",
+     :other "kvadrillion"},
+    :thousand {:few "ming", :many "ming", :one "ming", :other "ming"},
+    :trillion
+    {:few "trillion",
+     :many "trillion",
+     :one "trillion",
+     :other "trillion"},
+    :unit ""}},
+  :format
+  {:delimiter "",
+   :precision 1,
+   :significant false,
+   :strip_insignificant_zeros false},
+  :storage_units
+  {:format "%n %u",
+   :units
+   {:byte {:few "bayt", :many "bayt", :one "bayt", :other "bayt"},
+    :gb "GB",
+    :kb "KB",
+    :mb "MB",
+    :tb "TB"}}},
+ :percentage {:format {:delimiter ""}},
+ :precision {:format {:delimiter ""}}}

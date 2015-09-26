@@ -1,0 +1,64 @@
+{:distance_in_words
+ {:x_months
+  {:few "%{count} oy",
+   :many "%{count} oy",
+   :one "%{count} oy",
+   :other "%{count} oy"},
+  :less_than_x_minutes
+  {:few "%{count} daqiqadan kam",
+   :many "%{count} daqiqadan kam",
+   :one "%{count} daqiqadan kam",
+   :other "%{count} daqiqadan kam"},
+  :almost_x_years
+  {:one "deyarli 1 yil",
+   :few "deyarli %{count} yil",
+   :many "deyarli %{count} yil",
+   :other "deyarli %{count} yil"},
+  :over_x_years
+  {:few "%{count} yildan ziyod",
+   :many "%{count} yildan ziyod",
+   :one "%{count} yildan ziyod",
+   :other "%{count} yildan ziyod"},
+  :x_seconds
+  {:few "%{count} soniya",
+   :many "%{count} soniya",
+   :one "%{count} soniyaа",
+   :other "%{count} soniya"},
+  :x_minutes
+  {:few "%{count} daqiqa",
+   :many "%{count} daqiqa",
+   :one "%{count} daqiqa",
+   :other "%{count} daqiqa"},
+  :x_days
+  {:few "%{count} kun",
+   :many "%{count} kun",
+   :one "%{count} kun",
+   :other "%{count} kun"},
+  :less_than_x_seconds
+  {:few "%{count} soniyadan kam",
+   :many "%{count} soniyadan kam",
+   :one "%{count} soniyadan kam",
+   :other "%{count} soniyadan kam"},
+  :half_a_minute "bir daqiqadan kam",
+  :about_x_months
+  {:few "chamasi %{count} oy",
+   :many "chamasi %{count} oy",
+   :one "chamasi %{count} oy",
+   :other "chamasi %{count} oy"},
+  :about_x_hours
+  {:few "chamasi %{count} soat",
+   :many "chamasi %{count} soat",
+   :one "chamasi %{count} soat",
+   :other "chamasi %{count} soat"},
+  :about_x_years
+  {:few "chamasi %{count} yil",
+   :many "chamasi %{count} yil",
+   :one "chamasi %{count} yil",
+   :other "chamasi %{count} yil"}},
+ :prompts
+ {:day "kun",
+  :hour "soat",
+  :minute "daqiqa",
+  :month "oy",
+  :second "soniya",
+  :year "yil"}}

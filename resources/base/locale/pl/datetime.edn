@@ -1,0 +1,64 @@
+{:distance_in_words
+ {:x_months
+  {:few "%{count} miesiące",
+   :many "%{count} miesięcy",
+   :one "1 miesiąc",
+   :other "%{count} miesięcy"},
+  :less_than_x_minutes
+  {:few "mniej niż %{count} minuty",
+   :many "mniej niż %{count} minut",
+   :one "mniej niż minutę",
+   :other "mniej niż %{count} minut"},
+  :almost_x_years
+  {:few "prawie %{count} lata",
+   :many "prawie %{count} lat",
+   :one "prawie rok",
+   :other "prawie %{count} lat"},
+  :over_x_years
+  {:few "ponad %{count} lata",
+   :many "ponad %{count} lat",
+   :one "ponad rok",
+   :other "ponad %{count} lat"},
+  :x_seconds
+  {:few "%{count} sekundy",
+   :many "%{count} sekund",
+   :one "1 sekunda",
+   :other "%{count} sekund"},
+  :x_minutes
+  {:few "%{count} minuty",
+   :many "%{count} minut",
+   :one "1 minuta",
+   :other "%{count} minut"},
+  :x_days
+  {:few "%{count} dni",
+   :many "%{count} dni",
+   :one "1 dzień",
+   :other "%{count} dni"},
+  :less_than_x_seconds
+  {:few "mniej niż %{count} sekundy",
+   :many "mniej niż %{count} sekund",
+   :one "mniej niż sekundę",
+   :other "mniej niż %{count} sekund"},
+  :half_a_minute "pół minuty",
+  :about_x_months
+  {:few "około %{count} miesiące",
+   :many "około %{count} miesięcy",
+   :one "około miesiąca",
+   :other "około %{count} miesięcy"},
+  :about_x_hours
+  {:few "około %{count} godziny",
+   :many "około %{count} godzin",
+   :one "około godziny",
+   :other "około %{count} godzin"},
+  :about_x_years
+  {:few "około %{count} lata",
+   :many "około %{count} lat",
+   :one "około rok",
+   :other "około %{count} lat"}},
+ :prompts
+ {:day "Dzień",
+  :hour "Godzina",
+  :minute "Minuta",
+  :month "Miesiąc",
+  :second "Sekundy",
+  :year "Rok"}}

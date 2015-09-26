@@ -1,0 +1,42 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "gouf scho geholl",
+  :too_long
+  {:one "ass ze laang (Maximal 1 Zeechen)",
+   :other "ass ze laang (net méi wéi %{count} Zeechen)"},
+  :equal_to "muss d'selwecht si wéi %{count}",
+  :even "muss gerued sinn",
+  :greater_than "muss méi grouss wéi %{count} sinn",
+  :present "muss eidel sinn",
+  :less_than_or_equal_to "muss méi kleng oder gläich si wéi %{count}",
+  :confirmation "stëmmt net mat %{attribute} iwwerenee",
+  :accepted "muss akzeptéiert ginn",
+  :too_short
+  {:one "ass ze kuerz (Mniimal 1 Zeechen)",
+   :other "ass ze kuerz (mindestens %{count} Zeechen)"},
+  :record_invalid "Validatioun feelgeschlo: %{errors}",
+  :invalid "ass net valabel",
+  :wrong_length
+  {:one "huet déi falsch Längt (muss genee een Zeeche sinn)",
+   :other "huet déi falsch Längt (musse genee %{count} Zeeche sinn)"},
+  :not_an_integer "muss eng ganz Zuel sinn",
+  :empty "däerf net eidel sinn",
+  :odd "muss ongerued sinn",
+  :blank "däerf net eidel sinn",
+  :exclusion "ass reservéiert",
+  :less_than "muss méi kleng wéi %{count} sinn",
+  :other_than "muss anescht si wéi %{count}",
+  :not_a_number "ass keng Zuel",
+  :greater_than_or_equal_to
+  "muss méi grouss oder gläich si wéi %{count}",
+  :inclusion "ass net an der Lëscht dran",
+  :restrict_dependent_destroy
+  {:one
+   "Den Enregistrement kann net geläscht gi wëll et en dovun ofhängegt %{record} gëtt",
+   :many
+   "Den Enregistrement kann net geläscht gi wëll et dovun ofhängegt %{record} gëtt"}},
+ :template
+ {:body "Et gouf Problemer mat dëse Felder:",
+  :header
+  {:one "1 Feeler verhënnert d'Späichere vu(n) %{model}",
+   :other "%{count} Feeler verhënneren d'Späichere vu(n) %{model}"}}}

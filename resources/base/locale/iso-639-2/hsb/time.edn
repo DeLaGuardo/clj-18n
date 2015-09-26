@@ -1,0 +1,6 @@
+{:am "dopołdnja",
+ :formats
+ {:default "%A, %d. %B %Y, %H:%M hodź",
+  :long "%A, %d. %B %Y, %H:%M hodź.",
+  :short "%d. %B, %H:%M hodź."},
+ :pm "popołdnju"}

@@ -1,0 +1,5 @@
+{:select {:prompt "Bonvolu elekti"},
+ :submit
+ {:create "Krei %{model}",
+  :submit "Registri tiun %{model}",
+  :update "Modifi tiun %{model}"}}

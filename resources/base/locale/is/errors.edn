@@ -1,0 +1,41 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "er þegar í notkun",
+  :too_long
+  {:one "er of langt (má mest vera 1 stafur)",
+   :other "er of langt (má mest vera %{count} stafir)"},
+  :equal_to "þarf að vera jafngilt %{count}",
+  :even "þarf að vera slétt tala",
+  :greater_than "þarf að vera stærri en %{count}",
+  :present "verður að vera autt",
+  :less_than_or_equal_to "þarf að vera minna en eða jafngilt %{count}",
+  :confirmation "er ekki jafngilt staðfestingunni",
+  :accepted "þarf að vera tekið gilt",
+  :too_short
+  {:one "er of stutt (má minnst vera 1 stafur)",
+   :other "er of stutt (má minnst vera %{count} stafir)"},
+  :record_invalid "Villur: %{errors}",
+  :invalid "er ógilt",
+  :wrong_length
+  {:one "er af rangri lengd (má mest vera 1 stafur)",
+   :other "er af rangri lengd (má mest vera %{count} stafir)"},
+  :not_an_integer "þarf að vera heiltala",
+  :empty "má ekki vera tómt",
+  :odd "þarf að vera oddatala",
+  :blank "má ekki vera autt",
+  :exclusion "er frátekið",
+  :less_than "þarf að vera minna en %{count}",
+  :other_than "verður að vera annað en %{count}",
+  :not_a_number "er ekki tala",
+  :greater_than_or_equal_to
+  "þarf að vera stærri en eða jafngilt %{count}",
+  :inclusion "er ekki í listanum",
+  :restrict_dependent_destroy
+  {:one "Ekki hægt að eyða færslu því %{record} sem hún er háð er til",
+   :many
+   "Ekki hægt að eyða færslur því %{record} sem hún er háð er til"}},
+ :template
+ {:body "Villur fundust í eftirfarandi dálkum:",
+  :header
+  {:one "Ekki var hægt að vista %{model} vegna einnar villu.",
+   :other "Ekki var hægt að vista %{model} vegna %{count} villna."}}}

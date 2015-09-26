@@ -1,0 +1,41 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "ist bereits vergeben",
+  :too_long
+  {:one "ist zu lang (mehr als 1 Zeichen)",
+   :other "ist zu lang (mehr als %{count} Zeichen)"},
+  :equal_to "muss genau %{count} sein",
+  :even "muss gerade sein",
+  :greater_than "muss grösser als %{count} sein",
+  :present "darf nicht ausgefüllt werden",
+  :less_than_or_equal_to "muss kleiner oder gleich %{count} sein",
+  :confirmation "stimmt nicht mit %{attribute} überein",
+  :accepted "muss akzeptiert werden",
+  :too_short
+  {:one "ist zu kurz (weniger als 1 Zeichen)",
+   :other "ist zu kurz (weniger als %{count} Zeichen)"},
+  :record_invalid "Gültigkeitsprüfung ist fehlgeschlagen: %{errors}",
+  :invalid "ist nicht gültig",
+  :wrong_length
+  {:one "hat die falsche Länge (muss genau 1 Zeichen haben)",
+   :other "hat die falsche Länge (muss genau %{count} Zeichen haben)"},
+  :not_an_integer "muss ganzzahlig sein",
+  :empty "muss ausgefüllt werden",
+  :odd "muss ungerade sein",
+  :blank "muss ausgefüllt werden",
+  :exclusion "ist nicht verfügbar",
+  :less_than "muss kleiner als %{count} sein",
+  :other_than "darf nicht gleich %{count} sein",
+  :not_a_number "ist keine Zahl",
+  :greater_than_or_equal_to "muss grösser oder gleich %{count} sein",
+  :inclusion "ist kein gültiger Wert",
+  :restrict_dependent_destroy
+  {:one
+   "Datensatz kann nicht gelöscht werden, da ein abhängiger %{record}-Datensatz existiert.",
+   :many
+   "Datensatz kann nicht gelöscht werden, da abhängige %{record} existieren."}},
+ :template
+ {:body "Bitte überprüfen Sie die folgenden Felder:",
+  :header
+  {:one "Konnte %{model} nicht speichern: ein Fehler.",
+   :other "Konnte %{model} nicht speichern: %{count} Fehler."}}}

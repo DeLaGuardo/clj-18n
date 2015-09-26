@@ -1,0 +1,32 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "hartuta dago",
+  :too_long "luzeegia da (%{count} karaktere gehienez)",
+  :equal_to "%{count} izan behar da",
+  :even "bikoitia izan behar du",
+  :greater_than "%{count} baino handiagoa izan behar da",
+  :less_than_or_equal_to
+  "%{count} baino txikiago edo berdin izan behar da",
+  :confirmation "ez dator bat konfirmazioarekin",
+  :accepted "onartuta izan behar da",
+  :too_short "laburregia da (%{count} karaktere gutxienez)",
+  :record_invalid "Balioztatze arazoa: %{errors}",
+  :invalid "ez da zuzena",
+  :wrong_length
+  "ez du luzeera zuzena (%{count} karaktere izan behar ditu)",
+  :not_an_integer "zenbaki osoa izan behar da",
+  :empty "ezin da hutsik egon",
+  :odd "bakoitia izan behar du",
+  :blank "ezin da zuriz utzi",
+  :exclusion "erreserbatuta dago",
+  :less_than "%{count} baino txikiago izan behar da",
+  :not_a_number "ez da zenbaki bat",
+  :greater_than_or_equal_to
+  "%{count} baino handiago edo berdin izan behar da",
+  :inclusion "ez da zerrendako aukera bat"},
+ :template
+ {:body "Arazoak egon dira ondoko eremuekin:",
+  :header
+  {:one "Errore batek ezinezkoa egin du %{model} hau gordetzea",
+   :other
+   "%{count} errorek ezinezkoa egiten dute %{model} hau gordetzea"}}}

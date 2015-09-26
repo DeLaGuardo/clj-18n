@@ -1,0 +1,28 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "imesajiliwa",
+  :too_long "ndefu sana (isizidi herufi %{count})",
+  :equal_to "z/iwe sawa na %{count}",
+  :even "z/iwe shufwa",
+  :greater_than "z/iwe zaidi ya %{count}",
+  :less_than_or_equal_to "z/iwe sawa na, ama chini ya %{count}",
+  :confirmation "haifanani na hapo chini",
+  :accepted "lazima ikubaliwe",
+  :too_short "fupi mno (isipungue herufi %{count})",
+  :record_invalid "Uhalalishaji umeshindikana: %{errors}",
+  :invalid "haifai",
+  :wrong_length "idadi ya herufi hazilingani (inatakiwa %{count})",
+  :not_an_integer "inaruhusiwa namba tu",
+  :empty "haitakiwi kuwa tupu",
+  :odd "z/iwe witiri",
+  :blank "haitakiwi kuwa wazi",
+  :exclusion "haiwezi kutumika",
+  :less_than "z/isizidi %{count}",
+  :not_a_number "inaruhusiwa namba tu",
+  :greater_than_or_equal_to "z/iwe sawa ama zaidi ya %{count}",
+  :inclusion "haipo kwenye orodha"},
+ :template
+ {:body "Tafadhali kagua sehemu zifuatazo:",
+  :header
+  {:one "%{model} haikuhifadhiwa kwa sababu moja.",
+   :other "%{model} haikuhifadhiwa kwa sababu %{count}."}}}

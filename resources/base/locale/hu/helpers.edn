@@ -1,0 +1,5 @@
+{:select {:prompt "Válasszon"},
+ :submit
+ {:create "Új %{model}",
+  :submit "%{model} mentése",
+  :update "%{model} módosítása"}}

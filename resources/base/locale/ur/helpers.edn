@@ -1,0 +1,5 @@
+{:select {:prompt "منتخب کیجیے"},
+ :submit
+ {:create "%{model} تشکیل دیں",
+  :submit "%{model} محفوظ کریں",
+  :update "اپ ڈیٹ %{model}"}}

@@ -1,0 +1,4 @@
+{:array
+ {:last_word_connector " και ",
+  :two_words_connector " και ",
+  :words_connector ", "}}

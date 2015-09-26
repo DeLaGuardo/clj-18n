@@ -1,0 +1,6 @@
+{:am "قبل از ظهر",
+ :formats
+ {:default "%A، %e %B %Y، ساعت %H:%M:%S (%Z)",
+  :long "%e %B %Y، ساعت %H:%M",
+  :short "%e %B، ساعت %H:%M"},
+ :pm "بعد از ظهر"}

@@ -1,0 +1,57 @@
+{:currency
+ {:format
+  {:delimiter " ",
+   :format "%n %u",
+   :precision 2,
+   :separator ",",
+   :significant false,
+   :strip_insignificant_zeros false,
+   :unit "грн."}},
+ :format
+ {:delimiter " ",
+  :precision 3,
+  :separator ",",
+  :significant false,
+  :strip_insignificant_zeros false},
+ :human
+ {:decimal_units
+  {:format "%n %u",
+   :units
+   {:billion
+    {:few "Мільярдів",
+     :many "Мільярдів",
+     :one "Мільярд",
+     :other "Мільярдів"},
+    :million
+    {:few "Мільйонів",
+     :many "Мільйонів",
+     :one "Мільйон",
+     :other "Мільйонів"},
+    :quadrillion
+    {:few "Квадрильйонів",
+     :many "Квадрильйонів",
+     :one "Кквадрильйон",
+     :other "Квадрильйонів"},
+    :thousand
+    {:few "Тисяч", :many "Тисяч", :one "Тисяча", :other "Тисяч"},
+    :trillion
+    {:few "Трильйонів",
+     :many "Трильйонів",
+     :one "Трильйон",
+     :other "Трильйонів"},
+    :unit ""}},
+  :format
+  {:delimiter "",
+   :precision 1,
+   :significant false,
+   :strip_insignificant_zeros false},
+  :storage_units
+  {:format "%n %u",
+   :units
+   {:byte {:few "байти", :many "байтів", :one "байт", :other "байту"},
+    :gb "ГБ",
+    :kb "кБ",
+    :mb "МБ",
+    :tb "ТБ"}}},
+ :percentage {:format {:delimiter ""}},
+ :precision {:format {:delimiter ""}}}

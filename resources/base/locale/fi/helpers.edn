@@ -1,0 +1,5 @@
+{:select {:prompt "Valitse"},
+ :submit
+ {:create "Luo %{model}",
+  :submit "Tallenna %{model}",
+  :update "Päivitä %{model}"}}

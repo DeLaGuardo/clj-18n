@@ -1,0 +1,30 @@
+{:abbr_day_names ["Ahd" "Isn" "Sel" "Rab" "Kha" "Jum" "Sab"],
+ :abbr_month_names
+ ["Jan"
+  "Feb"
+  "Mac"
+  "Apr"
+  "Mei"
+  "Jun"
+  "Jul"
+  "Ogo"
+  "Sep"
+  "Okt"
+  "Nov"
+  "Dis"],
+ :day_names ["Ahad" "Isnin" "Selasa" "Rabu" "Khamis" "Jumaat" "Sabtu"],
+ :formats {:default "%d-%m-%Y", :long "%d %B, %Y", :short "%d %b"},
+ :month_names
+ ["Januari"
+  "Febuari"
+  "Mac"
+  "April"
+  "Mei"
+  "Jun"
+  "Julai"
+  "Ogos"
+  "September"
+  "Oktober"
+  "November"
+  "Disember"],
+ :order [":day" ":month" ":year"]}

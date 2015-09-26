@@ -1,0 +1,23 @@
+{:distance_in_words
+ {:x_months {:one "en måned", :other "%{count} måneder"},
+  :less_than_x_minutes
+  {:one "mindre end et minut", :other "mindre end %{count} minutter"},
+  :almost_x_years {:one "næsten et år", :other "næsten %{count} år"},
+  :over_x_years {:one "mere end et år", :other "mere end %{count} år"},
+  :x_seconds {:one "et sekund", :other "%{count} sekunder"},
+  :x_minutes {:one "et minut", :other "%{count} minutter"},
+  :x_days {:one "en dag", :other "%{count} dage"},
+  :less_than_x_seconds
+  {:one "mindre end et sekund", :other "mindre end %{count} sekunder"},
+  :half_a_minute "et halvt minut",
+  :about_x_months
+  {:one "cirka en måned", :other "cirka %{count} måneder"},
+  :about_x_hours {:one "cirka en time", :other "cirka %{count} timer"},
+  :about_x_years {:one "cirka et år", :other "cirka %{count} år"}},
+ :prompts
+ {:day "Dag",
+  :hour "Time",
+  :minute "Minut",
+  :month "Måned",
+  :second "Sekund",
+  :year "År"}}

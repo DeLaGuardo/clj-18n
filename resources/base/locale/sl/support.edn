@@ -1,0 +1,4 @@
+{:array
+ {:last_word_connector " in ",
+  :two_words_connector " in ",
+  :words_connector ", "}}

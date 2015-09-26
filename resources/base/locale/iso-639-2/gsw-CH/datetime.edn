@@ -1,0 +1,26 @@
+{:distance_in_words
+ {:x_months {:one "ein monet", :other "%{count} mönet"},
+  :less_than_x_minutes
+  {:one "weniger als e minute", :other "weniger als %{count} minute"},
+  :almost_x_years
+  {:one "fascht es johr", :other "fascht %{count} johr"},
+  :over_x_years
+  {:one "meh als es johr", :other "meh als %{count} johr"},
+  :x_seconds {:one "ei sekunde", :other "%{count} sekunde"},
+  :x_minutes {:one "ei minute", :other "%{count} minute"},
+  :x_days {:one "ein tag", :other "%{count} täg"},
+  :less_than_x_seconds
+  {:one "weniger als e sekunde",
+   :other "weniger als %{count} sekunde"},
+  :half_a_minute "e halbi minute",
+  :about_x_months
+  {:one "öppe ein monet", :other "öppe %{count} mönet"},
+  :about_x_hours {:one "öppe ei stund", :other "öppe %{count} stundä"},
+  :about_x_years {:one "öppe es johr", :other "öppe %{count} johr"}},
+ :prompts
+ {:day "tag",
+  :hour "stund",
+  :minute "minute",
+  :month "monet",
+  :second "sekunde",
+  :year "johr"}}

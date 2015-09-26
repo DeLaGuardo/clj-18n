@@ -1,0 +1,29 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "ತೆಗೆದುಕೊಂಡಾಗಿದೆ",
+  :too_long "ಬಹಳ ದೊಡ್ಡದಾಗಿದೆ (ಗರಿಷ್ಟ %{count} ಅಕ್ಷರಗಳು)",
+  :equal_to "%{count} ಕ್ಕೆ ಸಮಾನವಾಗಿರಬೇಕು",
+  :even "ಸಮ ಆಗಿರಬೇಕು",
+  :greater_than "%{count} ಕ್ಕಿಂತ ಹೆಚ್ಚಿರಬೇಕು",
+  :less_than_or_equal_to "%{count} ಕಿಂತ ಕಡಿಮೆ ಅಥವಾ ಸಮಾನವಾಗಿರ ಇರಬೇಕು",
+  :confirmation "ಸಮರ್ಥನೆ ಸರಿಬರಲ್ಲಿಲ್ಲ",
+  :accepted "ಒಪ್ಪಿಕೊಳ್ಳಬೇಕು",
+  :too_short "ಬಹಳ ಚಿಕ್ಕದಾಗಿದೆ (ಕನಿಷ್ಠ %{count} ಅಕ್ಷರಗಳು)",
+  :record_invalid "ತಪ್ಪು ಆಧಾರ: %{errors}",
+  :invalid "ನಿರರ್ಥಕವಾಗಿದೆ",
+  :wrong_length "ತಪ್ಪು ಉದ್ದವಿದೆ (%{count} ಅಕ್ಷರಗಳಿರಬೇಕು)",
+  :not_an_integer "ಸಂಖೆ ಆಗಿರಬೇಕು",
+  :empty "ಖಾಲಿ ಬಿಡಲು ಸಧ್ಯವಿಲ್ಲ",
+  :odd "ಬೆಸ ಆಗಿರಬೇಕು",
+  :blank "ಖಾಲಿ ಬಿಡಲು ಸಧ್ಯವಿಲ್ಲ",
+  :exclusion "ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ",
+  :less_than "%{count} ಕ್ಕಿಂತ ಕಡಿಮೆ ಆಗಿರಬೇಕು",
+  :not_a_number "ಸಂಖೆ ಆಗಿಲ್ಲ",
+  :greater_than_or_equal_to
+  "%{count} ಕಿಂತ ಹೆಚ್ಚು ಅಥವಾ ಸಮಾನವಾಗಿರ ಇರಬೇಕು",
+  :inclusion "ಪಟ್ಟಿಯಲ್ಲಿ ಶಾಮೀಲು ಆಗಿಲ್ಲ"},
+ :template
+ {:body "ಸಮಸ್ಯೆಗಳಿರುವ ಜಾಗಗಳು:",
+  :header
+  {:one "1 ಧೋಷದ ಪರಿಣಾಮ %{model} ಅನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ",
+   :other "%{count} ಧೋಷಗಳ ಪರಿಣಾಮ %{model} ಅನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"}}}

@@ -1,0 +1,64 @@
+{:distance_in_words
+ {:x_months
+  {:one "%{count} mesec",
+   :few "%{count} meseca",
+   :many "%{count} meseci",
+   :other "%{count} meseci"},
+  :less_than_x_minutes
+  {:one "manje od %{count} minut",
+   :few "manje od %{count} minuta",
+   :many "manje od %{count} minuta",
+   :other "manje od %{count} minuta"},
+  :almost_x_years
+  {:one "skoro %{count} godina",
+   :few "skoro %{count} godine",
+   :many "skoro %{count} godina",
+   :other "skoro %{count} godina"},
+  :over_x_years
+  {:one "preko %{count} godine",
+   :few "preko %{count} godine",
+   :many "preko %{count} godina",
+   :other "preko %{count} godina"},
+  :x_seconds
+  {:one "%{count} sekunda",
+   :few "%{count} sekunde",
+   :many "%{count} sekundi",
+   :other "%{count} sekundi"},
+  :x_minutes
+  {:one "%{count} minut",
+   :few "%{count} minuta",
+   :many "%{count} minuta",
+   :other "%{count} minuta"},
+  :x_days
+  {:one "%{count} dan",
+   :few "%{count} dana",
+   :many "%{count} dana",
+   :other "%{count} dana"},
+  :less_than_x_seconds
+  {:few "manje od %{count} sekunde",
+   :one "manje od %{count} sekund",
+   :many "manje od %{count} sekundi",
+   :other "manje od %{count} sekundi"},
+  :half_a_minute "pola minute",
+  :about_x_months
+  {:one "oko %{count} mesec",
+   :few "oko %{count} meseca",
+   :many "oko %{count} meseci",
+   :other "oko %{count} meseci"},
+  :about_x_hours
+  {:one "oko %{count} sat",
+   :few "oko %{count} sata",
+   :many "oko %{count} sati",
+   :other "oko %{count} sati"},
+  :about_x_years
+  {:one "oko %{count} godine",
+   :few "oko %{count} godine",
+   :many "oko %{count} godina",
+   :other "oko %{count} godina"}},
+ :prompts
+ {:day "Dan",
+  :hour "Sat",
+  :minute "Minut",
+  :month "Mesec",
+  :second "Sekund",
+  :year "Godina"}}

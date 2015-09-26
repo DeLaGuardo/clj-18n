@@ -1,0 +1,29 @@
+{:distance_in_words
+ {:x_months {:one "hilabete bat", :other "%{count} hilabete"},
+  :less_than_x_minutes
+  {:one "1 minutu bat baino gutxiago",
+   :other "%{count} minutu baino gutxiago"},
+  :almost_x_years {:one "ia urte bat", :other "ia %{count} urte"},
+  :over_x_years
+  {:one "urte bat baino gehiago",
+   :other "%{count} urte baino gehiago"},
+  :x_seconds {:one "segundu bat", :other "%{count} segundu"},
+  :x_minutes {:one "minutu bat", :other "%{count} minutu"},
+  :x_days {:one "egun bat", :other "%{count} egun"},
+  :less_than_x_seconds
+  {:one "segundu bat baino gutxiago",
+   :other "%{count} segundu baino gutxiago"},
+  :half_a_minute "minutu erdi",
+  :about_x_months
+  {:one "hilabete bat inguru", :other "%{count} hilabete inguru"},
+  :about_x_hours
+  {:one "ordu bat inguru", :other "%{count} ordu inguru"},
+  :about_x_years
+  {:one "urte bat inguru", :other "%{count} urte inguru"}},
+ :prompts
+ {:day "Egun",
+  :hour "Ordu",
+  :minute "Minutu",
+  :month "Hilabete",
+  :second "Segundu",
+  :year "Urte"}}

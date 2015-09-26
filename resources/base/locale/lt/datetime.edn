@@ -1,0 +1,53 @@
+{:distance_in_words
+ {:x_months
+  {:one "%{count} mėnesis",
+   :few "%{count} mėnesiai",
+   :other "%{count} mėnesių"},
+  :less_than_x_minutes
+  {:one "mažiau nei %{count} minutė",
+   :few "mažiau nei %{count} minutės",
+   :other "mažiau nei %{count} minučių"},
+  :almost_x_years
+  {:one "beveik %{count} metai",
+   :few "beveik %{count} metai",
+   :other "beveik %{count} metų"},
+  :over_x_years
+  {:one "virš %{count} metų",
+   :few "virš %{count} metų",
+   :other "virš %{count} metų"},
+  :x_seconds
+  {:one "%{count} sekundė",
+   :few "%{count} sekundės",
+   :other "%{count} sekundžių"},
+  :x_minutes
+  {:one "%{count} minutė",
+   :few "%{count} minutės",
+   :other "%{count} minučių"},
+  :x_days
+  {:one "%{count} diena",
+   :few "%{count} dienos",
+   :other "%{count} dienų"},
+  :less_than_x_seconds
+  {:one "mažiau nei %{count} sekundė",
+   :few "mažiau nei %{count} sekundės",
+   :other "mažiau nei %{count} sekundžių"},
+  :half_a_minute "pusė minutės",
+  :about_x_months
+  {:one "apie %{count} mėnesį",
+   :few "apie %{count} mėnesius",
+   :other "apie %{count} mėnesių"},
+  :about_x_hours
+  {:one "apie %{count} valanda",
+   :few "apie %{count} valandas",
+   :other "apie %{count} valandų"},
+  :about_x_years
+  {:one "apie %{count} metus",
+   :few "apie %{count} metus",
+   :other "apie %{count} metų"}},
+ :prompts
+ {:day "Diena",
+  :hour "Valanda",
+  :minute "Minutė",
+  :month "Mėnuo",
+  :second "Sekundės",
+  :year "Metai"}}

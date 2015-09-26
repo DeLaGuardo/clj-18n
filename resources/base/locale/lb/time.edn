@@ -1,0 +1,6 @@
+{:am "moies",
+ :formats
+ {:default "%A, %d. %B %Y, %H:%M Auer",
+  :long "%A, %d. %B %Y, %H:%M Auer",
+  :short "%d. %b %H:%M"},
+ :pm "mëttes"}

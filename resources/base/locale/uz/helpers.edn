@@ -1,0 +1,5 @@
+{:select {:prompt "Tanlang: "},
+ :submit
+ {:create "Yarat %{model}",
+  :submit "Saqla %{model}",
+  :update "Saqla %{model}"}}

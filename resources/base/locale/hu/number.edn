@@ -1,0 +1,40 @@
+{:currency
+ {:format
+  {:delimiter "",
+   :format "%n %u",
+   :precision 0,
+   :separator ",",
+   :significant true,
+   :strip_insignificant_zeros true,
+   :unit "Ft"}},
+ :format
+ {:delimiter " ",
+  :precision 2,
+  :separator ",",
+  :significant true,
+  :strip_insignificant_zeros true},
+ :human
+ {:decimal_units
+  {:format "%n %u",
+   :units
+   {:billion "milliárd",
+    :million "millió",
+    :quadrillion "billiárd",
+    :thousand "ezer",
+    :trillion "billió",
+    :unit ""}},
+  :format
+  {:delimiter "",
+   :precision 1,
+   :significant true,
+   :strip_insignificant_zeros true},
+  :storage_units
+  {:format "%n %u",
+   :units
+   {:byte {:one "bájt", :other "bájt"},
+    :gb "GB",
+    :kb "KB",
+    :mb "MB",
+    :tb "TB"}}},
+ :percentage {:format {:delimiter ""}},
+ :precision {:format {:delimiter ""}}}

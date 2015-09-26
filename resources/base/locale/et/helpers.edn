@@ -1,0 +1,5 @@
+{:select {:prompt "Palun vali"},
+ :submit
+ {:create "Loo uus %{model}",
+  :submit "Salvesta %{model}",
+  :update "Uuenda objekti %{model}"}}

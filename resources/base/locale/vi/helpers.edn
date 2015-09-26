@@ -1,0 +1,5 @@
+{:select {:prompt "Vui lòng chọn"},
+ :submit
+ {:create "Tạo %{model}",
+  :submit "Lưu %{model}",
+  :update "Cập nhật %{model}"}}

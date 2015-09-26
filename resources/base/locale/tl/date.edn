@@ -1,0 +1,40 @@
+{:formats
+ {:default "%d/%m/%Y",
+  :short "ika-%d ng %b",
+  :long "ika-%d ng %B, %Y"},
+ :day_names
+ ["Linggo"
+  "Lunes"
+  "Martes"
+  "Miyerkules"
+  "Huwebes"
+  "Biyernes"
+  "Sabado"],
+ :abbr_day_names ["Lin" "Lun" "Mar" "Miy" "Huw" "Biy" "Sab"],
+ :month_names
+ ["Enero"
+  "Pebrero"
+  "Marso"
+  "Abril"
+  "Mayo"
+  "Hunyo"
+  "Hulyo"
+  "Agosto"
+  "Setyembre"
+  "Oktubre"
+  "Nobyembre"
+  "Disyembre"],
+ :abbr_month_names
+ ["Ene"
+  "Peb"
+  "Mar"
+  "Abr"
+  "May"
+  "Hun"
+  "Hul"
+  "Ago"
+  "Set"
+  "Okt"
+  "Nob"
+  "Dis"],
+ :order [":year" ":month" ":day"]}

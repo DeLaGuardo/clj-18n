@@ -1,0 +1,44 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "jo južo w datowej bance",
+  :too_long
+  {:few "jo pśedłujki (maks. %{count} znamješka)",
+   :one "jo pśedłujki (maks. 1 znamješko)",
+   :other "jo pśedłujki (maks. %{count} znamješkow)",
+   :two "jo pśedłujki (maks. %{count} znamješce)"},
+  :equal_to "musy jadnak %{count} byś",
+  :even "musy rowna licba byś",
+  :greater_than "musy wětšy ako %{count} byś",
+  :less_than_or_equal_to "musy mjeńšy abo jadnak %{count} byś",
+  :confirmation "njejo se wobkšuśiło",
+  :accepted "musy se wobkšuśiś",
+  :too_short
+  {:few "jo překrotki (min. %{count} znamješka)",
+   :one "jo překrotki (min. 1 znamješko)",
+   :other "jo překrotki (min. %{count} znamješkow)",
+   :two "jo překrotki (min. %{count} znamješce)"},
+  :invalid "njejo płaśiwy",
+  :wrong_length
+  {:few "njama pšawu dłujkosć (%{count} znamješka wócakane)",
+   :one "njama pšawu dłujkosć (1 znamješko wócakane)",
+   :other "njama pšawu dłujkosć (%{count} znamješkow wócakanych)",
+   :two "njama pšawu dłujkosć (%{count} znamješce wócakanej)"},
+  :empty "njesmějo prozny byś",
+  :odd "musy njerowna licba byś",
+  :blank "jo trěbny",
+  :exclusion "njestoj k dispoziciji",
+  :less_than "musy mjeńšy ako %{count} byś",
+  :not_a_number "njejo licba",
+  :greater_than_or_equal_to "musy wětšy abo jadnak %{count} byś",
+  :inclusion "njejo płaśiwa gódnota"},
+ :template
+ {:body "Pšosym pśeglědaj slědujuce póla:",
+  :header
+  {:few
+   "Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo było móžno składowaś",
+   :one
+   "Pśi składowanju objekta %{model} jo k zmólce dojšło a njejo było móžno składowaś",
+   :other
+   "Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo było móžno składowaś",
+   :two
+   "Pśi składowanju objekta %{model} jo k %{count} zmólkam dojšło a njejo było móžno składowaś"}}}

@@ -1,0 +1,28 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "پیشتر گرفته شده",
+  :too_long "بلند است (حداکثر %{count} کاراکتر)",
+  :equal_to "باید برابر %{count} باشد",
+  :even "باید زوج باشد",
+  :greater_than "باید بزرگتر از %{count} باشد",
+  :less_than_or_equal_to "باید کمتر یا برابر %{count} باشد",
+  :confirmation "با تایید نمی‌خواند",
+  :accepted "باید پذیرفته شود",
+  :too_short "کوتاه است (حداقل %{count} کاراکتر)",
+  :record_invalid "رکورد نامعتبر است %{errors}",
+  :invalid "نامعتبر است",
+  :wrong_length "نااندازه است (باید %{count} کاراکتر باشد)",
+  :not_an_integer "عدد صحیح نیست",
+  :empty "نمی‌تواند خالی باشد",
+  :odd "باید فرد باشد",
+  :blank "نباید خالی باشد",
+  :exclusion "رزرو است",
+  :less_than "باید کمتر از %{count} باشد",
+  :not_a_number "عدد نیست",
+  :greater_than_or_equal_to "باید بزرگتر یا برابر %{count} باشد",
+  :inclusion "در لیست موجود نیست"},
+ :template
+ {:body "موارد زیر مشکل داشت:",
+  :header
+  {:one "1 خطا جلوی ذخیره این %{model} را گرفت",
+   :other "%{count} خطا جلوی ذخیره این %{model} را گرفت"}}}

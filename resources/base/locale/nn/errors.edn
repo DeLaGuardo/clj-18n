@@ -1,0 +1,33 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "er allereie i bruk",
+  :too_long "er for lang (maksimum %{count} teikn)",
+  :equal_to "må vera lik %{count}",
+  :even "må vera partal",
+  :greater_than "må vera større enn %{count}",
+  :present "må vera blank",
+  :less_than_or_equal_to "må vera mindre enn eller lik %{count}",
+  :confirmation "er ikkje stadfesta",
+  :accepted "må vera akseptert",
+  :too_short "er for kort (minimum %{count} teikn)",
+  :record_invalid "Valideringa mislukka: %{errors}",
+  :invalid "er ugyldig",
+  :wrong_length "har feil lengde (maksimum %{count} teikn)",
+  :not_an_integer "er ikkje eit heiltal",
+  :empty "kan ikkje vera tom",
+  :odd "må vera oddetal",
+  :blank "kan ikkje vera blank",
+  :exclusion "er reservert",
+  :less_than "må vera mindre enn %{count}",
+  :other_than "må vera noko anna enn %{count}",
+  :not_a_number "er ikkje eit tal",
+  :greater_than_or_equal_to "må vera større enn eller lik %{count}",
+  :inclusion "er ikkje inkludert i lista",
+  :restrict_dependent_destroy
+  {:one
+   "Kan ikkje sletta registreringa, fordi 1 avhengig %{record} finst.",
+   :many
+   "Kan ikkje sletta registreringa, fordi avhengige %{record} finst."}},
+ :template
+ {:body "det oppstod problem i følgjande felt:",
+  :header "kunne ikkje lagra %{model} grunna %{count} feil."}}

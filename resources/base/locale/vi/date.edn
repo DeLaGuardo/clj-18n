@@ -1,0 +1,44 @@
+{:abbr_day_names
+ ["Chủ nhật"
+  "Thứ hai"
+  "Thứ ba"
+  "Thứ tư"
+  "Thứ năm"
+  "Thứ sáu"
+  "Thứ bảy"],
+ :abbr_month_names
+ ["Tháng một"
+  "Tháng hai"
+  "Tháng ba"
+  "Tháng tư"
+  "Tháng năm"
+  "Tháng sáu"
+  "Tháng bảy"
+  "Tháng tám"
+  "Tháng chín"
+  "Tháng mười"
+  "Tháng mười một"
+  "Tháng mười hai"],
+ :day_names
+ ["Chủ nhật"
+  "Thứ hai"
+  "Thứ ba"
+  "Thứ tư"
+  "Thứ năm"
+  "Thứ sáu"
+  "Thứ bảy"],
+ :formats {:default "%d-%m-%Y", :long "%d %B, %Y", :short "%d %b"},
+ :month_names
+ ["Tháng một"
+  "Tháng hai"
+  "Tháng ba"
+  "Tháng tư"
+  "Tháng năm"
+  "Tháng sáu"
+  "Tháng bảy"
+  "Tháng tám"
+  "Tháng chín"
+  "Tháng mười"
+  "Tháng mười một"
+  "Tháng mười hai"],
+ :order [":day" ":month" ":year"]}

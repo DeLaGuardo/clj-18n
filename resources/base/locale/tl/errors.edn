@@ -1,0 +1,39 @@
+{:format "%{attribute} ay %{message}",
+ :messages
+ {:taken "ginagamit na",
+  :too_long
+  {:one "masyadong mahaba (pinakamadami ay %{count} character)",
+   :other "masyadong mahaba (pinakamadami ay %{count} character)"},
+  :equal_to "dapat na katumba sa %{count}",
+  :even "dapat maging even",
+  :greater_than "dapat na mas higit sa %{count}",
+  :less_than_or_equal_to
+  "dapat na mas mababa sa o katumbas ng %{count}",
+  :confirmation "hindi tumutugma ang pagpapatunay",
+  :accepted "dapat na tanggapin",
+  :too_short
+  {:one "masyadong maikli (pinakakonti ay %{count} character)",
+   :other "masyadong maikli (pinakakonti ay %{count} character)"},
+  :record_invalid "Nabigo ang pagpapatunay: %{errors}",
+  :invalid "hindi wasto",
+  :wrong_length
+  {:one "ang maling haba (ito ay dapat eksaktong %{count} character)",
+   :other
+   "ang maling haba (ito ay dapat eksaktong %{count} character)"},
+  :not_an_integer "dapat na isang integer",
+  :empty "hindi maaaring walang laman",
+  :odd "dapat maging odd",
+  :blank "hindi maaaring walang laman",
+  :exclusion "nakalaan na",
+  :less_than "dapat na mas mababa sa %{count}",
+  :not_a_number "hindi isang numero",
+  :greater_than_or_equal_to
+  "dapat na mas higit sa o katumbas ng %{count}",
+  :inclusion "hindi kasama sa listahan"},
+ :template
+ {:header
+  {:one
+   "hindi maaaring i-save ang %{model} na ito dahil sa isang error",
+   :other
+   "hindi maaaring i-save ang %{model} na ito dahil sa %{count} error"},
+  :body "May mga problema sa mga sumusunod na patlang:"}}

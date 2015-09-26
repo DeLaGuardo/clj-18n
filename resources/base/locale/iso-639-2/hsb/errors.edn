@@ -1,0 +1,44 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "je hižo w datowej bance",
+  :too_long
+  {:few "je předołhi (maks. %{count} znamješka)",
+   :one "je předołhi (maks. 1 znamješko)",
+   :other "je předołhi (maks. %{count} znamješkow)",
+   :two "je předołhi (maks. %{count} znamješce)"},
+  :equal_to "dyrbi runja %{count} być",
+  :even "dyrbi runa ličba być",
+  :greater_than "dyrbi wjetši hač %{count} być",
+  :less_than_or_equal_to "dyrbi mjenje abo runja %{count} być",
+  :confirmation "njebu wobkrućene",
+  :accepted "dyrbi so wobkrućić",
+  :too_short
+  {:few "je překrótki (min. %{count} znamješka)",
+   :one "je překrótki (min. 1 znamješko)",
+   :other "je překrótki (min. %{count} znamješkow)",
+   :two "je překrótki (min. %{count} znamješće)"},
+  :invalid "njeje płaćiwy",
+  :wrong_length
+  {:few "nima prawu dołhosć (%{count} znamješka wočakowane)",
+   :one "nima prawu dołhosć (1 znamješko wočakowane)",
+   :other "nima prawu dołhosć (%{count} znamješkow wočakowanych)",
+   :two "nima prawu dołhosć (%{count} znamješce wočakowanej)"},
+  :empty "njesmě prózdny być",
+  :odd "dyrbi njeruna ličby być",
+  :blank "je trěbny",
+  :exclusion "njesteji k dispoziciji",
+  :less_than "dyrbi mjenje hač %{count} być",
+  :not_a_number "njeje ličba",
+  :greater_than_or_equal_to "dyrbi wjetši abo runja %{count} być",
+  :inclusion "njeje płaćiwa hódnota"},
+ :template
+ {:body "Prošu přepruwuj slědowace pola:",
+  :header
+  {:few
+   "Při składowanju objekta %{model} je k %{count} zmylkam dóšło a njebě móžno składować",
+   :one
+   "Při składowanju objekta %{model} je k zmylkej dóšło a njebě móžno składować",
+   :other
+   "Při składowanju objekta %{model} je k %{count} zmylkam dóšło a njebě móžno składować",
+   :two
+   "Při składowanju objekta %{model} je k %{count} zmylkam dóšło a njebě móžno składować"}}}

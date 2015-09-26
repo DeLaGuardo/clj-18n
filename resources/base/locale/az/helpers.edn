@@ -1,0 +1,5 @@
+{:select {:prompt "Seçin"},
+ :submit
+ {:create "%{model} yarat",
+  :submit "%{model} saxla",
+  :update "%{model} yenilə"}}

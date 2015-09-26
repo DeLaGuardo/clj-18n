@@ -1,0 +1,5 @@
+{:select {:prompt "Lütfen seçiniz"},
+ :submit
+ {:create "%{model} Ekle",
+  :submit "%{model} Kaydet",
+  :update "%{model} Güncelle"}}

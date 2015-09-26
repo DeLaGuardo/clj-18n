@@ -1,0 +1,39 @@
+{:format "%{attribute}%{message}",
+ :messages
+ {:taken "ئىشلىتىپ بولۇنغان",
+  :too_long
+  {:one "بەك ئۇزۇن (بىر ھەرىپ)",
+   :other "بەك ئۇزۇن (ئەڭ ئۇزۇن بولغاندا %{count} ھەرىپ)"},
+  :equal_to "%{count} غا تەڭ",
+  :even "جۈپ سان",
+  :greater_than "%{count} دىن چوڭ",
+  :present "بوش بولىشى كېرەك",
+  :less_than_or_equal_to "%{count} دىن كىچىك ياكى تەڭ",
+  :confirmation "تەستىق بىلەن ماس ئەمەس",
+  :accepted "تەستىقلاش كېرەك",
+  :too_short
+  {:one "بەك قىسقا (بىر ھەرىپ)",
+   :other "بەك قىسقا (ئەڭ قىسقا بولغاندا %{count} ھەرىپ)"},
+  :record_invalid "%{errors} دا خاتالىق بار",
+  :invalid "ئىناۋەتسىز",
+  :wrong_length
+  {:one "ئىناۋەتسىز ئۇزۇنلۇق (بىر ھەرىپ)",
+   :other "ئىناۋەتسىز ئۇزۇنلۇق (چوقۇم %{count} ھەرىپ)"},
+  :not_an_integer "پۈتۈن سان ئەمەس",
+  :empty "بوش بولماسلىقى كېرەك",
+  :odd "تاق سان",
+  :blank "بوش بولماسلىقى كېرەك",
+  :exclusion "مۇمكىن ئەمەس",
+  :less_than "%{count} دىن كىچىك",
+  :other_than "ئىناۋەتسىز ئۇزۇنلۇق (%{count} ھەرىپ بولماسلىقى كېرەك)",
+  :not_a_number "سان ئەمەس",
+  :greater_than_or_equal_to "%{count} دىن چوڭ ياكى تەڭ",
+  :inclusion "كۈتىلمىگەن نەتىجە",
+  :restrict_dependent_destroy
+  {:one "%{record} بۇ مەلۇماتنى ئىشلىتىدۇ، شۇڭا ئۆچۈرگىلى بولمايدۇ",
+   :many "%{record} بۇ مەلۇماتنى ئىشلىتىدۇ، شۇڭا ئۆچۈرگىلى بولمايدۇ"}},
+ :template
+ {:body "تۆۋەندىكى سۆز بۆلەكلىرىدە خاتالىق بار",
+  :header
+  {:one "بىر خاتالىق تۈپەيلىدىن 「%{model}」 ساقلاش مەغلۇب بولدى",
+   :other "%{count} خاتالىق تۈپەيلىدىن 「%{model}」ساقلاش مەغلۇب بولدى"}}}

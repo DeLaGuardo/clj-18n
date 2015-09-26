@@ -1,0 +1,5 @@
+{:select {:prompt "Por fabor skohe"},
+ :submit
+ {:create "Krea %{model}",
+  :submit "Warda %{model}",
+  :update "Aktualisá %{model}"}}

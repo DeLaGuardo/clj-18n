@@ -1,0 +1,30 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "no està disponible",
+  :too_long "és massa llarg (%{count} caràcters màxim)",
+  :equal_to "ha de ser igual a %{count}",
+  :even "ha de ser parell",
+  :greater_than "ha de ser més gran que %{count}",
+  :less_than_or_equal_to "ha de ser menor o igual a %{count}",
+  :confirmation "no coincideix",
+  :accepted "ha de ser acceptat",
+  :too_short "és massa curt (%{count} caràcters mínim)",
+  :record_invalid "La validació ha fallat: %{errors}",
+  :invalid "no és vàlid",
+  :wrong_length
+  "no té la longitud correcta (%{count} caràcters exactament)",
+  :not_an_integer "ha de ser un enter",
+  :empty "no pot estar buit",
+  :odd "ha de ser senar",
+  :blank "no pot estar en blanc",
+  :exclusion "està reservat",
+  :less_than "ha de ser menor que %{count}",
+  :not_a_number "no és un número",
+  :greater_than_or_equal_to "ha de ser més gran o igual a %{count}",
+  :inclusion "no està inclós a la llista"},
+ :template
+ {:body "Hi ha hagut problemes amb els següents camps:",
+  :header
+  {:one "No s'ha pogut desar aquest/a %{model} perquè hi ha 1 error",
+   :other
+   "No s'ha pogut desar aquest/a %{model} perquè hi ha hagut %{count} errors"}}}

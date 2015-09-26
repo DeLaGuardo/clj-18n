@@ -1,0 +1,37 @@
+{:abbr_day_names ["Sul" "Llun" "Maw" "Mer" "Iau" "Gwe" "Sad"],
+ :abbr_month_names
+ ["Ion"
+  "Chw"
+  "Maw"
+  "Ebr"
+  "Mai"
+  "Meh"
+  "Gor"
+  "Awst"
+  "Med"
+  "Hyd"
+  "Tach"
+  "Rha"],
+ :day_names
+ ["Dydd Sul"
+  "Dydd Llun"
+  "Dydd Mawrth"
+  "Dydd Mercher"
+  "Dydd Iau"
+  "Dydd Gwener"
+  "Dydd Sadwrn"],
+ :formats {:default "%d-%m-%Y", :long "%B %d, %Y", :short "%b %d"},
+ :month_names
+ ["Ionawr"
+  "Chwefror"
+  "Mawrth"
+  "Ebrill"
+  "Mai"
+  "Mehefin"
+  "Gorffennaf"
+  "Awst"
+  "Medi"
+  "Hydref"
+  "Tachwedd"
+  "Rhagfyr"],
+ :order [":year" ":month" ":day"]}

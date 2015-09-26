@@ -1,0 +1,4 @@
+{:array
+ {:last_word_connector " és ",
+  :two_words_connector " és ",
+  :words_connector ", "}}

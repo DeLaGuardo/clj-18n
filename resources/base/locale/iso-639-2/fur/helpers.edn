@@ -1,0 +1,5 @@
+{:select {:prompt "Sielç par plasê"},
+ :submit
+ {:create "Cree %{model}",
+  :submit "Salve %{model}",
+  :update "Inzorne %{model}"}}

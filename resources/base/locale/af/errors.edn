@@ -1,0 +1,37 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "is reeds geneem",
+  :too_long
+  {:one "is te lank (maksimum is 1 karakter)",
+   :other "is te lank (maksimum is %{count} karakters)"},
+  :equal_to "moet gelyk wees aan %{count}",
+  :even "moet gelykstaande wees",
+  :greater_than "moet meer wees as %{count}",
+  :less_than_or_equal_to
+  "moet minder of gelykstaande wees aan %{count}",
+  :confirmation "pas nie by bevestiging nie",
+  :accepted "moet aanvaar word",
+  :too_short
+  {:one "is te kort (minimum is 1 karakter)",
+   :other "is te kort (minimum is %{count} karakters)"},
+  :record_invalid "Validation failed: %{errors}",
+  :invalid "is ongeldig",
+  :wrong_length
+  {:one "is die verkeerde lengte (moet 1 karakter wees)",
+   :other "is die verkeerde lengte (moet %{count} karakters wees)"},
+  :not_an_integer "moet n integer wees",
+  :empty "mag nie leeg wees nie",
+  :odd "moet onewe wees",
+  :blank "mag nie leeg wees nie",
+  :exclusion "is bespreek",
+  :less_than "moet minder wees as %{count}",
+  :not_a_number "is nie n getal nie",
+  :greater_than_or_equal_to
+  "moet meer of gelykstaande wees aan %{count}",
+  :inclusion "is nie by die lys ingesluit nie"},
+ :template
+ {:body "There were problems with the following fields:",
+  :header
+  {:one "1 fout het verhoed dat hierdie %{model} gestoor kon word",
+   :other
+   "%{count} foute het verhoed dat hierdie %{model} gestoor kon word"}}}

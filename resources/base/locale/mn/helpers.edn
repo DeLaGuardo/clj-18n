@@ -1,0 +1,2 @@
+{:select {:prompt "Сонгоно уу"},
+ :submit {:create "Үүсгэх", :submit "Хадгалах", :update "Шинэчлэх"}}

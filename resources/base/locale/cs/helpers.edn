@@ -1,0 +1,5 @@
+{:select {:prompt "Prosím vyberte si"},
+ :submit
+ {:create "Vytvořit %{model}",
+  :submit "Uložit %{model}",
+  :update "Aktualizovat %{model}"}}

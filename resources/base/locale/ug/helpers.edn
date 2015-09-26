@@ -1,0 +1,5 @@
+{:select {:prompt "تاللاڭ"},
+ :submit
+ {:create "%{model} قوشۇش",
+  :submit "%{model} ساقلاش",
+  :update "%{model} يېڭىلاش"}}

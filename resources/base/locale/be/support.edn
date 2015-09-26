@@ -1,0 +1,4 @@
+{:array
+ {:last_word_connector " і ",
+  :two_words_connector " і ",
+  :words_connector ", "}}

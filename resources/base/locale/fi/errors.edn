@@ -1,0 +1,31 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "on jo käytössä",
+  :too_long "on liian pitkä (saa olla enintään %{count} merkkiä)",
+  :equal_to "täytyy olla yhtä suuri kuin %{count}",
+  :even "täytyy olla parillinen",
+  :greater_than "täytyy olla suurempi kuin %{count}",
+  :less_than_or_equal_to
+  "täytyy olla pienempi tai yhtä suuri kuin %{count}",
+  :confirmation "ei vastaa varmennusta",
+  :accepted "täytyy olla hyväksytty",
+  :too_short "on liian lyhyt (oltava vähintään %{count} merkkiä)",
+  :record_invalid "Validointi epäonnistui: %{errors}",
+  :invalid "on kelvoton",
+  :wrong_length
+  "on väärän pituinen (täytyy olla täsmälleen %{count} merkkiä)",
+  :not_an_integer "ei ole kokonaisluku",
+  :empty "ei voi olla tyhjä",
+  :odd "täytyy olla pariton",
+  :blank "ei voi olla sisällötön",
+  :exclusion "on varattu",
+  :less_than "täytyy olla pienempi kuin %{count}",
+  :not_a_number "ei ole luku",
+  :greater_than_or_equal_to
+  "täytyy olla suurempi tai yhtä suuri kuin %{count}",
+  :inclusion "ei löydy listasta"},
+ :template
+ {:body "Seuraavat kentät aiheuttivat ongelmia:",
+  :header
+  {:one "Virhe syötteessä esti mallin %{model} tallentamisen",
+   :other "%{count} virhettä esti mallin %{model} tallentamisen"}}}

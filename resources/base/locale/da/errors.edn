@@ -1,0 +1,35 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "er allerede brugt",
+  :too_long "er for lang (højest %{count} tegn)",
+  :equal_to "skal være %{count}",
+  :even "skal være et lige tal",
+  :greater_than "skal være større end %{count}",
+  :present "skal være tom",
+  :less_than_or_equal_to
+  "skal være mindre end, eller lig med, %{count}",
+  :confirmation "stemmer ikke overens med bekræftelse",
+  :accepted "skal accepteres",
+  :too_short "er for kort (mindst %{count} tegn)",
+  :record_invalid "Godkendelse gik galt: %{errors}",
+  :invalid "er ikke gyldig",
+  :wrong_length "har forkert længde (skulle være %{count} tegn)",
+  :not_an_integer "er ikke et heltal",
+  :empty "må ikke udelades",
+  :odd "skal være et ulige tal",
+  :blank "skal udfyldes",
+  :exclusion "er reserveret",
+  :less_than "skal være mindre end %{count}",
+  :other_than "skal være forskellig fra %{count}",
+  :not_a_number "er ikke et tal",
+  :greater_than_or_equal_to
+  "skal være større end, eller lig med, %{count}",
+  :inclusion "er ikke på listen",
+  :restrict_dependent_destroy
+  {:one "Kunne ikke slette posten fordi en afhængig %{record} findes",
+   :many "Kunne ikke slette posten fordi afhængige %{record} findes"}},
+ :template
+ {:body "Der var problemer med følgende felter:",
+  :header
+  {:one "En fejl forhindrede %{model} i at blive gemt",
+   :other "%{count} fejl forhindrede %{model} i at blive gemt"}}}

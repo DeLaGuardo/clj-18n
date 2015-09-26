@@ -1,0 +1,5 @@
+{:select {:prompt "Veuillez sélectionner"},
+ :submit
+ {:create "Créer un %{model}",
+  :submit "Enregistrer ce %{model}",
+  :update "Modifier ce %{model}"}}

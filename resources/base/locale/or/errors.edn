@@ -1,0 +1,28 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "ଗ୍ରହଣ  କରା ଯାଇଛି",
+  :too_long "ଦିର୍ଘତମ ଅଟେ(ଅତ୍ୟଧୀକ %{count} ଅଖ୍ଯର)",
+  :equal_to "%{count} କୁ ସମାନ",
+  :even "ଯୁଗ୍ମ ହେବାର ଅଛି",
+  :greater_than "%{count} ରୁ ବଡ ହେବାର ଅଛି",
+  :less_than_or_equal_to "%{count} ରୁ ଛୋଟ କିମ୍ବା ସମାନ ହେବାର ଅଛି",
+  :confirmation "ପ୍ରମାଣ ହେଇନି",
+  :accepted "ଗ୍ରହଣ କରିବାର ଅଛି",
+  :too_short "ଅତି ସଂଖିପ୍ତ ଅଟେ (ଅତ୍ଯଳ୍ପ %{count} ଅଖ୍ଯର ଅଟେ)",
+  :record_invalid "ସଠିକ୍ ନୁହ: %{errors}",
+  :invalid "ଠିକ୍ ନୁହେଁ",
+  :wrong_length "ଲମ୍ବା ଭୁଲ ଅଟେ (%{count} ଅଖ୍ଯର ହେବା ଉଚିତ୍)",
+  :not_an_integer "ଗଣନ ସଂଖ୍ଯା ହେବାର ଅଛି",
+  :empty "ଖାଲି ହେଇପାରିବନି",
+  :odd "ଅଯୁଗ୍ମ ହେବାର ଅଛି",
+  :blank "ଖାଲି ହେଇ ପାରୀବନ",
+  :exclusion "ସୁରଖିତ ଅଟେ",
+  :less_than "%{count} ରୁ ଛୋଟ",
+  :not_a_number "ସଂଖ୍ଯ ନୁହେଁ",
+  :greater_than_or_equal_to "%{count} ରୁ ବଡ କିମ୍ବା ସମାନ ହେବାର ଅଛି",
+  :inclusion "ସୁଚୀ ରେ ଅନ୍ତର୍ଭୁକ୍ତ ନୁହେଁ"},
+ :template
+ {:body "ନିମ୍ନ ଜାଗା ରେ ଅସୁବିଧା ହେଇଛି:",
+  :header
+  {:one "1 ଭୁଲ ଯଗୁଁ ନିମ୍ନ %{model} ସୁରଖିତ ହେଇପାରି ନଥିଲା",
+   :other "%{count} ଭୁଲ ଯଗୁଁ ଏହି %{model} ସୁରଖିତ ହେଇପାରି ନଥିଲା"}}}

@@ -1,0 +1,5 @@
+{:select {:prompt "कृपया निवडा"},
+ :submit
+ {:create "%{model} निर्माण करा",
+  :submit "%{model} जतन करा",
+  :update "%{model} अद्यतनित करा"}}

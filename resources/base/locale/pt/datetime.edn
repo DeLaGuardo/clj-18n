@@ -1,0 +1,28 @@
+{:distance_in_words
+ {:x_months {:one "1 mês", :other "%{count} meses"},
+  :less_than_x_minutes
+  {:one "menos de um minuto", :other "menos de %{count} minutos"},
+  :almost_x_years {:one "quase 1 ano", :other "quase %{count} anos"},
+  :over_x_years {:one "mais de 1 ano", :other "mais de %{count} anos"},
+  :x_seconds {:one "1 segundo", :other "%{count} segundos"},
+  :x_minutes {:one "1 minuto", :other "%{count} minutos"},
+  :x_days {:one "1 dia", :other "%{count} dias"},
+  :less_than_x_seconds
+  {:one "menos de 1 segundo", :other "menos de %{count} segundos"},
+  :half_a_minute "meio minuto",
+  :about_x_months
+  {:one "aproximadamente 1 mês",
+   :other "aproximadamente %{count} meses"},
+  :about_x_hours
+  {:one "aproximadamente 1 hora",
+   :other "aproximadamente %{count} horas"},
+  :about_x_years
+  {:one "aproximadamente 1 ano",
+   :other "aproximadamente %{count} anos"}},
+ :prompts
+ {:day "Dia",
+  :hour "Hora",
+  :minute "Minuto",
+  :month "Mês",
+  :second "Segundo",
+  :year "Ano"}}

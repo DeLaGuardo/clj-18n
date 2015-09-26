@@ -1,0 +1,31 @@
+{:abbr_day_names ["Nj" "Pó" "Wu" "Sr" "St" "Pě" "So"],
+ :abbr_month_names
+ ["jan"
+  "feb"
+  "měr"
+  "apr"
+  "maj"
+  "jun"
+  "jul"
+  "awg"
+  "sep"
+  "okt"
+  "now"
+  "dec"],
+ :day_names
+ ["njeźela" "pónjeźele" "wałtora" "srjoda" "stwórtk" "pětk" "sobota"],
+ :formats {:default "%d. %m. %Y", :long "%d. %B %Y", :short "%d %b"},
+ :month_names
+ ["Januar"
+  "Februar"
+  "Měrc"
+  "Apryl"
+  "Maj"
+  "Junij"
+  "Julij"
+  "Awgust"
+  "September"
+  "Oktober"
+  "Nowember"
+  "December"],
+ :order [":day" ":month" ":year"]}

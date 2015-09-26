@@ -1,0 +1,32 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "este deja folosit",
+  :too_long
+  "este prea lung (se pot folosi maximum %{count} caractere)",
+  :equal_to "trebuie să fie egal cu %{count}",
+  :even "trebuie să fie impar",
+  :greater_than "trebuie să fie mai mare decât %{count}",
+  :less_than_or_equal_to "trebuie să fie mai mic sau egal cu %{count}",
+  :confirmation "nu este confirmat",
+  :accepted "trebuie dat acceptul",
+  :too_short "este prea scurt (minimum de caractere este %{count})",
+  :record_invalid "Validare nereuşită %{errors}",
+  :invalid "este invalid",
+  :wrong_length
+  "nu are lungimea corectă (trebuie să aiba %{count} caractere)",
+  :not_an_integer "trebuie să fie un mumăr întreg",
+  :empty "nu poate fi gol",
+  :odd "trebuie să fie par",
+  :blank "nu poate fi gol",
+  :exclusion "este rezervat",
+  :less_than "trebuie să fie mai mic decât %{count}",
+  :not_a_number "nu este un număr",
+  :greater_than_or_equal_to
+  "trebuie să fie mai mare sau egal cu %{count}",
+  :inclusion "nu este inclus în listă"},
+ :template
+ {:body "Încearcă să corectezi urmatoarele câmpuri:",
+  :header
+  {:one "Nu am putut salva acest %{model}: o eroare",
+   :few "Nu am putut salva acest %{model}: %{count} erori.",
+   :other "Nu am putut salva acest %{model}: %{count} erori."}}}

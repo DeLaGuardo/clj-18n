@@ -1,0 +1,6 @@
+{:am "π.μ.",
+ :formats
+ {:default "%d %B %Y %H:%M",
+  :long "%A %d %B %Y %H:%M:%S %Z",
+  :short "%d %b %H:%M"},
+ :pm "μ.μ."}

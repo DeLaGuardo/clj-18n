@@ -1,0 +1,29 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "sudah digunakan",
+  :too_long "terlalu panjang (maksimum %{count} karakter)",
+  :equal_to "harus sama dengan %{count}",
+  :even "harus genap",
+  :greater_than "harus lebih besar dari %{count}",
+  :less_than_or_equal_to "harus sama atau lebih kecil dari %{count}",
+  :confirmation "tidak sesuai dengan %{attribute}",
+  :accepted "harus diterima",
+  :too_short "terlalu pendek (minimum %{count} karakter)",
+  :record_invalid "Verifikasi gagal: %{errors}",
+  :invalid "tidak valid",
+  :wrong_length "jumlah karakter salah (seharusnya %{count} karakter)",
+  :empty "tidak bisa kosong",
+  :odd "harus ganjil",
+  :blank "tidak bisa kosong",
+  :exclusion "sudah digunakan",
+  :less_than "harus lebih kecil dari %{count}",
+  :not_a_number "bukan angka",
+  :greater_than_or_equal_to
+  "harus sama atau lebih besar dari %{count}",
+  :inclusion "tidak termasuk"},
+ :template
+ {:body "Ada masalah dengan field berikut:",
+  :header
+  {:one "1 kesalahan mengakibatkan %{model} ini tidak bisa disimpan",
+   :other
+   "%{count} kesalahan mengakibatkan %{model} ini tidak bisa disimpan"}}}

@@ -1,0 +1,4 @@
+{:array
+ {:last_word_connector ", மற்றும் ",
+  :two_words_connector " மற்றும் ",
+  :words_connector ", "}}

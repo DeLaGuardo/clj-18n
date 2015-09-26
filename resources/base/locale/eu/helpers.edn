@@ -1,0 +1,5 @@
+{:select {:prompt "Mesedez, aukeratu"},
+ :submit
+ {:create "%{model}a eratu",
+  :submit "%{model}a gorde",
+  :update "%{model}a eguneratu"}}

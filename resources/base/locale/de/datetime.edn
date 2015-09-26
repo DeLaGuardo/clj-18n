@@ -1,0 +1,31 @@
+{:distance_in_words
+ {:x_months {:one "vor einem Monat", :other "vor %{count} Monaten"},
+  :less_than_x_minutes
+  {:one "vor weniger als einer Minute",
+   :other "vor weniger als %{count} Minuten"},
+  :almost_x_years
+  {:one "vor fast einem Jahr", :other "vor fast %{count} Jahren"},
+  :over_x_years
+  {:one "vor mehr als einem Jahr",
+   :other "vor mehr als %{count} Jahren"},
+  :x_seconds
+  {:one "vor einer Sekunde", :other "vor %{count} Sekunden"},
+  :x_minutes {:one "vor einer Minute", :other "vor %{count} Minuten"},
+  :x_days {:one "vor einem Tag", :other "vor %{count} Tagen"},
+  :less_than_x_seconds
+  {:one "vor weniger als eine Sekunde",
+   :other "vor weniger als %{count} Sekunden"},
+  :half_a_minute "vor einer halben Minute",
+  :about_x_months
+  {:one "vor etwa einem Monat", :other "vor etwa %{count} Monaten"},
+  :about_x_hours
+  {:one "vor etwa einer Stunde", :other "vor etwa %{count} Stunden"},
+  :about_x_years
+  {:one "vor etwa einem Jahr", :other "vor etwa %{count} Jahren"}},
+ :prompts
+ {:day "Tag",
+  :hour "Stunden",
+  :minute "Minute",
+  :month "Monat",
+  :second "Sekunde",
+  :year "Jahr //all are in singular now"}}

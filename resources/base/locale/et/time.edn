@@ -1,0 +1,6 @@
+{:am "enne lõunat",
+ :formats
+ {:default "%d. %B %Y, %H:%M",
+  :long "%a, %d. %b %Y, %H:%M:%S %z",
+  :short "%d.%m.%y, %H:%M"},
+ :pm "pärast lõunat"}

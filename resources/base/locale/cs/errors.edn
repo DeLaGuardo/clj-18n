@@ -1,0 +1,38 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "již databáze obsahuje",
+  :too_long "je příliš dlouhý/á/é (max. %{count} znaků)",
+  :equal_to "musí být rovno %{count}",
+  :even "musí být sudé číslo",
+  :greater_than "musí být větší než %{count}",
+  :present "musí být prázdný/á/é",
+  :less_than_or_equal_to "musí být méně nebo rovno %{count}",
+  :confirmation "nebylo potvrzeno",
+  :accepted "musí být potvrzeno",
+  :too_short "je příliš krátký/á/é (min. %{count} znaků)",
+  :record_invalid "Validace je neúspešná: %{errors}",
+  :invalid "není platná hodnota",
+  :wrong_length "nemá správnou délku (očekáváno %{count} znaků)",
+  :not_an_integer "musí být celé číslo",
+  :empty "nesmí být prázdný/á/é",
+  :odd "musí být liché číslo",
+  :blank "je povinná položka",
+  :exclusion "je vyhrazeno pro jiný účel",
+  :less_than "musí být méně než %{count}",
+  :other_than "musí být rozdílný/á/é od %{count}",
+  :not_a_number "není číslo",
+  :greater_than_or_equal_to "musí být větší nebo rovno %{count}",
+  :inclusion "není v seznamu povolených hodnot",
+  :restrict_dependent_destroy
+  {:one "Nemůžu smazat položku protože existuje závislá/ý/é %{record}",
+   :many
+   "Nemůžu smazat položku protože existuje závislé/ý %{record}"}},
+ :template
+ {:body "Následující pole obsahují chybně vyplněné údaje: ",
+  :header
+  {:one
+   "Při ukládání objektu %{model} došlo k chybám a nebylo jej možné uložit",
+   :few
+   "Při ukládání objektu %{model} došlo ke %{count} chybám a nebylo možné jej uložit",
+   :other
+   "Při ukládání objektu %{model} došlo ke %{count} chybám a nebylo možné jej uložit"}}}

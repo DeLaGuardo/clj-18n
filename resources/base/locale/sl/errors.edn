@@ -1,0 +1,30 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "je že zasedeno",
+  :too_long "je predolgo (dovoljeno je do %{count} znakov)",
+  :equal_to "mora biti enako %{count}",
+  :even "mora biti sodo",
+  :greater_than "mora biti večje kot %{count}",
+  :less_than_or_equal_to "mora biti manj ali enako %{count}",
+  :confirmation "se ne ujema s potrditvijo",
+  :accepted "mora biti sprejeto",
+  :too_short "je prekratko (zahtevano je najmanj %{count} znakov)",
+  :record_invalid "",
+  :invalid "je nepravilno",
+  :wrong_length
+  "je napačne dolžine (mora biti natančno %{count} znakov)",
+  :empty "ne sme biti prazno",
+  :odd "mora biti liho",
+  :blank "ne sme biti prazno",
+  :exclusion "je rezervirano",
+  :less_than "mora biti manj kot %{count}",
+  :not_a_number "ni številka",
+  :greater_than_or_equal_to "mora biti večje ali enako %{count}",
+  :inclusion "ni vključeno v seznam"},
+ :template
+ {:body "Napačno izpolnjena polja:",
+  :header
+  {:few "%{count} napake preprečujejo, da bi shranili %{model}",
+   :one "Ena napaka preprečuje, da bi shranili %{model}",
+   :other "%{count} napak preprečuje, da bi shranili %{model}",
+   :two "Dve napaki preprečujeta, da bi shranili %{model}"}}}

@@ -1,0 +1,30 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "al è za doprât",
+  :too_long "al è masse lunc (il massim al è %{count} letaris)",
+  :equal_to "al à di jessi compagn di %{count}",
+  :even "al à di jessi pâr",
+  :greater_than "al à di jessi plui grant di %{count}",
+  :less_than_or_equal_to "al à di jessi mancul o compagn di %{count}",
+  :confirmation "nol è compagn de conferme",
+  :accepted "al à di jessi acetât",
+  :too_short "al è masse curt (il minim al è %{count} letaris)",
+  :record_invalid "Convalide falide: %{errors}",
+  :invalid "nol è valit",
+  :wrong_length
+  "nol à la lungjece juste (al à di jessi di %{count} letaris)",
+  :not_an_integer "al à di jessi un numar intîr",
+  :empty "nol pues jessi vueit",
+  :odd "al à di jessi dispar",
+  :blank "nol pues jessi lassât in blanc",
+  :exclusion "al è riservât",
+  :less_than "al à di jessi mancul di %{count}",
+  :not_a_number "nol è un numar",
+  :greater_than_or_equal_to
+  "al à di jessi plui grant o compagn di %{count}",
+  :inclusion "nol è includût te liste"},
+ :template
+ {:body "Torne par plasê a controlâ i cjamps ca sot:",
+  :header
+  {:one "No si pues salvâ chest %{model}: 1 erôr",
+   :other "No si pues salvâ chest %{model}: %{count} erôrs."}}}

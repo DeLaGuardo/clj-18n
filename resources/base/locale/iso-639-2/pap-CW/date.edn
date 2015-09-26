@@ -1,0 +1,38 @@
+{:abbr_day_names ["Dum" "Lun" "Mar" "Ras" "Wep" "Biè" "Sab"],
+ :abbr_month_names
+ ["yan"
+  "feb"
+  "mar"
+  "apr"
+  "mei"
+  "yün"
+  "yül"
+  "oug"
+  "sèp"
+  "òkt"
+  "nov"
+  "des"],
+ :day_names
+ ["djadumingu"
+  "djaluna"
+  "djamars"
+  "djárason"
+  "djaweps"
+  "djabièrnè"
+  "djasabra"],
+ :formats
+ {:default "%Y-%m-%d", :long "%B di %d, %Y", :short "%b di %d"},
+ :month_names
+ ["yanüari"
+  "febrüari"
+  "mart"
+  "aprel"
+  "mei"
+  "yüni"
+  "yüli"
+  "ougùstùs"
+  "sèptèmber"
+  "òktober"
+  "novèmber"
+  "desèmber"],
+ :order [":year" ":month" ":day"]}

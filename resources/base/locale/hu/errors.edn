@@ -1,0 +1,29 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "már foglalt",
+  :too_long "túl hosszú (nem lehet több %{count} karakternél)",
+  :equal_to "pontosan %{count} kell legyen",
+  :even "páros kell legyen",
+  :greater_than "nagyobb kell legyen, mint %{count}",
+  :less_than_or_equal_to "legfeljebb %{count} lehet",
+  :confirmation "nem egyezik",
+  :accepted "nincs elfogadva",
+  :too_short "túl rövid (legalább %{count} karakter kell legyen)",
+  :record_invalid "Sikertelen validálás %{errors}",
+  :invalid "nem megfelelő",
+  :wrong_length
+  "nem megfelelő hosszúságú (%{count} karakter szükséges)",
+  :not_an_integer "egész számnak kell lennie",
+  :empty "nincs megadva",
+  :odd "páratlan kell legyen",
+  :blank "nincs megadva",
+  :exclusion "nem elérhető",
+  :less_than "kevesebb, mint %{count} kell legyen",
+  :not_a_number "nem szám",
+  :greater_than_or_equal_to "legalább %{count} kell legyen",
+  :inclusion "nincs a listában"},
+ :template
+ {:body "Problémás mezők:",
+  :header
+  {:one "1 hiba miatt nem menthető a következő: %{model}",
+   :other "%{count} hiba miatt nem menthető a következő: %{model}"}}}

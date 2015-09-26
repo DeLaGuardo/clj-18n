@@ -1,0 +1,29 @@
+{:distance_in_words
+ {:x_months {:one "1 μήνα", :other "%{count} μήνες"},
+  :less_than_x_minutes
+  {:one "λιγότερο από ένα λεπτό",
+   :other "λιγότερο από %{count} λεπτά"},
+  :almost_x_years
+  {:one "σχεδόν ένα χρόνο", :other "σχεδόν %{count} χρόνια"},
+  :over_x_years
+  {:one "πάνω από ένα χρόνο", :other "πάνω από %{count} χρόνια"},
+  :x_seconds {:one "1 δευτερόλεπτο", :other "%{count} δευτερόλεπτα"},
+  :x_minutes {:one "1 λεπτό", :other "%{count} λεπτά"},
+  :x_days {:one "1 μέρα", :other "%{count} ημέρες"},
+  :less_than_x_seconds
+  {:one "λιγότερο από ένα δευτερόλεπτο",
+   :other "λιγότερο από %{count} δευτερόλεπτα"},
+  :half_a_minute "μισό λεπτό",
+  :about_x_months
+  {:one "περίπου ένα μήνα", :other "περίπου %{count} μήνες"},
+  :about_x_hours
+  {:one "περίπου μία ώρα", :other "περίπου %{count} ώρες"},
+  :about_x_years
+  {:one "περίπου ένα χρόνο", :other "περίπου %{count} χρόνια"}},
+ :prompts
+ {:day "Ημέρα",
+  :hour "Ώρα",
+  :minute "Λεπτό",
+  :month "Μήνας",
+  :second "Δευτερόλεπτο",
+  :year "Έτος"}}

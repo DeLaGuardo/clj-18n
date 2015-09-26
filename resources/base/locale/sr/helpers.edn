@@ -1,0 +1,5 @@
+{:select {:prompt "Изаберите"},
+ :submit
+ {:create "Направи %{model}",
+  :submit "Сачувај %{model}",
+  :update "Измени %{model}"}}

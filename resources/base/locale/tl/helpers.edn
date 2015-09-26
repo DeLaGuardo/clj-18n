@@ -1,0 +1,5 @@
+{:select {:prompt "Mangyaring pumili"},
+ :submit
+ {:create "lumikha ng %{model}",
+  :update "i-update ang %{model}",
+  :submit "isumite ang %{model}"}}

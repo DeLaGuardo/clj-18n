@@ -1,0 +1,24 @@
+{:distance_in_words
+ {:x_months {:one "kuukausi", :other "%{count} kuukautta"},
+  :less_than_x_minutes
+  {:one "alle minuutti", :other "alle %{count} minuuttia"},
+  :almost_x_years
+  {:one "melkein yksi vuosi", :other "melkein %{count} vuotta"},
+  :over_x_years {:one "yli vuosi", :other "yli %{count} vuotta"},
+  :x_seconds {:one "sekunti", :other "%{count} sekuntia"},
+  :x_minutes {:one "minuutti", :other "%{count} minuuttia"},
+  :x_days {:one "päivä", :other "%{count} päivää"},
+  :less_than_x_seconds
+  {:one "alle sekunti", :other "alle %{count} sekuntia"},
+  :half_a_minute "puoli minuuttia",
+  :about_x_months
+  {:one "noin kuukausi", :other "noin %{count} kuukautta"},
+  :about_x_hours {:one "noin tunti", :other "noin %{count} tuntia"},
+  :about_x_years {:one "vuosi", :other "noin %{count} vuotta"}},
+ :prompts
+ {:day "päivä",
+  :hour "tunti",
+  :minute "minuutti",
+  :month "kuukausi",
+  :second "sekunti",
+  :year "vuosi"}}

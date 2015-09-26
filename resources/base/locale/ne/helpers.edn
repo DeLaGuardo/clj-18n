@@ -1,0 +1,5 @@
+{:select {:prompt "कृपया छान्नुहोस्"},
+ :submit
+ {:create "नयाँ %{model} बनाउ",
+  :submit "%{model} बचत गर",
+  :update "%{model} सामयिक बनाउ"}}

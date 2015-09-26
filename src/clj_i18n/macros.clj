@@ -1,7 +1,7 @@
 (ns clj-i18n.macros
-  (:require [clojure.java.io :refer [file resource]]
+  (:require [clojure.java.io :refer [file resource make-parents]]
             [clj-yaml.core :as yaml]
-            [clojure.string :refer [split]]))
+            [clojure.string :refer [split] :as s]))
 
 (extend-protocol yaml/YAMLCodec
   java.util.ArrayList

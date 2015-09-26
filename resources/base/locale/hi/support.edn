@@ -1,0 +1,4 @@
+{:array
+ {:last_word_connector ", और ",
+  :two_words_connector " और ",
+  :words_connector ", "}}

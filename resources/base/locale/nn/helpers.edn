@@ -1,0 +1,5 @@
+{:select {:prompt "Gjer eit val"},
+ :submit
+ {:create "Lag %{model}",
+  :submit "Lagr %{model}",
+  :update "Oppdater %{model}"}}

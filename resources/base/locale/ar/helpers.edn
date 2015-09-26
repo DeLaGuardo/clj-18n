@@ -1,0 +1,5 @@
+{:select {:prompt "يُرجى الاختيار"},
+ :submit
+ {:create "%{model} إنشاء",
+  :submit "%{model} حِفظ",
+  :update "%{model} تحديث"}}

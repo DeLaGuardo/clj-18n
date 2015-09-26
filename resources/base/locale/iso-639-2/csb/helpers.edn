@@ -1,0 +1,5 @@
+{:select {:prompt "Proszã wëbrac"},
+ :submit
+ {:create "Ùsôdzë %{model}",
+  :submit "Zapiszë %{model}",
+  :update "Aktualizëjë %{model}"}}

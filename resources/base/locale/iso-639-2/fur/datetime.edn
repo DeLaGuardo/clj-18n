@@ -1,0 +1,23 @@
+{:distance_in_words
+ {:x_months {:one "1 mês", :other "%{count} mês"},
+  :less_than_x_minutes
+  {:one "mancul di un minût", :other "mancul di %{count} minûts"},
+  :almost_x_years {:one "cuasi un an", :other "cuasi %{count} agns"},
+  :over_x_years {:one "plui di un an", :other "plui di %{count} agns"},
+  :x_seconds {:one "1 secont", :other "%{count} seconts"},
+  :x_minutes {:one "1 minût", :other "%{count} minûts"},
+  :x_days {:one "1 zornade", :other "%{count} zornadis"},
+  :less_than_x_seconds
+  {:one "mancul di un secont", :other "mancul di %{count} seconts"},
+  :half_a_minute "mieç minût",
+  :about_x_months {:one "cirche un mês", :other "cirche %{count} mês"},
+  :about_x_hours
+  {:one "cirche une ore", :other "cirche %{count} oris"},
+  :about_x_years {:one "cirche un an", :other "cirche %{count} agns"}},
+ :prompts
+ {:day "Zornade",
+  :hour "Ore",
+  :minute "Minût",
+  :month "Mês",
+  :second "Secont",
+  :year "An"}}

@@ -1,0 +1,47 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "je već zauzet",
+  :too_long
+  {:one "je predugačak (maksimum je %{count} znak)",
+   :few "je predugačak (maksimum je %{count} znaka)",
+   :many "je predugačak (maksimum je %{count} znakova)",
+   :other "je predugačak (maksimum je %{count} znakova)"},
+  :equal_to "mora biti jednak %{count}",
+  :even "mora biti paran",
+  :greater_than "mora biti veći od %{count}",
+  :present "mora biti prazan",
+  :less_than_or_equal_to "mora biti manji ili jednak %{count}",
+  :confirmation "se ne slaže sa svojom potvrdom",
+  :accepted "mora biti prihvaćen",
+  :too_short
+  {:one "je prekratak (minimum je %{count} znak)",
+   :few "je prekratak (minimum je %{count} znaka)",
+   :many "je prekratak (minimum je %{count} znakova)",
+   :other "je prekratak (minimum je %{count} znakova)"},
+  :record_invalid "Validacija nije uspjela: %{errors}",
+  :invalid "nije ispravan",
+  :wrong_length
+  {:one "nije odgovarajuće duljine (treba biti %{count} znak)",
+   :few "nije odgovarajuće duljine (treba biti %{count} znaka)",
+   :many "nije odgovarajuće duljine (treba biti %{count} znakova)",
+   :other "nije odgovarajuće duljine (treba biti %{count} znakova)"},
+  :not_an_integer "nije cijeli broj",
+  :empty "ne smije biti prazan",
+  :odd "mora biti neparan",
+  :blank "ne smije biti prazan",
+  :exclusion "je rezerviran",
+  :less_than "mora biti manji od %{count}",
+  :other_than "mora biti različit od %{count}",
+  :not_a_number "nije broj",
+  :greater_than_or_equal_to "mora biti veći ili jednak %{count}",
+  :inclusion "nije u listi",
+  :restrict_dependent_destroy
+  {:one "Nije moguće izbrisati zapis jer postoji ovisan %{record}",
+   :many "Nije moguće izbrisati zapis jer postoje ovisni %{record}"}},
+ :template
+ {:body "Sljedeća polja su neispravno popunjena:",
+  :header
+  {:one "%{count} greška je spriječila %{model} da se spremi",
+   :few "%{count} greške su spriječile %{model} da se spremi",
+   :many "%{count} grešaka je spriječilo %{model} da se spremi",
+   :other "%{count} grešaka je spriječilo %{model} da se spremi"}}}

@@ -1,0 +1,27 @@
+{:distance_in_words
+ {:x_months {:one "एक महिना", :other "%{count} महिना"},
+  :less_than_x_minutes
+  {:one "एका मिनिटापेक्षा कमी", :other "%{count} मिनिटापेक्षा कमी"},
+  :almost_x_years
+  {:one "जवळजवळ एक वर्ष", :other "जवळजवळ %{count} वर्ष"},
+  :over_x_years
+  {:one "एका वर्षापेक्षा जास्त काळ",
+   :other "%{count} वर्षापेक्षा जास्त काळ"},
+  :x_seconds {:one "एक सेकंद", :other "%{count} सेकंद"},
+  :x_minutes {:one "एक मिनिट", :other "%{count} मिनिट"},
+  :x_days {:one "एक दिवस", :other "%{count} दिवस"},
+  :less_than_x_seconds
+  {:one "एक सेकंद पेक्षा कमी", :other "%{count} सेकंद पेक्षा कमी"},
+  :half_a_minute "अर्धा मिनिट",
+  :about_x_months
+  {:one "सुमारे 1 महीना", :other "सुमारे %{count} महिना"},
+  :about_x_hours {:one "सुमारे एक तास", :other "सुमारे %{count} तास"},
+  :about_x_years
+  {:one "सुमारे 1 वर्ष", :other "सुमारे %{count} वर्ष"}},
+ :prompts
+ {:day "दिवस",
+  :hour "तास",
+  :minute "मिनिट",
+  :month "महिना",
+  :second "सेकंद",
+  :year "वर्ष"}}

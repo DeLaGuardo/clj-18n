@@ -1,0 +1,32 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "wedi'i gymryd yn barod",
+  :too_long "yn rhy hir (cewch %{count} llythyren ar y fwyaf)",
+  :equal_to "angen bod yn %{count}",
+  :even "rhaid bod yn eilrif",
+  :greater_than "angen bod yn fwy na %{count}",
+  :less_than_or_equal_to "angen bod yr un maint neu lai na %{count}",
+  :confirmation "heb fod yn gyfateb",
+  :accepted "angen ei dderbyn",
+  :too_short "yn rhy fyr (rhaid am o leiaf %{count} llythyren)",
+  :record_invalid "Gwirio wedi methu: %{errors}",
+  :invalid "heb fod yn nheilwng",
+  :wrong_length
+  "gyda maint anghywir o lythrennau (dylai fod yn %{count} llythyren)",
+  :not_an_integer "heb fod yn rhif llawn",
+  :empty "methu bod yn wag",
+  :odd "rhaid bod yn odrif",
+  :blank "methu bod yn wag",
+  :exclusion "wedi cadw",
+  :less_than "angen bod yn llai na %{count}",
+  :not_a_number "heb fod yn rhif",
+  :greater_than_or_equal_to
+  "angen bod yr un maint neu fwy na %{count}",
+  :inclusion "heb fod yn y rhestr"},
+ :template
+ {:body "Cafwyd broblemau gyda'r meysydd canlynol:",
+  :header
+  {:one "Atalwyd y %{model} hwn rhag ei gadw gan 1 nam",
+   :two "Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam",
+   :many "Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam",
+   :other "Atalwyd y %{model} hwn rhag ei gadw gan %{count} nam"}}}

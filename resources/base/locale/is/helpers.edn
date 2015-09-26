@@ -1,0 +1,5 @@
+{:select {:prompt "Veldu"},
+ :submit
+ {:create "Búa til %{model}",
+  :submit "Vista %{model}",
+  :update "Uppfæra %{model}"}}

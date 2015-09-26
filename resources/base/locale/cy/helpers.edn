@@ -1,0 +1,5 @@
+{:select {:prompt "Dewiswch"},
+ :submit
+ {:create "Creu %{model}",
+  :submit "Cadw %{model}",
+  :update "Diweddaru %{model}"}}

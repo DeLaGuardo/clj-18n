@@ -1,0 +1,37 @@
+{:abbr_day_names ["Ned" "Pon" "Uto" "Sri" "Čet" "Pet" "Sub"],
+ :abbr_month_names
+ ["Sij"
+  "Veǉ"
+  "Ožu"
+  "Tra"
+  "Svi"
+  "Lip"
+  "Srp"
+  "Kol"
+  "Ruj"
+  "Lis"
+  "Stu"
+  "Pro"],
+ :day_names
+ ["Nedjelja"
+  "Ponedjeljak"
+  "Utorak"
+  "Srijeda"
+  "Četvrtak"
+  "Petak"
+  "Subota"],
+ :formats {:default "%d.%m.%Y.", :long "%e. %B %Y.", :short "%e.%-m."},
+ :month_names
+ ["Siječanj"
+  "Veljača"
+  "Ožujak"
+  "Travanj"
+  "Svibanj"
+  "Lipanj"
+  "Srpanj"
+  "Kolovoz"
+  "Rujan"
+  "Listopad"
+  "Studeni"
+  "Prosinac"],
+ :order [":day" ":month" ":year"]}

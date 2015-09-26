@@ -1,0 +1,5 @@
+{:select {:prompt "Kies asseblief"},
+ :submit
+ {:create "Skep %{model}",
+  :submit "Stoor %{model}",
+  :update "Dateer %{model} op"}}

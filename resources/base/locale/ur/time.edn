@@ -1,0 +1,6 @@
+{:am "صبح",
+ :pm "شام",
+ :formats
+ {:default "%a، %d %b %Y، %p %l:%M %Z",
+  :long "%B %d، %Y %p %H:%M",
+  :short "%d %b، %H:%M"}}

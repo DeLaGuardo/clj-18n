@@ -1,0 +1,52 @@
+{:distance_in_words
+ {:x_months
+  {:few "%{count} mjasecami",
+   :one "1 mjasecom",
+   :other "%{count} mjasecami",
+   :two "%{count} mjasecoma"},
+  :less_than_x_minutes
+  {:few "mjenjej ako %{count} minutami",
+   :one "mjenjej ako 1 minutu",
+   :other "mjenjej ako %{count} minutami",
+   :two "mjenjej ako %{count} minutoma"},
+  :over_x_years
+  {:few "wěcej ako %{count} lětami",
+   :one "wěcej ako 1 lětom",
+   :other "wěcej ako %{count} lětami",
+   :two "wěcej ako %{count} lětoma"},
+  :x_seconds
+  {:few "%{count} sekundami",
+   :one "1 sekundu",
+   :other "%{count} sekundami",
+   :two "%{count} sekundoma"},
+  :x_minutes
+  {:few "%{count} minutami",
+   :one "1 minutu",
+   :other "%{count} minutami",
+   :two "%{count} minutoma"},
+  :x_days
+  {:few "%{count} dnjami",
+   :one "1 dnjom",
+   :other "%{count} dnjami",
+   :two "%{count} dnjoma"},
+  :less_than_x_seconds
+  {:few "mjenjej ako %{count} sekundami",
+   :one "mjenjej ako 1 sekundu",
+   :other "mjenjej ako %{count} sekundami",
+   :two "mjenjej ako %{count} sekundoma"},
+  :half_a_minute "poł minuty",
+  :about_x_months
+  {:few "něźi %{count} mjasecami",
+   :one "něźi 1 mjasecom",
+   :other "něźi %{count} mjasecami",
+   :two "něźi %{count} mjasecoma"},
+  :about_x_hours
+  {:few "něźi %{count} góźinami",
+   :one "něźi 1 góźinu",
+   :other "něźi %{count} góźinami",
+   :two "něźi %{count} góźinoma"},
+  :about_x_years
+  {:few "něźi %{count} lětami",
+   :one "něźi 1 lětom",
+   :other "něźi %{count} lětami",
+   :two "něźi %{count} lětoma"}}}

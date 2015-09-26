@@ -1,0 +1,6 @@
+{:am "öğleden önce",
+ :formats
+ {:default "%a %d.%b.%y %H:%M",
+  :long "%e %B %Y, %A, %H:%M",
+  :short "%e %B, %H:%M"},
+ :pm "öğleden sonra"}

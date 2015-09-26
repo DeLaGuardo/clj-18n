@@ -1,0 +1,40 @@
+{:currency
+ {:format
+  {:delimiter ",",
+   :format "%n %u",
+   :precision 2,
+   :separator ".",
+   :significant false,
+   :strip_insignificant_zeros false,
+   :unit "Rs"}},
+ :format
+ {:delimiter ",",
+  :precision 0,
+  :separator ".",
+  :significant false,
+  :strip_insignificant_zeros false},
+ :human
+ {:decimal_units
+  {:format "%n %u",
+   :units
+   {:thousand "ہزار",
+    :million "ملین",
+    :billion "بلین",
+    :trillion "ٹریلن",
+    :quadrillion "کواڈریلن",
+    :unit "Rs"}},
+  :format
+  {:delimiter "",
+   :precision 0,
+   :significant true,
+   :strip_insignificant_zeros true},
+  :storage_units
+  {:format "%n %u",
+   :units
+   {:byte {:one "Byte", :other "Bytes"},
+    :gb "GB",
+    :kb "KB",
+    :mb "MB",
+    :tb "TB"}}},
+ :percentage {:format {:delimiter "", :format "%n فیصد"}},
+ :precision {:format {:delimiter ""}}}

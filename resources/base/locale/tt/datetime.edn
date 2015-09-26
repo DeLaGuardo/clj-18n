@@ -1,0 +1,24 @@
+{:distance_in_words
+ {:x_months {:one "бер ай", :other "%{count} ай"},
+  :less_than_x_minutes
+  {:one "бер минуттан азрак", :other "%{count} минуттан азрак"},
+  :almost_x_years
+  {:one "бер ел диярлек", :other "%{count} ел диярлек"},
+  :over_x_years {:one "бер ел артык", :other "%{count} ел артык"},
+  :x_seconds {:one "бер секунд", :other "%{count} секунд"},
+  :x_minutes {:one "бер минут", :other "%{count} минут"},
+  :x_days {:one "бер көн", :other "%{count} көн"},
+  :less_than_x_seconds
+  {:one "бер секундтан азрак", :other "%{count} секундтан азрак"},
+  :half_a_minute "минуттан азрак",
+  :about_x_months {:one "бер ай чамасы", :other "%{count} ай чамасы"},
+  :about_x_hours
+  {:one "бер сәгать чамасы", :other "%{count} сәгать чамасы"},
+  :about_x_years {:one "бер ел чамасы", :other "%{count} ел чамасы"}},
+ :prompts
+ {:day "Көн",
+  :hour "Сәгать",
+  :minute "Минут",
+  :month "Ай",
+  :second "Секунд",
+  :year "Ел"}}

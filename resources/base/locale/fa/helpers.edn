@@ -1,0 +1,5 @@
+{:select {:prompt "لطفا انتخاب کنید"},
+ :submit
+ {:create "ایجاد %{model}",
+  :submit "ذخیره‌ی %{model}",
+  :update "بروز رسانی %{model}"}}

@@ -1,0 +1,39 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "hali hazırda kullanılmakta",
+  :too_long
+  {:one "çok uzun (en fazla 1 karakter)",
+   :other "çok uzun (en fazla %{count} karakter)"},
+  :equal_to "tam olarak %{count} olmalı",
+  :even "çift olmalı",
+  :greater_than "%{count} sayısından büyük olmalı",
+  :present "boş bırakılmalı",
+  :less_than_or_equal_to "%{count} sayısına eşit veya küçük olmalı",
+  :confirmation "%{attribute} teyidiyle uyuşmuyor",
+  :accepted "kabul edilmeli",
+  :too_short
+  {:one "çok kısa (en az 1 karakter)",
+   :other "çok kısa (en az %{count} karakter)"},
+  :record_invalid "Doğrulama başarısız oldu: %{errors}",
+  :invalid "geçersiz",
+  :wrong_length
+  {:one "hatalı uzunlukta (1 karakter olmalı)",
+   :other "hatalı uzunlukta (%{count} karakter olmalı)"},
+  :not_an_integer "tam sayı olmalı",
+  :empty "doldurulmalı",
+  :odd "tek olmalı",
+  :blank "doldurulmalı",
+  :exclusion "kullanılamaz",
+  :less_than "%{count} sayısından küçük olmalı",
+  :other_than "%{count} karakterden oluşamaz",
+  :not_a_number "geçerli bir sayı değil",
+  :greater_than_or_equal_to "%{count} sayısına eşit veya büyük olmalı",
+  :inclusion "kabul edilen bir kelime değil",
+  :restrict_dependent_destroy
+  {:one "Bağlı bir kayıt %{record} bulunduğu için kayıt silinemedi",
+   :many "Bağlı kayıtlar %{record} bulunduğu için kayıt silinemedi"}},
+ :template
+ {:body "Lütfen aşağıdaki hataları düzeltiniz:",
+  :header
+  {:one "1 hata oluştuğu için %{model} kaydedilemedi",
+   :other "%{count} hata oluştuğu için %{model} kaydedilemedi"}}}

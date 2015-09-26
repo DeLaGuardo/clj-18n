@@ -1,0 +1,6 @@
+{:am "priekšpusdiena",
+ :formats
+ {:default "%Y. gada %e. %B, %H:%M",
+  :long "%Y. gada %e. %B, %H:%M:%S",
+  :short "%d.%m.%Y., %H:%M"},
+ :pm "pēcpusdiena"}

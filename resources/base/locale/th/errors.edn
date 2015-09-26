@@ -1,0 +1,28 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "ถูกใช้ไปแล้ว",
+  :too_long "ยาวเกินไป (ต้องไม่เกิน %{count} ตัวอักษร)",
+  :equal_to "ต้องมีค่าเท่ากับ %{count}",
+  :even "ต้องเป็นจำนวนคู่",
+  :greater_than "ต้องมากกว่า %{count}",
+  :less_than_or_equal_to "ต้องมีค่าน้อยกว่าหรือเท่ากับ %{count}",
+  :confirmation "ไม่ตรงกับการยืนยัน",
+  :accepted "ต้องถูกยอมรับ",
+  :too_short "สั้นเกินไป (ต้องยาวกว่า %{count} ตัวอักษร)",
+  :record_invalid "ไม่ผ่านการตรวจสอบ: %{errors}",
+  :invalid "ไม่ถูกต้อง",
+  :wrong_length
+  "มีความยาวไม่ถูกต้อง (ต้องมีความยาว %{count} ตัวอักษร)",
+  :not_an_integer "ไม่ใช่จำนวนเต็ม",
+  :empty "ต้องไม่เว้นว่างเอาไว้",
+  :odd "ต้องเป็นจำนวนคี่",
+  :blank "ต้องไม่เว้นว่างเอาไว้",
+  :exclusion "ไม่ได้รับอนุญาตให้ใช้",
+  :less_than "ต้องมีค่าน้อยกว่า %{count}",
+  :not_a_number "ไม่ใช่ตัวเลข",
+  :greater_than_or_equal_to "ต้องมากกว่าหรือเท่ากับ %{count}",
+  :inclusion "ไม่ได้อยู่ในรายการ"},
+ :template
+ {:body "โปรดตรวจสอบข้อมูลในช่องต่อไปนี้:",
+  :header
+  "พบข้อผิดพลาด %{count} ประการ ทำให้ไม่สามารถบันทึก%{model}ได้"}}

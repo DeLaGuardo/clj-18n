@@ -1,0 +1,49 @@
+{:distance_in_words
+ {:x_months
+  {:few "%{count} miesiące",
+   :one "1 miesąc",
+   :other "%{count} miesięców"},
+  :less_than_x_minutes
+  {:few "mni jak %{count} minutë",
+   :one "mni jak minuta",
+   :other "mni jak %{count} minutów"},
+  :almost_x_years
+  {:few "wnet %{count} lata",
+   :one "wnet rok",
+   :other "wnet %{count} lat"},
+  :over_x_years
+  {:few "wicy jak %{count} lata",
+   :one "wicy jak rok",
+   :other "wicy jak %{count} lat"},
+  :x_seconds
+  {:few "%{count} sekùndë",
+   :one "1 sekùnda",
+   :other "%{count} sekùndów"},
+  :x_minutes
+  {:few "%{count} minutë", :one "1 minuta", :other "%{count} minutów"},
+  :x_days
+  {:few "%{count} dni", :one "1 dzéń", :other "%{count} dniów"},
+  :less_than_x_seconds
+  {:few "mni jak %{count} sekùndë",
+   :one "mni jak sekùnda",
+   :other "mni jak %{count} sekùndów"},
+  :half_a_minute "pół minutë",
+  :about_x_months
+  {:few "kòle %{count} miesąców",
+   :one "kòle miesąca",
+   :other "kòle %{count} miesąców"},
+  :about_x_hours
+  {:few "kòle %{count} gòdzën",
+   :one "kòle gòdzënë",
+   :other "kòle %{count} gòdzën"},
+  :about_x_years
+  {:few "kòle %{count} lat",
+   :one "kòle rokù",
+   :other "kòle %{count} lat"}},
+ :prompts
+ {:day "Dzéń",
+  :hour "Gòdzëna",
+  :minute "Minuta",
+  :month "Miesiąc",
+  :second "Sekunda",
+  :year "Rok"}}

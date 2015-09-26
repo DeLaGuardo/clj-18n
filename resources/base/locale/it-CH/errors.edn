@@ -1,0 +1,36 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "è già in uso",
+  :too_long
+  {:one "è troppo lungo (il massimo è 1 carattere)",
+   :other "è troppo lungo (il massimo è %{count} caratteri)"},
+  :equal_to "deve essere uguale a %{count}",
+  :even "deve essere pari",
+  :greater_than "deve essere superiore a %{count}",
+  :less_than_or_equal_to "deve essere meno o uguale a %{count}",
+  :confirmation "non coincide con %{attribute}",
+  :accepted "deve essere accettata",
+  :too_short
+  {:one "è troppo corto (il minimo è 1 carattere)",
+   :other "è troppo corto (il minimo è %{count} caratteri)"},
+  :record_invalid "Validazione fallita: %{errors}",
+  :invalid "non è valido",
+  :wrong_length
+  {:one "è della lunghezza sbagliata (deve essere di 1 carattere)",
+   :other
+   "è della lunghezza sbagliata (deve essere di %{count} caratteri)"},
+  :not_an_integer "non è un intero",
+  :empty "non può essere vuoto",
+  :odd "deve essere dispari",
+  :blank "non può essere lasciato in bianco",
+  :exclusion "è riservato",
+  :less_than "deve essere meno di %{count}",
+  :not_a_number "non è un numero",
+  :greater_than_or_equal_to
+  "deve essere superiore o uguale a %{count}",
+  :inclusion "non è incluso nella lista"},
+ :template
+ {:body "Per favore ricontrolla i seguenti campi:",
+  :header
+  {:one "Non posso salvare questo %{model}: 1 errore",
+   :other "Non posso salvare questo %{model}: %{count} errori."}}}

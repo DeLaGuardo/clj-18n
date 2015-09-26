@@ -1,0 +1,6 @@
+{:am "aamupäivä",
+ :formats
+ {:default "%A %e. %Bta %Y %H:%M:%S %z",
+  :long "%e. %Bta %Y %H.%M",
+  :short "%e.%m. %H.%M"},
+ :pm "iltapäivä"}

@@ -1,0 +1,29 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "isch scho vergäh",
+  :too_long "isch z lang (nöd meh als %{count} zeichä)",
+  :equal_to "muess genau %{count} si",
+  :even "muess grad si",
+  :greater_than "muess grösser als %{count} si",
+  :less_than_or_equal_to "muess chliner oder gliich %{count} si",
+  :confirmation "stimmt nöd mit dr bestätigung überii",
+  :accepted "muess akzeptiert werdä",
+  :too_short "ist z churz (nöd weniger als %{count} zeichä)",
+  :record_invalid
+  "D gültigkeitsprüefig hät nöd funktioniert: %{errors}",
+  :invalid "isch nöd gültig",
+  :wrong_length "hät di falsch längi (muess genau %{count} zeichä ha)",
+  :not_an_integer "muess ganzzahlig si",
+  :empty "muess usgfüllt werdä",
+  :odd "muess ungrad si",
+  :blank "muess usgfüllt werdä",
+  :exclusion "isch nöd verfüegbar",
+  :less_than "muess chliner als %{count} si",
+  :not_a_number "isch kei zahl",
+  :greater_than_or_equal_to "muess grösser oder gliich %{count} si",
+  :inclusion "isch kein gültige wärt"},
+ :template
+ {:body "Bitte überprüefend si folgendi felder:",
+  :header
+  {:one "Han %{model} nöd chönne speicherä: ein fähler.",
+   :other "Han %{model} nöd chönne speicherä: %{count} fähler."}}}

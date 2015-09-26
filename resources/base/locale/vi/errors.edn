@@ -1,0 +1,34 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "đã có",
+  :too_long "quá dài (tối đa %{count} ký tự)",
+  :equal_to "phải bằng %{count}",
+  :even "phải là số chẵn",
+  :greater_than "phải lớn hơn %{count}",
+  :present "cần phải để trắng",
+  :less_than_or_equal_to "phải nhỏ hơn hoặc bằng %{count}",
+  :confirmation "không khớp với xác nhận",
+  :accepted "phải được đồng ý",
+  :too_short "quá ngắn (tối thiểu %{count} ký tự)",
+  :record_invalid "Có các lỗi sau: %{errors}",
+  :invalid "không hợp lệ",
+  :wrong_length "độ dài không đúng (phải là %{count} ký tự)",
+  :not_an_integer "phải là một số nguyên",
+  :empty "không thể rỗng",
+  :odd "phải là số lẻ",
+  :blank "không thể để trắng",
+  :exclusion "đã được giành trước",
+  :less_than "phải nhỏ hơn %{count}",
+  :other_than "cần phải khác %{count}",
+  :not_a_number "không phải là số",
+  :greater_than_or_equal_to "phải lớn hơn hoặc bằng %{count}",
+  :inclusion "không có trong danh sách",
+  :restrict_dependent_destroy
+  {:one "Không thể xóa do tồn tại đối tượng phụ thuộc %{record}",
+   :many
+   "Không thể xóa do tồn tại một số đối tượng phụ thuộc %{record}"}},
+ :template
+ {:body "Có lỗi với các mục sau:",
+  :header
+  {:one "1 lỗi ngăn không cho lưu %{model} này",
+   :other "%{count} lỗi ngăn không cho lưu %{model} này"}}}

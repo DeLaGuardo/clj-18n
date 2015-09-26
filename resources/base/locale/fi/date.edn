@@ -1,0 +1,38 @@
+{:abbr_day_names ["su" "ma" "ti" "ke" "to" "pe" "la"],
+ :abbr_month_names
+ ["tammi"
+  "helmi"
+  "maalis"
+  "huhti"
+  "touko"
+  "kesä"
+  "heinä"
+  "elo"
+  "syys"
+  "loka"
+  "marras"
+  "joulu"],
+ :day_names
+ ["sunnuntai"
+  "maanantai"
+  "tiistai"
+  "keskiviikko"
+  "torstai"
+  "perjantai"
+  "lauantai"],
+ :formats
+ {:default "%-d.%-m.%Y", :long "%A %e. %Bta %Y", :short "%d. %b"},
+ :month_names
+ ["tammikuu"
+  "helmikuu"
+  "maaliskuu"
+  "huhtikuu"
+  "toukokuu"
+  "kesäkuu"
+  "heinäkuu"
+  "elokuu"
+  "syyskuu"
+  "lokakuu"
+  "marraskuu"
+  "joulukuu"],
+ :order [":day" ":month" ":year"]}

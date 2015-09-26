@@ -1,0 +1,35 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "er allerede i bruk",
+  :too_long "er for lang (maksimum %{count} tegn)",
+  :equal_to "må være lik %{count}",
+  :even "må være partall",
+  :greater_than "må være større enn %{count}",
+  :present "må være blank",
+  :less_than_or_equal_to "må være mindre enn eller lik %{count}",
+  :confirmation "passer ikke bekreftelsen",
+  :accepted "må være akseptert",
+  :too_short "er for kort (minimum %{count} tegn)",
+  :record_invalid "Det oppstod feil: %{errors}",
+  :invalid "er ugyldig",
+  :wrong_length "er av feil lengde (maksimum %{count} tegn)",
+  :not_an_integer "er ikke et heltall",
+  :empty "kan ikke være tom",
+  :odd "må være oddetall",
+  :blank "kan ikke være blank",
+  :exclusion "er reservert",
+  :less_than "må være mindre enn %{count}",
+  :other_than "kan ikke være nøyaktig %{count}",
+  :not_a_number "er ikke et tall",
+  :greater_than_or_equal_to "må være større enn eller lik %{count}",
+  :inclusion "er ikke inkludert i listen",
+  :restrict_dependent_destroy
+  {:one
+   "Kan ikke slette registreringen, fordi 1 %{record} avhenger av denne.",
+   :many
+   "Kan ikke slette registreringen, fordi %{record} avhenger av denne."}},
+ :template
+ {:body "Det oppstod problemer i følgende felt:",
+  :header
+  {:one "Kunne ikke lagre %{model} på grunn av én feil.",
+   :other "Kunne ikke lagre %{model} på grunn av %{count} feil."}}}

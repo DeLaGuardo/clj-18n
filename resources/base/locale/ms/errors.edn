@@ -1,0 +1,36 @@
+{:format "%{attribute} %{message}",
+ :messages
+ {:taken "telah digunakan",
+  :too_long
+  {:one "terlalu panjang (maksima adalah 1 karakter)",
+   :other "terlalu panjang (maksima adalah %{count} karakter)"},
+  :equal_to "mesti sama dengan %{count}",
+  :even "mesti genap",
+  :greater_than "mesti lebih dari %{count}",
+  :less_than_or_equal_to
+  "mesti kurang daripada atat sama dengan %{count}",
+  :confirmation "tidak sama dengan penegasan",
+  :accepted "wajib diterima",
+  :too_short
+  {:one "terlalu pendek (minima adalah 1 karakter)",
+   :other "terlalu pendek (minima adalah %{count} karakter)"},
+  :record_invalid "Pengesahan gagal: %{errors}",
+  :invalid "adalah tidak laku",
+  :wrong_length
+  {:one "mempunyai panjang yang salah (sepatutnya 1 karakter sahaja)",
+   :other
+   "mempunyai panjang yang salah(sepatutnya %{count} karakter sahaja)"},
+  :not_an_integer "mestilah integer",
+  :empty "tidak boleh dikosongkan",
+  :odd "mesti ganjil",
+  :blank "tidak boleh dikosongkan",
+  :exclusion "telah terpelihara",
+  :less_than "mesti kurang daripada %{count}",
+  :not_a_number "bukan nombor",
+  :greater_than_or_equal_to "mesti melibihi atau sama dengan %{count}",
+  :inclusion "tidak termasuk dalam senarai"},
+ :template
+ {:body "Terdapat masalah dengan medan data tersebut:",
+  :header
+  {:one "1 ralat menhalang  %{model} ini dari disimpan",
+   :other "%{count} ralat menhalang %{model} ini dari disimpan"}}}
