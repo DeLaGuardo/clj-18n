@@ -1,58 +1,39 @@
 (ns clj-i18n.macros
-  (:require [clojure.java.io :refer [file resource make-parents]]
+  (:require [clj-i18n.tools :refer [cart deep-merge]]
             [clj-yaml.core :as yaml]
-            [clojure.string :refer [split] :as s]))
+            [clojure.string :refer [split join] :as s]))
 
-(extend-protocol yaml/YAMLCodec
-  java.util.ArrayList
-  (decode [data]
-    (vec (remove nil? data))))
+(def base-path "base/locale")
+(def base-modules '(:date :datetime :errors :helpers :number :support :time))
 
-(defn- deep-merge
-  ([a b]
-   (merge-with (fn [x y]
-                 (cond (map? y) (deep-merge x y)
-                       :else y))
-               a b))
-  ([a b & other]
-   (apply deep-merge
-          (deep-merge a b)
-          (first other)
-          (rest other))))
+(defn- read-file [file-name]
+  (let [f (clojure.java.io/file (clojure.java.io/resource file-name))]
+    (if (.exists f)
+      (with-open [r (java.io.PushbackReader. (clojure.java.io/reader f))]
+        (binding [*read-eval* false]
+          (read r)))
+      {})))
 
-(defn- read-file [res]
-  (let [res (resource res)]
-    (first
-     (vals
-      (yaml/parse-string
-       (slurp (if (.startsWith (str res) "f")
-                (file res)
-                res)))))))
+(defn- load-locale-module [module locale path-to-data]
+  (let [file-name (join "/" [path-to-data locale (str (name module) ".edn")])]
+    (read-file file-name)))
 
-(defn- read-translations [translation-key path-to-locale-data]
-  (let [en-data (read-file "base/locale/en.yml")
-        [locale _] (split translation-key #"-")
-        locale-data (if (not= locale translation-key)
-                      (deep-merge (read-file (str "base/locale/" locale ".yml"))
-                                  (read-file (str "base/locale/" translation-key ".yml"))
-                                  (if path-to-locale-data
-                                    (read-file (str path-to-locale-data "/" locale ".yml"))
-                                    {}))
-                      (read-file (str "base/locale/" translation-key ".yml")))]
-    (deep-merge en-data
-                locale-data
-                (if path-to-locale-data
-                  (read-file (str path-to-locale-data "/" translation-key ".yml"))
-                  {}))))
+(defn- load-translations [locale {:keys [locale-resources modules] :or {modules base-modules}}]
+  (let [[lang _] (split locale #"-")
+        locales (remove nil? (into (sorted-set "en") [lang locale]))
+        paths (remove nil? [base-path locale-resources])]
+    (into {} (map (fn [module]
+                    {module (apply deep-merge (map #(apply load-locale-module module %) (cart locales paths)))})
+                  modules))))
 
-(def memoized-read-translations (memoize read-translations))
+(def memoized-read-translations (memoize load-translations))
 
-(defmacro generate-translations [locale & path-to-locale-data]
-  (let [translations (read-translations locale (first path-to-locale-data))]
+(defmacro generate-translations [locale opts]
+  (let [translations (load-translations locale opts)]
     `(do ~translations)))
 
-(defmacro translate [locale translation-keys & path-to-locale-data]
-  (let [translations (read-translations locale (first path-to-locale-data))
+(defmacro translate [locale translation-keys opts]
+  (let [translations (load-translations locale opts)
         translation (get-in translations translation-keys)]
     `(do ~translation)))
 
