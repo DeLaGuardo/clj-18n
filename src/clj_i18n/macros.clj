@@ -1,15 +1,15 @@
 (ns clj-i18n.macros
   (:require [clj-i18n.tools :refer [cart deep-merge]]
-            [clj-yaml.core :as yaml]
-            [clojure.string :refer [split join] :as s]))
+            [clojure.java.io :as io]
+            [clojure.string :as s :refer [join split]]))
 
 (def base-path "base/locale")
 (def base-modules '(:date :datetime :errors :helpers :number :support :time))
 
 (defn- read-file [file-name]
-  (let [f (clojure.java.io/file (clojure.java.io/resource file-name))]
+  (let [f (io/file (io/resource file-name))]
     (if (.exists f)
-      (with-open [r (java.io.PushbackReader. (clojure.java.io/reader f))]
+      (with-open [r (java.io.PushbackReader. (io/reader f))]
         (binding [*read-eval* false]
           (read r)))
       {})))
