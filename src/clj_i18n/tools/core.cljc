@@ -1,4 +1,4 @@
-(ns clj-i18n.tools)
+(ns clj-i18n.tools.core)
 
 (defn deep-merge
   ([a] a)
