@@ -17,6 +17,7 @@
    (apply str (take-last count (apply str (concat (repeat count "0") value))))))
 
 ;; Date
+
 (declare %-m)
 (declare %e)
 
@@ -69,6 +70,7 @@
     (zero-padded (rem (js/Number date) one-day) 3)))
 
 ;; Time
+
 (defn %H [date]
   (zero-padded (.getHours date)))
 
@@ -107,11 +109,38 @@
   (zero-padded (.getMilliseconds date) 3))
 
 ;; TimeZone
+
+(defn get-timezone [date]
+  (let [tz (.getTimezoneOffset date)
+        tz-hours (let [th (quot tz 60)]
+                   (if (> th 0)
+                     (zero-padded (str th))
+                     (str "-" (zero-padded (str th)))))
+        tz-minutes (zero-padded (str (mod tz 60)))]
+    [tz-hours tz-minutes]))
+
 (defn %z [date]
-  "not-yet-implemented")
+  (apply str (get-timezone date)))
+
+(defn %:z [date]
+  (let [[tz-h tz-m] (get-timezone date)]
+    tz-h))
+
+(defn %::z [date]
+  (let [[tz-h tz-m] (get-timezone date)]
+    (str tz-h ":" tz-m)))
+
+(defn %:::z [date]
+  (str (%::z date) ":00"))
+
+(defn %Z [date]
+  (let [tz-str (take-last 1 (.split (str date) " "))]
+    (apply str (rest (butlast tz-str)))))
 
 ;; Weekday
+
 (declare %w)
+
 (defn %A [date]
   (let [day_names (translate :date :day_names)]
     (get day_names (%w date))))
@@ -131,11 +160,32 @@
 
 ;; ISO 8601 week-based year and week number
 
+(defn %G [date])
+
+(defn %g [date])
+
+(defn %V [date])
+
 ;; Week number
+(defn %U [date])
+
+(defn %W [date])
 
 ;; Seconds since the Unix Epoch
 
+(defn %s [date]
+  (str (js/Number date)))
+
+(defn %Q [date]
+  (str (* (js/Number date) 1000)))
+
 ;; Literal string
+
+(defn %n [date]
+  "\n")
+
+(defn %t [date]
+  "\t")
 
 ;; Combination
 
