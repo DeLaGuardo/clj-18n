@@ -65,8 +65,6 @@
                   (keys data))))
          yml-files)))
 
-(yaml-to-edn "./rails-i18n/rails/locale/" "./resources/base/locale/")
-
 ;; Default config
 (def ^:dynamic *config* (atom {:current-locale "en"
                                :fallback "en"
@@ -100,11 +98,12 @@
                     {module (apply deep-merge (map #(apply load-locale-module module %) (cartesian-product locales paths)))})
                   modules))))
 
-(defmacro generate-translations [locale & opts]
-  (swap! *config* merge (apply sorted-map opts))
-  (swap! *config* assoc :translations (load-translations locale))
-  (swap! *config* assoc :current-locale locale)
-  `~(not (or (nil? (:translations @*config*)) (empty? (:translations @*config*)))))
+(defmacro generate-translations! [locale & opts]
+  (let [opts (apply sorted-map opts)]
+    (swap! *config* merge opts)
+    (swap! *config* assoc :translations (load-translations locale))
+    (swap! *config* assoc :current-locale locale)
+    `~(not (or (nil? (:translations @*config*)) (empty? (:translations @*config*))))))
 
 (defmacro translate [& tr-keys]
   (let [translations-dict (let [tr-dict (last tr-keys)]
