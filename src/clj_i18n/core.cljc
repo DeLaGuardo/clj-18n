@@ -2,20 +2,6 @@
   #?(:cljs (:require-macros [clj-i18n.macros :refer [translate generate-translations!]])
      :clj (:require [clj-i18n.macros :refer [translate]])))
 
-(def a (atom [1 2 3]))
-(def a (atom [1 2 3 4]))
-
-(add-watch a :subvec (fn [k r o n]
-                       (js/console.log [k r o n])
-                       (assert (== 0 n))))
-(swap! a )
-
-(swap! a subvec 1 2)
-
-(swap! a (subvec 1 2))
-
-(subvec [1 2 3] 1 2)
-
 (declare format)
 (declare pluralize)
 
