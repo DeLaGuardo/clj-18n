@@ -1,233 +1,181 @@
 (ns clj-i18n.core
-  #?(:cljs (:require-macros [clj-i18n.macros :refer [translate]])
+  #?(:cljs (:require-macros [clj-i18n.macros :refer [translate generate-translations!]])
      :clj (:require [clj-i18n.macros :refer [translate]])))
 
-(declare t)
+(def a (atom [1 2 3]))
+(def a (atom [1 2 3 4]))
 
-(defn blank-padded
-  ([value]
-   (blank-padded value 2))
-  ([value count]
-   (apply str (take-last count (apply str (concat (repeat count " ") value))))))
+(add-watch a :subvec (fn [k r o n]
+                       (js/console.log [k r o n])
+                       (assert (== 0 n))))
+(swap! a )
 
-(defn zero-padded
-  ([value]
-   (zero-padded value 2))
-  ([value count]
-   (apply str (take-last count (apply str (concat (repeat count "0") value))))))
+(swap! a subvec 1 2)
 
-;; Date
+(swap! a (subvec 1 2))
 
-(declare %-m)
-(declare %e)
+(subvec [1 2 3] 1 2)
 
-(defn %Y [date]
+(declare format)
+(declare pluralize)
+
+(defn- any-padded [ch]
+  (fn [s & {:keys [count] :or {count 2}}]
+    (apply str (take-last count (apply str (concat (repeat count ch) s))))))
+
+(defn- get-year [date]
   (.getFullYear date))
-
-(defn %C [date]
-  (let [year (%Y date)]
-    (rem year 100)))
-
-(defn %y [date]
-  (let [year (%Y date)]
-    (mod year 100)))
-
-(defn %m [date]
-  (zero-padded (%-m date)))
-
-(defn %_m [date]
-  (blank-padded (%-m date)))
-
-(defn %-m [date]
+(defn- get-month [date]
   (inc (.getMonth date)))
-
-(defn %B [date]
-  (let [month-names (translate :date :month_names)]
-    (get month-names (%-m date))))
-
-(defn %b [date]
-  (let [short-month-names (translate :date :abbr_month_names)]
-    (get short-month-names (%-m date))))
-
-(defn %h [date]
-  (%b date))
-
-(defn %d [date]
-  (zero-padded (%-d date)))
-
-(defn %_d [date]
-  (%e date))
-
-(defn %e [date]
-  (blank-padded (%-d date)))
-
-(defn %-d [date]
+(defn- get-date [date]
   (.getDate date))
-
-(defn %j [date]
-  (let [january-first (js/Date. (%Y date) 0 1)
-        one-day (* 1000 60 60 24)]
-    (zero-padded (rem (js/Number date) one-day) 3)))
-
-;; Time
-
-(defn %H [date]
-  (zero-padded (.getHours date)))
-
-(defn %k [date]
-  (blank-padded (.getHours date)))
-
-(defn hours [date]
-  (let [h (.getHours date)]
-    (cond
-      (= h 24) 12
-      (= h 0) 1
-      :else (mod h 12))))
-
-(defn %I [date]
-  (zero-padded (hours date)))
-
-(defn %l [date]
-  (blank-padded (hours date)))
-
-(defn %P [date]
-  (let [h (.getHours date)]
-    (case (quot h 12)
-      0 (translate :time :am)
-      1 (translate :time :pm))))
-
-(defn %p [date]
-  (.toUpperCase (%P date)))
-
-(defn %M [date]
-  (zero-padded (.getMinutes date)))
-
-(defn %S [date]
-  (zero-padded (.getSeconds date)))
-
-(defn %L [date]
-  (zero-padded (.getMilliseconds date) 3))
-
-;; TimeZone
-
-(defn get-timezone [date]
+(defn- get-hours [date]
+  (.getHours date))
+(defn- get-minutes [date]
+  (.getMinutes date))
+(defn- get-seconds [date]
+  (.getSeconds date))
+(defn- get-milliseconds [date]
+  (.getMilliseconds date))
+(defn- get-timezone-offset [date]
   (let [tz (.getTimezoneOffset date)
-        tz-hours (let [th (quot tz 60)]
-                   (if (> th 0)
-                     (zero-padded (str th))
-                     (str "-" (zero-padded (str th)))))
-        tz-minutes (zero-padded (str (mod tz 60)))]
-    [tz-hours tz-minutes]))
-
-(defn %z [date]
-  (apply str (get-timezone date)))
-
-(defn %:z [date]
-  (let [[tz-h tz-m] (get-timezone date)]
-    tz-h))
-
-(defn %::z [date]
-  (let [[tz-h tz-m] (get-timezone date)]
-    (str tz-h ":" tz-m)))
-
-(defn %:::z [date]
-  (str (%::z date) ":00"))
-
-(defn %Z [date]
-  (let [tz-str (take-last 1 (.split (str date) " "))]
-    (apply str (rest (butlast tz-str)))))
-
-;; Weekday
-
-(declare %w)
-
-(defn %A [date]
-  (let [day_names (translate :date :day_names)]
-    (get day_names (%w date))))
-
-(defn %a [date]
-  (let [days_short (translate :date :abbr_day_names)]
-    (get days_short (%w date))))
-
-(defn %w [date]
+        sign (if (< tz 0) -1 1)
+        tz (* sign tz)
+        th ((any-padded "0") (str (quot tz 60)))
+        tm ((any-padded "0") (str (mod tz 60)))]
+    (str (when (< sign 0) "-") th tm)))
+(defn- get-weekday [date]
   (.getDay date))
 
-(defn %u [date]
-  (let [x (%w date)]
-    (if (= x 0)
-      7
-      x)))
+(def ^:private flags-map
+  {"-" (fn [x &] (apply str x))
+   "_" (any-padded " ")
+   "0" (any-padded "0")
+   "^" (fn [origin-string &] (.toUpperCase (apply str origin-string)))
+   "#" (fn [origin-string &]
+         (loop [letters origin-string res []]
+           (if-let [first-char (first letters)]
+             (let [lower-first-char (.toLowerCase first-char)
+                   new-char (if (= first-char lower-first-char)
+                              (.toUpperCase first-char)
+                              lower-first-char)]
+               (recur (rest letters) (conj res new-char)))
+             (apply str res))))
+   ":" (fn [tz-offset &]
+         (apply str tz-offset))})
 
+;; Main formatter
+(defmulti formatter (fn [_ [_ _ _ conversion]] (str conversion)))
+;; Date
+(defmethod formatter "Y" [date _]
+  (get-year date))
+(defmethod formatter "C" [date _]
+  (quot (get-year date) 100))
+(defmethod formatter "y" [date _]
+  (mod (get-year date) 100))
+(defmethod formatter "m" [date [flags _ _ _]]
+  (let [flags-composition (apply comp (map flags-map (.split flags "")))
+        month-str (str (get-month date))]
+    (flags-composition month-str)))
+(defmethod formatter "B" [date _]
+  (let [month-names (translate :date :month_names)]
+    (str (get month-names (get-month date)))))
+(defmethod formatter "b" [date _]
+  (let [short-month-names (translate :date :abbr_month_names)]
+    (str (get short-month-names (get-month date)))))
+(defmethod formatter "h" [date _]
+  (formatter date [nil nil nil "b"]))
+(defmethod formatter "d" [date [flags _ _ _]]
+  (let [flags-composition (apply comp (map flags-map (.split flags "")))]
+    (flags-composition (str (get-date date)))))
+(defmethod formatter "e" [date _]
+  (format date "%_d"))
+(defmethod formatter "j" [date _]
+  (let [january-first (js/Date. (get-year date) 0 1)
+        one-day (* 1000 60 60 24)]
+    ((any-padded "0") (str (quot (- (js/Number date) (js/Number january-first)) one-day)) :count 3)))
+;; Time
+(defmethod formatter "H" [date _]
+  ((any-padded "0") (str (get-hours date))))
+(defmethod formatter "k" [date _]
+  ((any-padded " ") (str (get-hours date))))
+(defmethod formatter "I" [date _]
+  (let [h (get-hours date)
+        h (cond
+            (= h 24) 12
+            (= h 0) 1
+            :else (mod h 12))]
+    ((any-padded "0") (str h))))
+(defmethod formatter "l" [date _]
+  (let [h (get-hours date)
+        h (cond
+            (= h 24) 12
+            (= h 0) 1
+            :else (mod h 12))]
+    ((any-padded "_") (str h))))
+(defmethod formatter "P" [date [flags _ _ _]]
+  (let [flags-composition (apply comp (map flags-map (.split flags "")))]
+    (case (quot (get-hours date) 12)
+      0 (flags-composition (translate :time :am))
+      1 (flags-composition (translate :time :pm)))))
+(defmethod formatter "p" [date _]
+  (formatter date ["^" nil nil "P"]))
+(defmethod formatter "M" [date _]
+  ((any-padded "0") (str (get-minutes date))))
+(defmethod formatter "S" [date _]
+  ((any-padded "0") (str (get-seconds date))))
+(defmethod formatter "L" [date _]
+  ((any-padded "0") (str (get-milliseconds date))))
+;; TimeZone
+(defmethod formatter "z" [date [flags _ _ _]]
+  (let [flags (filter #(= % ":") flags)
+        tz (apply str (get-timezone-offset date))]
+    (if ((comp not empty?) flags)
+      (let [flags-composition (apply comp (map flags-map flags))]
+        (flags-composition tz))
+      tz)))
+(defmethod formatter "Z" [date _]
+  (apply str (butlast (rest (last (.split (.toString date) " "))))))
+;; Weekday
+(defmethod formatter "A" [date _]
+  (let [weekday-names (translate :date :day_names)]
+    (get weekday-names (get-weekday date))))
+(defmethod formatter "a" [date _]
+  (let [short-weekday-names (translate :date :abbr_day_names)]
+    (get short-weekday-names (get-weekday date))))
+(defmethod formatter "w" [date _]
+  (str (get-weekday date)))
+(defmethod formatter "u" [date _]
+  (let [weekday (get-weekday date)]
+    (if (= weekday 0)
+      "7"
+      (str weekday))))
 ;; ISO 8601 week-based year and week number
 
-(defn %G [date])
-
-(defn %g [date])
-
-(defn %V [date])
-
 ;; Week number
-(defn %U [date])
-
-(defn %W [date])
 
 ;; Seconds since the Unix Epoch
-
-(defn %s [date]
+(defmethod formatter "s" [date _]
   (str (js/Number date)))
-
-(defn %Q [date]
-  (str (* (js/Number date) 1000)))
-
-;; Literal string
-
-(defn %n [date]
-  "\n")
-
-(defn %t [date]
-  "\t")
-
-;; Combination
-
-(defn %c [date]
-  (format-date date "%a %b %e %T %Y"))
-
-(defn %D [date]
-  (format-date date "%m/%d/%y"))
-
-(defn %F [date]
-  (format-date date "%Y-%m-%d"))
-
-(defn %v [date]
-  (format-date date "%e-%b-%Y"))
-
-(defn %x [date]
-  (%D date))
-
-(defn %X [date]
-  (%D date))
-
-(defn %r [date]
-  (format-date date "%I:%M:%S %p"))
-
-(defn %R [date]
-  (format-date date "%H:%M"))
-
-(defn %T [date]
-  (format-date date "%H:%M:%S"))
-
-(defn %+ [date]
-  (format-date date "%a %b %e %H:%M:%S %Z %Y"))
-
-(def format-map {"%a" #(t [:datepicker :days_short (.getDay %)])
-                 "%A" #(t [:datepicker :days (.getDay %)])
-                 "%b" #(t [:datepicker :months_short (.getMonth %)])
-                 "%B" #(t [:datepicker :months (.getMonth %)])
-                 "%d" #(apply str (take-last 2 (str "0" (.getDate %))))
-                 "%m" #(apply str (take-last 2 (str "0" (inc (.getMonth %)))))
-                 "%y" #(apply str (take-last 2 (str (.getFullYear %))))
-                 "%Y" #(.getFullYear %)
-                 "%-e" #(.getDate %)})
+(defmethod formatter "Q" [date _]
+  (str (* 1000 (js/Number date))))
+;; Literal strings
+(defmethod formatter "n" [_ _] "\n")
+(defmethod formatter "t" [_ _] "\t")
+(defmethod formatter "%" [_ _] "%")
+;; Combinations
+(defmethod formatter "c" [date _] (format date "%a %b %e %T %Y"))
+(defmethod formatter "D" [date _] (format date "%m/%d/%y"))
+(defmethod formatter "F" [date _] (format date "%Y-%m-%d"))
+(defmethod formatter "v" [date _] (format date "%e-%b-%Y"))
+(defmethod formatter "x" [date _] (format date "%D"))
+(defmethod formatter "X" [date _] (format date "%D"))
+(defmethod formatter "r" [date _] (format date "%I:%M:%S %p"))
+(defmethod formatter "R" [date _] (format date "%H:%M"))
+(defmethod formatter "T" [date _] (format date "%H:%M:%S"))
+(defmethod formatter "+" [date _] (format date "%a %b %e %H:%M:%S %Z %Y"))
+;; Default
+(defmethod formatter :default [_ _] "Not yet implemented!")
 
 (defn interpolate [translation value]
   (.replace translation (js/RegExp. "%\\{(value|count)\\}") value))
@@ -236,41 +184,23 @@
   (let [key (pluralize count)]
     (interpolate (key translation) count)))
 
-(defn t [translation-keys & [{:keys [value count]}]]
-  (let [translation (translate translation-keys)]
-    (cond
-      value
-      (interpolate translation value)
-      count
-      (plural translation count)
-      :else
-      translation)))
+(defn- parse-formatter [formatter]
+  (let [pattern #"%([-_0^#:]*)([123456789]*)([EO]?)([YCymBbhdejHklIPpMSLzZaAwuGgVUWsQntcDFvxXrRT+%]?)"]
+    (re-seq pattern formatter)))
 
-(defn- parse-char [date ch acc-t acc-r]
-  (if (= (count acc-t) 0)
-    (if (= ch "%")
-      [[ch] acc-r]
-      [acc-t (concat acc-r [ch])])
-    (if-let [fmt-fn (get format-map (apply str acc-t))]
-      (if (= ch "%")
-        [[ch] (concat acc-r [(fmt-fn date)])]
-        (if (nil? ch)
-          [[] (concat acc-r [(fmt-fn date)])]
-          [acc-t (concat acc-r [(fmt-fn date) ch])]))
-      (if (= ch "%")
-        [[ch] (concat acc-r acc-t)]
-        (if (nil? ch)
-          [[] (vec (concat acc-r acc-t))]
-          [(conj acc-t ch) acc-r])))))
+(def ^:private memoized-parse-formatter (memoize parse-formatter))
 
-(defn format-date [date format]
-  (if date
-    (loop [fmt-v (seq format) acc-t [] acc-r []]
-      (if (and (= (count acc-t) 0) (= (count fmt-v) 0))
-        (apply str acc-r)
-        (let [ch (first fmt-v)
-              rest-ch (rest fmt-v)
-              [n-acc-t n-acc-r] (parse-char date ch acc-t acc-r)]
-          (recur rest-ch n-acc-t n-acc-r))))
-    ""))
+(defn format [date format]
+  (loop [formatters (memoized-parse-formatter format) res format]
+    (if (= (count formatters) 0)
+      res
+      (let [pattern (first (first formatters))
+            params (rest (first formatters))]
+        (recur (rest formatters) (.replace res pattern (formatter date params)))))))
 
+(defn -main []
+  (js/console.log "!"))
+
+(format (js/Date.) "%+")
+(generate-translations! "de")
+(translate :date)

@@ -19,3 +19,27 @@
       :scm         {:url "https://github.com/DeLaGuardo/clj-i18n"}
       :license     {"EPL" "http://www.eclipse.org/legal/epl-v10.html"}}
  jar {:manifest {"Foo" "bar"}})
+
+(deftask dev []
+  (set-env! :dependencies #(conj %
+                                 '[adzerk/boot-cljs            "1.7.48-4"        :scope "test"]
+                                 '[adzerk/boot-cljs-repl       "0.1.10-SNAPSHOT" :scope "test"]
+                                 '[adzerk/boot-reload          "0.3.2"           :scope "test"]
+                                 '[pandeiro/boot-http          "0.7.0-SNAPSHOT"  :scope "test"]
+                                 '[org.clojure/tools.nrepl     "0.2.11"]))
+  (require 'adzerk.boot-cljs)
+  (require 'adzerk.boot-cljs-repl)
+  (require 'adzerk.boot-reload)
+  (require 'pandeiro.boot-http)
+  (let [cljs (resolve 'adzerk.boot-cljs/cljs)
+        cljs-repl (resolve 'adzerk.boot-cljs-repl/cljs-repl)
+        start-repl (resolve 'adzerk.boot-cljs-repl/start-repl)
+        reload (resolve 'adzerk.boot-reload/reload)
+        serve (resolve 'pandeiro.boot-http/serve)]
+    (comp (serve :dir "target" :reload true)
+       (watch)
+       (speak)
+       (reload :on-jsload 'clj-i18n.core/-main)
+       (cljs-repl)
+       (cljs :source-map true
+             :optimizations :none))))

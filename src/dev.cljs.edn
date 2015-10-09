@@ -1,0 +1,2 @@
+{:require  [clj-i18n.core]
+ :init-fns [clj-i18n.core/-main]}
