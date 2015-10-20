@@ -186,7 +186,3 @@
 
 (defn -main []
   (js/console.log "!"))
-
-(format (js/Date.) "%+")
-(generate-translations! "de")
-(translate :date)
