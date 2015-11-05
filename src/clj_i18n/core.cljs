@@ -1,6 +1,5 @@
 (ns clj-i18n.core
-  #?(:cljs (:require-macros [clj-i18n.macros :refer [translate generate-translations!]])
-     :clj (:require [clj-i18n.macros :refer [translate]])))
+  (:require-macros [clj-i18n.macros :refer [translate]]))
 
 (declare format)
 (declare pluralize)
@@ -184,5 +183,9 @@
             params (rest (first formatters))]
         (recur (rest formatters) (.replace res pattern (formatter date params)))))))
 
-(defn -main []
+(def x (js/Date.))
+
+(format x "%Y-%m-%d")
+
+(defn init []
   (js/console.log "!"))

@@ -1,10 +1,10 @@
 (set-env!
  :source-paths #{"src"}
- :resource-paths #{"resources"}
- :dependencies '[[org.clojure/clojure       "1.7.0"  :scope "provided"]
-                 [org.clojure/clojurescript "1.7.48" :scope "provided"]
-                 [clj-yaml                  "0.4.0"  :scope "provided"]
-                 [adzerk/bootlaces          "0.1.12" :scope "test"]])
+ :resource-paths #{"html" "build"}
+ :dependencies '[[org.clojure/clojure       "1.7.0"   :scope "provided"]
+                 [org.clojure/clojurescript "1.7.145" :scope "provided"]
+                 [clj-yaml                  "0.4.0"   :scope "provided"]
+                 [adzerk/bootlaces          "0.1.12"  :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all])
 
@@ -22,10 +22,10 @@
 
 (deftask dev []
   (set-env! :dependencies #(conj %
-                                 '[adzerk/boot-cljs            "1.7.48-4"        :scope "test"]
-                                 '[adzerk/boot-cljs-repl       "0.1.10-SNAPSHOT" :scope "test"]
-                                 '[adzerk/boot-reload          "0.3.2"           :scope "test"]
-                                 '[pandeiro/boot-http          "0.7.0-SNAPSHOT"  :scope "test"]
+                                 '[adzerk/boot-cljs            "1.7.48-6"       :scope "test"]
+                                 '[adzerk/boot-cljs-repl       "0.2.0"          :scope "test"]
+                                 '[adzerk/boot-reload          "0.4.1"          :scope "test"]
+                                 '[pandeiro/boot-http          "0.7.0-SNAPSHOT" :scope "test"]
                                  '[org.clojure/tools.nrepl     "0.2.11"]))
   (require 'adzerk.boot-cljs)
   (require 'adzerk.boot-cljs-repl)
@@ -36,10 +36,10 @@
         start-repl (resolve 'adzerk.boot-cljs-repl/start-repl)
         reload (resolve 'adzerk.boot-reload/reload)
         serve (resolve 'pandeiro.boot-http/serve)]
-    (comp (serve :dir "target" :reload true)
+    (comp (serve :port 3000)
        (watch)
        (speak)
-       (reload :on-jsload 'clj-i18n.core/-main)
+       (reload :on-jsload 'clj-i18n.dev/refresh)
        (cljs-repl)
        (cljs :source-map true
              :optimizations :none))))

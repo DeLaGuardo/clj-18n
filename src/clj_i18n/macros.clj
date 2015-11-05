@@ -103,6 +103,7 @@
     (swap! *config* merge opts)
     (swap! *config* assoc :translations (load-translations locale))
     (swap! *config* assoc :current-locale locale)
+    (println @*config*)
     `~(not (or (nil? (:translations @*config*)) (empty? (:translations @*config*))))))
 
 (defmacro translate [& tr-keys]
