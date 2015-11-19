@@ -1,9 +1,10 @@
 {:abbr_day_names ["" "" "" "" "" "" ""],
- :abbr_month_names ["" "" "" "" "" "" "" "" "" "" "" ""],
+ :abbr_month_names [nil "" "" "" "" "" "" "" "" "" "" "" ""],
  :day_names ["ອາທິດ" "ຈັນ" "ອັງຄານ" "ພຸດ" "ພະຫັດ" "ສຸກ" "ເສົາ"],
  :formats {:default "%d-%m-%Y", :long "%e %B %Y", :short "%e %b"},
  :month_names
- ["ມັງກອນ"
+ [nil
+  "ມັງກອນ"
   "ກຸມພາ"
   "ມີນາ"
   "ເມສາ"

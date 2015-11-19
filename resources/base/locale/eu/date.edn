@@ -1,7 +1,8 @@
 {:abbr_day_names
  ["Igan" "Astel" "Astear" "Asteaz" "Oste" "Osti" "Lar"],
  :abbr_month_names
- ["Urt"
+ [nil
+  "Urt"
   "Ots"
   "Mar"
   "Api"
@@ -24,7 +25,8 @@
  :formats
  {:default "%Y/%m/%e", :long "%Y(e)ko %Bk %e", :short "%b %e"},
  :month_names
- ["Urtarrila"
+ [nil
+  "Urtarrila"
   "Otsaila"
   "Martxoa"
   "Apirila"

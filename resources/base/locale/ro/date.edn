@@ -1,6 +1,7 @@
 {:abbr_day_names ["Dum" "Lun" "Mar" "Mie" "Joi" "Vin" "Sâm"],
  :abbr_month_names
- ["Ian"
+ [nil
+  "Ian"
   "Feb"
   "Mar"
   "Apr"
@@ -16,7 +17,8 @@
  ["Duminică" "Luni" "Marți" "Miercuri" "Joi" "Vineri" "Sâmbată"],
  :formats {:default "%d-%m-%Y", :long "%d %B %Y", :short "%d %b"},
  :month_names
- ["Ianuarie"
+ [nil
+  "Ianuarie"
   "Februarie"
   "Martie"
   "Aprilie"

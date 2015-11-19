@@ -1,6 +1,7 @@
 {:abbr_day_names ["Ne" "Po" "Út" "St" "Čt" "Pá" "So"],
  :abbr_month_names
- ["led"
+ [nil
+  "led"
   "úno"
   "bře"
   "dub"
@@ -16,7 +17,8 @@
  ["neděle" "pondělí" "úterý" "středa" "čtvrtek" "pátek" "sobota"],
  :formats {:default "%d. %m. %Y", :long "%d. %B %Y", :short "%d %b"},
  :month_names
- ["leden"
+ [nil
+  "leden"
   "únor"
   "březen"
   "duben"

@@ -1,6 +1,7 @@
 {:abbr_day_names ["J2" "J3" "J4" "J5" "Al" "Ij" "J1"],
  :abbr_month_names
- ["Jan"
+ [nil
+  "Jan"
   "Feb"
   "Mac"
   "Apr"
@@ -22,7 +23,8 @@
   "Jumamosi"],
  :formats {:default "%d-%m-%Y", :long "%e %B, %Y", :short "%e %b"},
  :month_names
- ["Mwezi wa kwanza"
+ [nil
+  "Mwezi wa kwanza"
   "Mwezi wa pili"
   "Mwezi wa tatu"
   "Mwezi wa nne"

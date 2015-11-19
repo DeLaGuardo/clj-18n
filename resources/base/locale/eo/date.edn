@@ -1,6 +1,7 @@
 {:abbr_day_names ["dim" "lun" "mar" "mer" "ĵaŭ" "ven" "sam"],
  :abbr_month_names
- ["jan."
+ [nil
+  "jan."
   "feb."
   "mar."
   "apr."
@@ -16,7 +17,8 @@
  ["dimanĉo" "lundo" "mardo" "merkredo" "ĵaŭdo" "vendredo" "sabato"],
  :formats {:default "%Y/%m/%d", :long "%e %B %Y", :short "%e %b"},
  :month_names
- ["januaro"
+ [nil
+  "januaro"
   "februaro"
   "marto"
   "aprilo"

@@ -1,6 +1,7 @@
 {:abbr_day_names ["su" "ma" "ti" "ke" "to" "pe" "la"],
  :abbr_month_names
- ["tammi"
+ [nil
+  "tammi"
   "helmi"
   "maalis"
   "huhti"
@@ -23,7 +24,8 @@
  :formats
  {:default "%-d.%-m.%Y", :long "%A %e. %Bta %Y", :short "%d. %b"},
  :month_names
- ["tammikuu"
+ [nil
+  "tammikuu"
   "helmikuu"
   "maaliskuu"
   "huhtikuu"

@@ -1,6 +1,7 @@
 {:abbr_day_names ["Sek" "Pir" "Ant" "Tre" "Ket" "Pen" "Šeš"],
  :abbr_month_names
- ["Sau"
+ [nil
+  "Sau"
   "Vas"
   "Kov"
   "Bal"
@@ -22,7 +23,8 @@
   "šeštadienis"],
  :formats {:default "%Y-%m-%d", :long "%B %d, %Y", :short "%b %d"},
  :month_names
- ["sausio"
+ [nil
+  "sausio"
   "vasario"
   "kovo"
   "balandžio"

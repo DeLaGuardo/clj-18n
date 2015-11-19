@@ -1,6 +1,7 @@
 {:abbr_day_names ["Ya" "Du" "Sh" "Ch" "Pa" "Ju" "Sh"],
  :abbr_month_names
- ["yan."
+ [nil
+  "yan."
   "fev."
   "mart"
   "apr."
@@ -22,7 +23,8 @@
   "shanba"],
  :formats {:default "%d.%m.%Y", :long "%d %B %Y", :short "%d %b"},
  :month_names
- ["yanvar"
+ [nil
+  "yanvar"
   "fevral"
   "mart"
   "aprel"

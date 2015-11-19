@@ -1,6 +1,7 @@
 {:abbr_day_names ["Ned" "Pon" "Uto" "Sre" "Čet" "Pet" "Sub"],
  :abbr_month_names
- ["Jan"
+ [nil
+  "Jan"
   "Feb"
   "Mar"
   "Apr"
@@ -16,7 +17,8 @@
  ["Nedelja" "Ponedeljak" "Utorak" "Sreda" "Četvrtak" "Petak" "Subota"],
  :formats {:default "%d/%m/%Y", :long "%B %e, %Y", :short "%e %b"},
  :month_names
- ["Januar"
+ [nil
+  "Januar"
   "Februar"
   "Mart"
   "April"

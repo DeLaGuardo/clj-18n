@@ -1,6 +1,7 @@
 {:abbr_day_names ["Su" "Mä" "Zi" "Mi" "Du" "Fr" "Sa"],
  :abbr_month_names
- ["Jan"
+ [nil
+  "Jan"
   "Feb"
   "Mär"
   "Apr"
@@ -22,7 +23,8 @@
   "Samschtig"],
  :formats {:default "%d.%m.%Y", :long "%e. %B %Y", :short "%e. %b"},
  :month_names
- ["Januar"
+ [nil
+  "Januar"
   "Februar"
   "März"
   "April"

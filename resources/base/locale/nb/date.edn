@@ -1,6 +1,7 @@
 {:abbr_day_names ["søn" "man" "tir" "ons" "tor" "fre" "lør"],
  :abbr_month_names
- ["jan"
+ [nil
+  "jan"
   "feb"
   "mar"
   "apr"
@@ -16,7 +17,8 @@
  ["søndag" "mandag" "tirsdag" "onsdag" "torsdag" "fredag" "lørdag"],
  :formats {:default "%d.%m.%Y", :long "%e. %B %Y", :short "%e. %b"},
  :month_names
- ["januar"
+ [nil
+  "januar"
   "februar"
   "mars"
   "april"

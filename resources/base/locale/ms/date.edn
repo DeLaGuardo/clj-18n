@@ -1,6 +1,7 @@
 {:abbr_day_names ["Ahd" "Isn" "Sel" "Rab" "Kha" "Jum" "Sab"],
  :abbr_month_names
- ["Jan"
+ [nil
+  "Jan"
   "Feb"
   "Mac"
   "Apr"
@@ -15,7 +16,8 @@
  :day_names ["Ahad" "Isnin" "Selasa" "Rabu" "Khamis" "Jumaat" "Sabtu"],
  :formats {:default "%d-%m-%Y", :long "%d %B, %Y", :short "%d %b"},
  :month_names
- ["Januari"
+ [nil
+  "Januari"
   "Febuari"
   "Mac"
   "April"

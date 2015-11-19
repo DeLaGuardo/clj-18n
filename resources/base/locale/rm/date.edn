@@ -1,6 +1,7 @@
 {:abbr_day_names ["du" "gli" "ma" "me" "gie" "ve" "so"],
  :abbr_month_names
- ["schan"
+ [nil
+  "schan"
   "favr"
   "mars"
   "avr"
@@ -22,7 +23,8 @@
   "sonda"],
  :formats {:default "%d.%m.%Y", :long "%e. %B %Y", :short "%e. %b"},
  :month_names
- ["schaner"
+ [nil
+  "schaner"
   "favrer"
   "mars"
   "avrigl"

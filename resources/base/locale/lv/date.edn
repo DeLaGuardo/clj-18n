@@ -1,6 +1,7 @@
 {:abbr_day_names ["Sv." "P." "O." "T." "C." "Pk." "S."],
  :abbr_month_names
- ["Janv"
+ [nil
+  "Janv"
   "Febr"
   "Marts"
   "Apr"
@@ -23,7 +24,8 @@
  :formats
  {:default "%d.%m.%Y.", :long "%Y. gada %e. %B", :short "%e. %B"},
  :month_names
- ["Janvāris"
+ [nil
+  "Janvāris"
   "Februāris"
   "Marts"
   "Aprīlis"

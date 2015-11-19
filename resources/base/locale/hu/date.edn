@@ -1,6 +1,7 @@
 {:abbr_day_names ["v." "h." "k." "sze." "cs." "p." "szo."],
  :abbr_month_names
- ["jan."
+ [nil
+  "jan."
   "febr."
   "márc."
   "ápr."
@@ -16,7 +17,8 @@
  ["vasárnap" "hétfő" "kedd" "szerda" "csütörtök" "péntek" "szombat"],
  :formats {:default "%Y.%m.%d.", :long "%Y. %B %e.", :short "%b %e."},
  :month_names
- ["január"
+ [nil
+  "január"
   "február"
   "március"
   "április"

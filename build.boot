@@ -1,9 +1,9 @@
 (set-env!
  :source-paths #{"src"}
- :resource-paths #{"html" "build"}
+ :resource-paths #{"html" "build" "resources"}
  :dependencies '[[org.clojure/clojure       "1.7.0"   :scope "provided"]
                  [org.clojure/clojurescript "1.7.145" :scope "provided"]
-                 [clj-yaml                  "0.4.0"   :scope "provided"]
+                 [clj-yaml                  "0.4.0"]
                  [adzerk/bootlaces          "0.1.12"  :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all])

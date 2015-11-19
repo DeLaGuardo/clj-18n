@@ -1,6 +1,7 @@
 {:abbr_day_names ["nie" "pòn" "wtó" "str" "czw" "pią" "sob"],
  :abbr_month_names
- ["stë"
+ [nil
+  "stë"
   "gro"
   "str"
   "łżë"
@@ -22,7 +23,8 @@
   "sobòta"],
  :formats {:default "%d-%m-%Y", :long "%B %d, %Y", :short "%d %b"},
  :month_names
- ["stëcznik"
+ [nil
+  "stëcznik"
   "gromicznik"
   "strëmiannik"
   "łżëkwiôt"

@@ -1,6 +1,7 @@
 {:abbr_day_names ["Dom" "Lun" "Mar" "Mer" "Xov" "Ven" "Sab"],
  :abbr_month_names
- ["Xan"
+ [nil
+  "Xan"
   "Feb"
   "Mar"
   "Abr"
@@ -17,7 +18,8 @@
  :formats
  {:default "%e/%m/%Y", :long "%A %e de %B de %Y", :short "%e %b"},
  :month_names
- ["Xaneiro"
+ [nil
+  "Xaneiro"
   "Febreiro"
   "Marzo"
   "Abril"

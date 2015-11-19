@@ -1,6 +1,7 @@
 {:abbr_day_names ["sun" "mán" "þri" "mið" "fim" "fös" "lau"],
  :abbr_month_names
- ["jan"
+ [nil
+  "jan"
   "feb"
   "mar"
   "apr"
@@ -22,7 +23,8 @@
   "laugardaginn"],
  :formats {:default "%d.%m.%Y", :long "%e. %B %Y", :short "%e. %b"},
  :month_names
- ["janúar"
+ [nil
+  "janúar"
   "febrúar"
   "mars"
   "apríl"

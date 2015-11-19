@@ -1,6 +1,7 @@
 {:abbr_day_names ["Pzr" "Pzt" "Sal" "Çrş" "Prş" "Cum" "Cts"],
  :abbr_month_names
- ["Oca"
+ [nil
+  "Oca"
   "Şub"
   "Mar"
   "Nis"
@@ -16,7 +17,8 @@
  ["Pazar" "Pazartesi" "Salı" "Çarşamba" "Perşembe" "Cuma" "Cumartesi"],
  :formats {:default "%d.%m.%Y", :long "%e %B %Y, %A", :short "%e %b"},
  :month_names
- ["Ocak"
+ [nil
+  "Ocak"
   "Şubat"
   "Mart"
   "Nisan"

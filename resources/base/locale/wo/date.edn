@@ -1,6 +1,7 @@
 {:abbr_day_names ["Dib" "Alt" "Tal" "All" "Alx" "Ajj" "Gaw"],
  :abbr_month_names
- ["Jan"
+ [nil
+  "Jan"
   "Feb"
   "Mar"
   "Apr"
@@ -16,7 +17,8 @@
  ["Dibèer" "Altine" "Talaata" "Allarba" "Alxamess" "Ajjouma" "Gaawu"],
  :formats {:default "%Y-%m-%d", :long "%B %d, %Y", :short "%b %d"},
  :month_names
- ["Tamkharit"
+ [nil
+  "Tamkharit"
   "Digui Gamou"
   "Gamou"
   "Raki Gamou"

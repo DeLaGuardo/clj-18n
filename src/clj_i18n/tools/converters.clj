@@ -6,7 +6,7 @@
 (extend-protocol yaml/YAMLCodec
   java.util.ArrayList
   (decode [data]
-    (vec (remove nil? data))))
+    (vec data)))
 
 (defn write-dataset-edn! [out-file raw-dataset-map]
   (with-open [w (clojure.java.io/writer out-file)]

@@ -1,6 +1,7 @@
 {:abbr_day_names ["P" "E" "T" "K" "N" "R" "L"],
  :abbr_month_names
- ["jaan."
+ [nil
+  "jaan."
   "veebr."
   "märts"
   "apr."
@@ -22,7 +23,8 @@
   "laupäev"],
  :formats {:default "%d.%m.%Y", :long "%d. %B %Y", :short "%d.%m.%y"},
  :month_names
- ["jaanuar"
+ [nil
+  "jaanuar"
   "veebruar"
   "märts"
   "aprill"

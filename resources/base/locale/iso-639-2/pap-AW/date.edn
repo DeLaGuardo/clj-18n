@@ -1,6 +1,7 @@
 {:abbr_day_names ["Dum" "Lun" "Mar" "Ras" "Wep" "Biè" "Sab"],
  :abbr_month_names
- ["yan"
+ [nil
+  "yan"
   "feb"
   "mar"
   "apr"
@@ -23,7 +24,8 @@
  :formats
  {:default "%Y-%m-%d", :long "%B di %d, %Y", :short "%b di %d"},
  :month_names
- ["yanüari"
+ [nil
+  "yanüari"
   "febrüari"
   "mart"
   "aprel"

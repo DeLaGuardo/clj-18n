@@ -1,6 +1,7 @@
 {:abbr_day_names ["Sul" "Llun" "Maw" "Mer" "Iau" "Gwe" "Sad"],
  :abbr_month_names
- ["Ion"
+ [nil
+  "Ion"
   "Chw"
   "Maw"
   "Ebr"
@@ -22,7 +23,8 @@
   "Dydd Sadwrn"],
  :formats {:default "%d-%m-%Y", :long "%B %d, %Y", :short "%b %d"},
  :month_names
- ["Ionawr"
+ [nil
+  "Ionawr"
   "Chwefror"
   "Mawrth"
   "Ebrill"

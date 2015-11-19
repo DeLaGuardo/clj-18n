@@ -1,6 +1,7 @@
 {:abbr_day_names ["zo" "ma" "di" "wo" "do" "vr" "za"],
  :abbr_month_names
- ["jan"
+ [nil
+  "jan"
   "feb"
   "mrt"
   "apr"
@@ -22,7 +23,8 @@
   "zaterdag"],
  :formats {:default "%d-%m-%Y", :long "%e %B %Y", :short "%e %b"},
  :month_names
- ["januari"
+ [nil
+  "januari"
   "februari"
   "maart"
   "april"

@@ -12,7 +12,8 @@
   "Sabado"],
  :abbr_day_names ["Lin" "Lun" "Mar" "Miy" "Huw" "Biy" "Sab"],
  :month_names
- ["Enero"
+ [nil
+  "Enero"
   "Pebrero"
   "Marso"
   "Abril"
@@ -25,7 +26,8 @@
   "Nobyembre"
   "Disyembre"],
  :abbr_month_names
- ["Ene"
+ [nil
+  "Ene"
   "Peb"
   "Mar"
   "Abr"

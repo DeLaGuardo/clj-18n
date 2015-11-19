@@ -1,6 +1,7 @@
 {:abbr_day_names ["Dom" "Lun" "Mar" "Mer" "Gio" "Ven" "Sab"],
  :abbr_month_names
- ["Gen"
+ [nil
+  "Gen"
   "Feb"
   "Mar"
   "Apr"
@@ -22,7 +23,8 @@
   "Sabato"],
  :formats {:default "%d-%m-%Y", :long "%d %B %Y", :short "%d %b"},
  :month_names
- ["Gennaio"
+ [nil
+  "Gennaio"
   "Febbraio"
   "Marzo"
   "Aprile"

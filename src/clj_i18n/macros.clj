@@ -70,7 +70,7 @@
                                :fallback "en"
                                :base-modules #{:date :datetime :errors :helpers :number :support :time}
                                :modules #{}
-                               :locale-resources nil
+                               :locale-resources ""
                                :translations nil}))
 
 (def ^:private base-path "base/locale")
@@ -103,8 +103,9 @@
     (swap! *config* merge opts)
     (swap! *config* assoc :translations (load-translations locale))
     (swap! *config* assoc :current-locale locale)
-    (println @*config*)
-    `~(not (or (nil? (:translations @*config*)) (empty? (:translations @*config*))))))
+    `(js/console.log ~locale)
+    ;; `~(not (or (nil? (:translations @*config*)) (empty? (:translations @*config*))))
+    ))
 
 (defmacro translate [& tr-keys]
   (let [translations-dict (let [tr-dict (last tr-keys)]

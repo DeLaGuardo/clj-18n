@@ -1,6 +1,7 @@
 {:abbr_day_names ["Dg" "Dl" "Dm" "Dc" "Dj" "Dv" "Ds"],
  :abbr_month_names
- ["Gen"
+ [nil
+  "Gen"
   "Feb"
   "Mar"
   "Abr"
@@ -23,7 +24,8 @@
  :formats
  {:default "%d-%m-%Y", :long "%d de %B de %Y", :short "%d de %b"},
  :month_names
- ["Gener"
+ [nil
+  "Gener"
   "Febrer"
   "Març"
   "Abril"
